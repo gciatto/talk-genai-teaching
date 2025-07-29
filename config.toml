@@ -1,6 +1,6 @@
-baseURL = "https://gciatto.github.io/talk-genai-unibo/"
+baseURL = "https://gciatto.github.io/talk-genai-teaching/"
 languageCode = "it-it"
-title = "IA Generativa: Tecnologie ed Esempi di Utilizzo"
+title = "IA Generativa: Tecnologie ed Esempi di Utilizzo per la Didattica"
 disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"

@@ -1,7 +1,7 @@
 
 +++
 
-title = "IA Generativa: Tecnologie ed Esempi di Utilizzo"
+title = "GenAI: Tecnologie ed Esempi di Utilizzo Per La Didattica"
 description = "Formazione su IA generativa"
 outputs = ["Reveal"]
 
@@ -9,12 +9,13 @@ outputs = ["Reveal"]
 
 {{% section %}}
 
-# IA Generativa: Tecnologie ed Esempi di Utilizzo
+# GenAI: Tecnologie ed Esempi di Utilizzo Per La Didattica – In relazione alle linee guida di ateneo
 
-[Giovanni Ciatto](mailto:giovanni.ciatto@unibo.it), Dipartimento di Informatica — Scienza e Ingegneria (DISI), Sede di Cesena,
+[Giovanni Ciatto](mailto:giovanni.ciatto@unibo.it) & [Giovanni Antonioni](mailto:giovanni.antonioni2@studio.unibo.it)
+<br> Dipartimento di Informatica — Scienza e Ingegneria (DISI), Sede di Cesena,
 <br> Alma Mater Studiorum—Università di Bologna
 
-{{< image src="./front.webp" max-h="50vh" >}}
+{{< image src="./front.png" max-h="50vh" >}}
 
 <span class="hint">(versione presentazione: {{< today >}})</span>
 
@@ -25,7 +26,7 @@ outputs = ["Reveal"]
 
 <{{< slides-url >}}>
 
-![](./qr.png)
+{{< qrcode >}}
 
 [<i class="fa fa-print" aria-hidden="true"></i> versione stampabile](?print-pdf&pdfSeparateFragments=false)
 

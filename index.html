@@ -1,0 +1,1938 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta name="generator" content="Hugo 0.148.2">
+    <meta charset="utf-8">
+<title>GenAI: Tecnologie ed Esempi di Utilizzo Per La Didattica</title>
+<meta name="description" content="Formazione su IA generativa">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="stylesheet" href="/talk-genai-teaching/reveal-js/dist/reset.css">
+<link rel="stylesheet" href="/talk-genai-teaching/reveal-js/dist/reveal.css">
+  <link rel="stylesheet" href="/talk-genai-teaching/css/custom-theme.min.3d531af72ba0bfb0d47820c423b62e5e562e7e1f54f40d1fb2c2a4ee2a4f5868.css" id="theme"><link rel="stylesheet" href="/talk-genai-teaching/highlight-js/solarized-dark.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oxygen Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu Mono" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/gh/DanySK/css-blur-animation/blur.css" rel="stylesheet" crossorigin="anonymous">
+
+<script src="https://kit.fontawesome.com/81ac037be0.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section>
+
+<section data-shortcode-section="">
+<h1 id="genai-tecnologie-ed-esempi-di-utilizzo-per-la-didattica--in-relazione-alle-linee-guida-di-ateneo">GenAI: Tecnologie ed Esempi di Utilizzo Per La Didattica – In relazione alle linee guida di ateneo</h1>
+<p><a href="mailto:giovanni.ciatto@unibo.it">Giovanni Ciatto</a> &amp; <a href="mailto:giovanni.antonioni2@studio.unibo.it">Giovanni Antonioni</a>
+<br> Dipartimento di Informatica — Scienza e Ingegneria (DISI), Sede di Cesena,
+<br> Alma Mater Studiorum—Università di Bologna</p>
+<img src="./front.png" alt="" style="max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+<p><span class="hint">(versione presentazione: 2025-07-29)</span></p>
+</section><section>
+<h2 id="link-a-queste-slide">Link a queste slide</h2>
+<p><a href="https://gciatto.github.io/talk-genai-teaching/">https://gciatto.github.io/talk-genai-teaching/</a></p>
+<div id="YThmZTQwYTUxYzUxNDdjYWRlNDYyYjIwZmZlZGFkNGFkNTQzOGQxNjU3ZGI3NmI1YTg3NzZkYmNkYzllOGQ5Yg==" style=""></div>
+<script type="text/javascript">
+    const qrCode = new QRCodeStyling({
+        width:  300 ,
+        height:  300 ,
+        type: "svg",
+        data: "https://gciatto.github.io/talk-genai-teaching/",
+        image: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+        dotsOptions: {
+            color: "#000000",
+            type: "rounded"
+        },
+        backgroundOptions: {
+            color: "#ffffff",
+        },
+        imageOptions: {
+            crossOrigin: "anonymous",
+            margin:  10 
+        }
+    });
+    qrCode.append(document.getElementById("YThmZTQwYTUxYzUxNDdjYWRlNDYyYjIwZmZlZGFkNGFkNTQzOGQxNjU3ZGI3NmI1YTg3NzZkYmNkYzllOGQ5Yg=="));
+</script>
+<p><a href="?print-pdf&amp;pdfSeparateFragments=false"><i class="fa fa-print" aria-hidden="true"></i> versione stampabile</a></p>
+</section><section>
+<h2 id="scaletta">Scaletta</h2>
+<ol>
+<li><a href="#intro">Introduzione</a></li>
+<li><a href="#interfaces">Principali soluzioni tecnologiche</a></li>
+<li><a href="#modes">Principali modalità d’utilizzo</a>
+<ol>
+<li><a href="#search-engine">Esempio di GenAI come motore di ricerca</a></li>
+<li><a href="#writing">Esempio di GenAI come assistente di (ri)scrittura</a></li>
+<li><a href="#reading">Esempio di GenAI come assistente di lettura</a></li>
+<li><a href="#data-processing">Esempio di GenAI come assistente per l’elaborazione dei dati</a></li>
+<li><a href="#content-generation">Esempio di GenAI come generatore di contenuti</a></li>
+</ol>
+</li>
+<li><a href="#citations">Dichiarare / citare l’impiego di GenAI</a></li>
+</ol>
+
+</section>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" id="intro">
+  
+<h2 id="genai-intelligenza-artificiale-generativa"><strong>GenAI</strong>: Intelligenza Artificiale <em>Generativa</em></h2>
+<!-- > [Sistemi basati su] <br> -->
+<p>Algoritmi di <em>IA</em> in grado di <strong>generare automaticamente</strong> <em>contenuti</em>, e.g.:</p>
+<ul>
+<li><em>testo</em></li>
+<li>immagini</li>
+<li>audio e/o video</li>
+<li>codice [di programmazione]</li>
+<li>…</li>
+</ul>
+<p>(cf. <a href="https://www.unibo.it/it/allegati/policy-per-un-uso-etico-e-responsabile-dell2019intelligenza-artificiale-generativa-nelle-attivita-di-didattica-e-ricerca/@@download/file/Policy-Generative-AI.pdf">Policy per un uso etico e responsabile dell’Intelligenza Artificiale Generativa nelle attività di didattica e ricerca</a>)</p>
+</section><section>
+<h2 id="genai-mediante-modelli-fondazionali-fm">GenAI mediante <em>Modelli Fondazionali</em> (FM)</h2>
+<ul>
+<li>Grosse <em>reti neurali</em> che imparano ad <em>elaborare</em>, <em>“capire”</em>, e <em>produrre</em> <strong>dati non</strong> [necessariamente] <strong>strutturati</strong></li>
+<li><strong>allenati</strong> su <em>grandi</em> quantità di dati, e con <em>grandi</em> risorse computazionali, a <strong>fare un po’ tutto</strong>
+<ul>
+<li>con l’idea di poterli poi <strong>specializzare</strong> per <em>compiti specifici</em></li>
+</ul>
+</li>
+</ul>
+<br>
+
+
+
+
+
+
+<img src="./foundation-models.png" alt="Concept dei modelli fondazionali" style="max-width: 95vw; max-height: 60vh; object-fit: contain; ">
+
+</section><section>
+<h2 id="terminologia-modelli-fondazionali-vs-large-language-models"><strong>Terminologia</strong>: Modelli Fondazionali vs. <em>Large Language Models</em></h2>
+
+
+
+
+
+
+<a href="https://thebabar.medium.com/essential-guide-to-foundation-models-and-large-language-models-27dab58f7404">
+
+<img src="./fm-vs-llm.webp" alt="Diagramma di Venn che spiega come gli LLM siano un caso particolare di modelli fondazionali " style="width: 80%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+
+</a>
+
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="genai-con-modello-di-consumo-as-a-service">GenAI con modello di consumo <em>as-a-Service</em></h2>
+<img src="./llm-concept.svg" alt="Modello di consumo 'as a Service' per i modelli fondazionali" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<h2 id="genai-con-modello-di-consumo-as-a-service-1">GenAI con modello di consumo <em>as-a-Service</em></h2>
+<ul>
+<li>
+<p>Modelli di <strong>costo</strong>:</p>
+<ul>
+<li>ad <strong>abbonamento</strong>: si paga un <em>canone</em> fisso mensile/annuale per avere accesso al servizio
+<ul>
+<li>spesso contiene comunque <em>limiti</em> di consumo</li>
+</ul>
+</li>
+<li>a <strong>consumo</strong>: si paga in <em>proporzione</em> all’uso effettivo del servizio</li>
+</ul>
+</li>
+<li>
+<p><strong>Consumo</strong> è misurato in base allo <em>sforzo computazionale</em> necessario per servire la richiesta:</p>
+<ul>
+<li><em>token</em> processati (per testo)</li>
+<li>quantità di <em>richieste</em> effettuate per unità di tempo (minto, ore, giorno, mese)</li>
+<li><em>dimensione</em> dei dati processati (per immagini, audio, video)</li>
+<li><em>complessità</em> dello specifico <em>modello</em> impiegato per per servire la richiesta</li>
+</ul>
+</li>
+<li>
+<p>La <strong>generazione</strong> da considerarsi un processo <em>stocastico</em>, per costruzione</p>
+</li>
+</ul>
+<span class="fragment ">
+  <blockquote>
+<ul>
+<li>La <strong>qualità</strong> del servizio è soggetta a casualità e a <em>fluttuazioni</em> dovute a:
+<ul>
+<li><em>carico</em> del servizio</li>
+<li>scelta del modello, e relativo <em>aggiornamento</em></li>
+<li><em>limiti</em> di servizio eventualumente raggiunti nel <em>quanto di tempo</em> corrente</li>
+<li>caso</li>
+</ul>
+</li>
+</ul></blockquote>
+</span>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="ciclo-di-apprendimento-di-genai">Ciclo di <em>apprendimento</em> di GenAI</h2>
+<img src="./dataflow.svg" alt="Ciclo di apprendimento di GenAI" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<h2 id="ciclo-di-apprendimento-di-genai-conseguenze-pt-1">Ciclo di <em>apprendimento</em> di GenAI —&nbsp;<strong>Conseguenze</strong> (pt. 1)</h2>
+<ul>
+<li>
+<p><strong>Bias</strong> di <strong>campionamento</strong>: GenAI conosce <em>solo</em> ciò su cui è stato <em>allenato</em> + pia speranza che impari a <em>generalizzare</em></p>
+</li>
+<li>
+<p>L’apprendimento usa dati presi <strong>dal Web</strong> + eventuali <strong>dati aziendali</strong> del fornitore del servizio</p>
+<ul>
+<li>comprovato impiego delle <em>interazioni</em> degli utenti precedenti come <em>feedback</em> per allenamenti successivi</li>
+</ul>
+</li>
+</ul>
+<span class="fragment ">
+  <h2></h2>
+<blockquote>
+<ul>
+<li>Informazioni di <strong>nicchia</strong> possono <u>non</u> essere apprese correttamente (o affatto)</li>
+<li>Fondamentale <strong>evitare di convididere</strong> informazioni <em>sensibili</em>, <em>confidenziali</em>, o protette da <em>diritti d’autore</em></li>
+</ul></blockquote>
+</span>
+</section><section>
+<h2 id="ciclo-di-apprendimento-di-genai-conseguenze-pt-2">Ciclo di <em>apprendimento</em> di GenAI —&nbsp;<strong>Conseguenze</strong> (pt. 2)</h2>
+<ul>
+<li>
+<p>Cicli di apprendimento estramente <strong>costosi</strong> in termini di <em>denaro</em> e <em>risorse computazionali</em>…</p>
+</li>
+<li>
+<p>… eseguiti <strong>periodicamente</strong> (settimane? mesi?) per migliorare la <em>qualità</em> del servizio</p>
+<ul>
+<li>il modello di consumo <em>as-a-Service</em> permette all’utente di avere accesso traspente al servizio <em>aggiornato</em></li>
+</ul>
+</li>
+</ul>
+<span class="fragment ">
+  <h2></h2>
+<blockquote>
+<ul>
+<li>Informazioni <strong>recenti</strong> potrebbero <u>non</u> essere state (ancora) <em>apprese</em></li>
+<li>Rischio di ricevere risposte <strong>datate</strong> o <em>manchevoli</em> da GenAI</li>
+<li>GenAI dà l’<em>impressione</em> di star imparando <strong>durante la conversazione</strong>, ma in realtà lo fa <em>offline</em></li>
+</ul></blockquote>
+</span>
+</section><section>
+<h2 id="alcune-soluzioni-tecnologiche-permettono-di-scegliere-pt-1">Alcune soluzioni tecnologiche permettono di <em>scegliere</em> (pt. 1)</h2>
+<img src="./logo-chatgpt.svg" alt="" style="height: 2em; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+<br>
+<img src="./chatgpt-settings/no-learn-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+</section><section>
+<h2 id="alcune-soluzioni-tecnologiche-permettono-di-scegliere-pt-2">Alcune soluzioni tecnologiche permettono di <em>scegliere</em> (pt. 2)</h2>
+<img src="./logo-chatgpt.svg" alt="" style="height: 2em; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+<br>
+<img src="./chatgpt-settings/no-learn-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+</section><section>
+<h2 id="alcune-soluzioni-tecnologiche-permettono-di-scegliere-pt-3">Alcune soluzioni tecnologiche permettono di <em>scegliere</em> (pt. 3)</h2>
+<img src="./logo-chatgpt.svg" alt="" style="height: 2em; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+<br>
+<img src="./chatgpt-settings/no-learn-3.png" alt="" style="width: 100%; max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+</section><section>
+<h2 id="alcune-soluzioni-tecnologiche-permettono-di-scegliere-pt-4">Alcune soluzioni tecnologiche permettono di <em>scegliere</em> (pt. 4)</h2>
+<img src="./logo-chatgpt.svg" alt="" style="height: 2em; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+<br>
+<img src="./chatgpt-settings/no-learn-4.png" alt="" style="width: 100%; max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+
+</section>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" id="interfaces">
+  
+<h1 id="principali-soluzioni-tecnologiche">Principali soluzioni <strong>tecnologiche</strong></h1>
+<h2 id="categorizzate-per-tipo-di-interfaccia">Categorizzate per tipo di <strong>interfaccia</strong></h2>
+<ul>
+<li><em>Conversazionali</em>: e.g. <a href="https://chatgpt.com/">ChatGPT</a>, <a href="https://claude.ai/login?returnTo=%2F%3F">Claude</a>, <a href="https://scite.ai">Scite</a></li>
+<li><em>Auto-completamento</em>: e.g. <a href="https://github.com/features/copilot">GitHub Copilot</a></li>
+<li><em>Programmatiche</em>: e.g. <a href="https://openai.com/api/">OpenAI Platform</a>, <a href="https://huggingface.co/">Hugging Face</a></li>
+<li><em>In-App</em>: e.g. <a href="https://www.microsoft.com/it-it/microsoft-365/copilot?market=it">Microsoft 365 Copilot</a></li>
+<li><em>Editing di audio-visivi</em>: e.g. <a href="https://suno.com/">Suno</a>, <a href="https://runwayml.com/">Runway</a></li>
+</ul>
+<!-- - _Ispezione di materiale generato_: e.g. [GPTZero](https://gptzero.me/), [ZeroGPT](https://www.zerogpt.com/) -->
+<p><span style="color: red;">Lista non esaustiva!</span></p>
+</section><section>
+<h2 id="interfaccia-conversazionale">Interfaccia <strong>conversazionale</strong></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./logo-chatgpt.svg" alt="" style="height: 2em; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+<a href="https://chatgpt.com/share/6798dd04-8a98-8008-a751-bc374318bd9e">
+<img src="./interface-conversational.png" alt="" style="width: 100%; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</a>
+</div>
+<div class="col " style="text-align: center;"><br>
+<ul>
+<li>Interazione <em>testuale</em> che mima una <em>corrispondenza</em> (<strong>chat</strong>)
+<ul>
+<li>l’utente chiede, l’IA risponde <em>reattivamente</em></li>
+</ul>
+</li>
+<li>L’interfaccia permette l’inserimento di un <strong>prompt</strong>
+<ul>
+<li>opzionalmente contenente <em>allegati</em> (e.g. immagini, documenti)</li>
+</ul>
+</li>
+<li>Le risposte sono <strong>contestuali</strong>
+<ul>
+<li>i.e., lo <em>storico</em> della conversazione impatta le risposte <em>future</em></li>
+</ul>
+</li>
+<li>La risposta contiene <strong>testo</strong> (spesso <em>formattato</em>)
+<ul>
+<li>opzionalmente: <em>immagini</em>, URL, codice</li>
+</ul>
+</li>
+</ul>
+<span class="fragment ">
+  <h3 id="talvolta">Talvolta…</h3>
+<ul>
+<li>… prima di rispondere, l’IA fa una <strong>ricerca</strong> su <em>Web</em></li>
+<li>importante per avere risultati <em>aggiornati</em></li>
+</ul>
+</span>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="interfaccia-basata-su-auto-completamento">Interfaccia basata su <strong>auto-completamento</strong></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./logo-copilot.svg" alt="" style="height: 2em; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+<img src="./interface-autocompletion.gif" alt="" style="width: 100%; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><br>
+<ul>
+<li>L’IA <em>suggerisce</em> un <strong>completamento</strong> per il testo inserito
+<ul>
+<li>e.g., codice, testo, URL</li>
+</ul>
+</li>
+<li>L’utente <strong>accetta</strong> (anche in parte) o <em>ignora</em> il suggerimento</li>
+<li>Usato anche e soprattutto per <strong>codice</strong> di <em>programmazione</em></li>
+</ul>
+<span class="fragment ">
+  <h3 id="attenzione">Attenzione…</h3>
+<ul>
+<li>… modello di costo ad <strong>abbonamento</strong> (vedi <a href="https://github.com/features/copilot/plans">qui</a>)</li>
+<li>… potenziali <strong>leak</strong> di informazioni <em>sensibili</em></li>
+<li>… rischio di <strong>lock-in</strong> non trascurabile</li>
+</ul>
+</span>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="interfaccia-programmatica">Interfaccia <strong>programmatica</strong></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col col-6" style="text-align: center;"><img src="./logo-openai.svg" alt="" style="height: 2em; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">asyncio</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">openai</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">AsyncOpenAI</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">client</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">AsyncOpenAI</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">api_key</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">"sk-1234567890abcdef1234567890abcdef"</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">async</span> <span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">():</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">stream</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">await</span> <span style="color:#000">client</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">chat</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">completions</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">create</span><span style="color:#000;font-weight:bold">(</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">model</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">"gpt-4"</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">messages</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87">dict</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">role</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">"user"</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#000">content</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">"European countries, one by line"</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">],</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">stream</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87;font-weight:bold">True</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">async</span> <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">chunk</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">stream</span><span style="color:#000;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87">print</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">chunk</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">choices</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">delta</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">content</span> <span style="color:#204a87;font-weight:bold">or</span> <span style="color:#4e9a06">""</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">end</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">", "</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">asyncio</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">run</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">main</span><span style="color:#000;font-weight:bold">())</span>
+</span></span></code></pre></div><p>Output:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span>Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Russia, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom, Vatican City (Holy See),
+</span></span></code></pre></div></div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><strong>Linguaggio di programmazione</strong> che interagisce con IA</p>
+<ul>
+<li>e.g., <em>Python</em>, JavaScript</li>
+</ul>
+</li>
+<li>
+<p>L’interazione rimane di tipo <em>richiesta-risposta</em></p>
+<ul>
+<li>il <strong>programma</strong> invia una <em>richiesta</em>, l’IA <em>risponde</em></li>
+</ul>
+</li>
+</ul>
+<span class="fragment ">
+  <h3 id="abilitante-per">Abilitante per</h3>
+<ul>
+<li>
+<p>Prompt <strong>parametrici</strong>, risposte processate <em>automaticamente</em></p>
+<ul>
+<li>es. <code>list of LOCALITIES in AREA, one by line</code>
+<ul>
+<li>dove <code>LOCALITIES</code> $\in$ {<code>cities</code>, <code>regions</code>, <code>states</code>}</li>
+<li>e <code>AREA</code> $\in$ {<code>Europe</code>, <code>Asia</code>, <code>Africa</code>, <code>America</code>, <code>Oceania</code>}</li>
+<li>risultati <em>ordinati alfabeticamente</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Scrittura <strong>software</strong> che usa l’IA come <strong>servizio</strong></p>
+<ul>
+<li>utile in <em>industria</em> come in <em>ricerca</em></li>
+</ul>
+</li>
+</ul>
+</span>
+<span class="fragment ">
+  <h3 id="attenzione">Attenzione…</h3>
+<ul>
+<li>… modello di costo <strong>a consumo</strong> (vedi <a href="https://openai.com/api/pricing/">qui</a>)
+<ul>
+<li>proporzionale al numero di <em>token</em> processati</li>
+<li>prezzi variabili <em>per modello</em></li>
+</ul>
+</li>
+</ul>
+</span>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="interfaccia-in-app">Interfaccia <strong>in-app</strong></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./logo-copilot-office.svg" alt="" style="height: 2em; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+<img src="./interface-inapp.gif" alt="" style="width: 100%; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><br>
+<ul>
+<li>
+<p>GenAI integrata in <strong>applicazioni</strong> <em>desktop</em> o <em>web</em></p>
+<ul>
+<li>e.g., <em>Microsoft Office</em> (Word, Excel, Outlook)</li>
+</ul>
+</li>
+<li>
+<p>supporto per interfaccia <strong>conversazionale</strong> <em>interna</em></p>
+<ul>
+<li>conversazione intrinsecamente <em>contestualizzata</em></li>
+</ul>
+</li>
+<li>
+<p>IA <strong>automatizza</strong> <em>operazioni complesse</em> (interne all’app)</p>
+<ul>
+<li>e.g., <em>scrittura</em> di bozze</li>
+<li>e.g., <em>generazione</em> di formule, grafici</li>
+</ul>
+</li>
+</ul>
+<span class="fragment ">
+  <h3 id="attenzione">Attenzione…</h3>
+<ul>
+<li>… modello di costo ad <strong>abbonamento</strong> (vedi <a href="https://www.microsoft.com/it-it/microsoft-365/copilot?market=it#plans">qui</a>)</li>
+<li>… potenziali <strong>leak</strong> di informazioni <em>sensibili</em></li>
+<li>… rischio di <strong>lock-in</strong> non trascurabile</li>
+</ul>
+</span>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="interfaccia-per-editing-di-audio-visivi-eg-musica">Interfaccia per <strong>editing</strong> di audio-visivi (e.g. <em>musica</em>)</h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./logo-suno.svg" alt="" style="height: 2em; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+<img src="./suno/generate-song-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p>Interazione <strong>one-shot</strong> per generare il contenuto</p>
+<ul>
+<li><em>input</em>: descrizione testuale del contenuto</li>
+<li><em>output</em>: contenuto</li>
+</ul>
+</li>
+<li>
+<p>L’interfaccia permette poi</p>
+<ul>
+<li><em>riproduzione</em> del contenuto</li>
+<li><strong>modifica</strong> del contenuto
+<ul>
+<li>e.g., <em>taglio</em> di parti, <em>modifica</em> di tonalità</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<span class="fragment ">
+  <h3 id="esempio">Esempio</h3>
+<ul>
+<li><a href="https://it.wikipedia.org/wiki/Il_trionfo_di_Bacco_e_Arianna_(poesia)">“Canzona di Bacco” (Lorenzo il Magnifico, 1490)</a>, rock
+<ul>
+<li><a href="https://suno.com/song/cce33ee7-a581-47ae-b9d1-806902e88e47">https://suno.com/song/cce33ee7-a581-47ae-b9d1-806902e88e47</a></li>
+</ul>
+</li>
+</ul>
+</span>
+</div>
+</div>
+</div>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" id="modes">
+  
+<h1 id="principali-modalità-d">Principali <strong>modalità d’utilizzo</strong></h1>
+<h2 id="categorizzate-per-ruolo-di-genai">Categorizzate per <strong>ruolo di GenAI</strong></h2>
+<h3 id="genai-come">GenAI come…</h3>
+<ul>
+<li>… <em>motore di ricerca</em>: uso GenAI per <strong>ricercare</strong> informazioni</li>
+<li>… <em>assistente di (ri)scrittura</em>: uso GenAI per <strong>(ri)scrivere</strong> documenti</li>
+<li>… <em>assistente di lettura</em>: uso GenAI per <strong>acquisire informazioni</strong> da documenti</li>
+<li>… <em>assistente per l’elaborazione dei dati</em>: uso GenAI per <strong>elaborare</strong> dati</li>
+<li>… <em>generatore di contenuti</em>: uso GenAI per <strong>creare</strong> contenuti</li>
+</ul>
+<p><span style="color: red;">Lista non esaustiva!</span></p>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" id="search-engine">
+  
+<h2 id="genai-come-motore-di-ricerca">GenAI come <em>motore di ricerca</em></h2>
+<h3 id="disclaimer">Disclaimer</h3>
+<blockquote>
+<p>GenAI <strong>non è</strong> un <em>motore di ricerca</em> come Google, Bing, DuckDuckGo, etc.</p></blockquote>
+
+
+<span class="fragment ">
+  <ul>
+<li>
+<p>FM, di base, <strong>non accedono</strong> al Web (<strong>né interrogano</strong> qualche sorgente) prima di rispondere</p>
+<ul>
+<li>alcune tecnologie specifiche possono farlo, ma non c’è garanzia</li>
+</ul>
+</li>
+<li>
+<p>FM, di base, rispondono in base a <em>dati</em> e <em>conoscenze</em> acquisite durante <strong>l’allenamento</strong></p>
+<ul>
+<li>informazioni <em>successive</em> all’ultimo ciclo di apprendimento potrebbero non essere considerate</li>
+</ul>
+</li>
+<li>
+<p>FM possono essere immaginati come <strong>grandi memorie</strong></p>
+<ul>
+<li>in cui (porzioni de) lo <em>scibile umano</em> è stato <em>“registrato”</em></li>
+<li>interrogabili tramite il <em>linguaggio naturale</em></li>
+</ul>
+</li>
+<li>
+<p>Le risposte di GenAI non vanno <em>mai</em> accettate <strong>acriticamente</strong>, in quanto suscettibili di <em>allucinazioni</em>:</p>
+<ul>
+<li><strong>errori</strong>: informazioni fattualmente false o inventate, riportate con sicumera</li>
+<li><strong>fraitendimenti</strong>: informazioni fuori contesto o non pertinenti rispetto all’aspettativa dell’utente</li>
+<li><strong>bias</strong>: di campionamento delle informazioni, di selezione del motore di ricerca, intrinseci nel linguaggio, etc.</li>
+</ul>
+</li>
+</ul>
+
+</span>
+
+</section><section>
+<h2 id="genai-come-motore-di-ricerca-1">GenAI come <em>motore di ricerca</em></h2>
+<h3 id="razionale">Razionale</h3>
+<br>
+<p>Possiamo considerare FM come <strong>esperti</strong> su tematiche che:</p>
+<ul>
+<li>siano temporalmente <em>consolidate</em> $\implies$ diffidare di risposte su temi <em>recenti</em></li>
+<li>siano relativamente <em>popolari</em> $\implies$ diffidare di risposte su temi <em>di nicchia</em></li>
+</ul>
+</section><section>
+<h2 id="genai-come-motore-di-ricerca-2">GenAI come <em>motore di ricerca</em></h2>
+<h3 id="consigli-sempre-validi">Consigli sempre validi</h3>
+<br>
+<ul>
+<li>
+<p>verificare le <strong>fonti</strong> menzionate da GenAI</p>
+<ul>
+<li>esistono davvero? sono aggiornate?</li>
+</ul>
+</li>
+<li>
+<p>verificare l’<strong>aderenza</strong> alle fonti</p>
+<ul>
+<li>la fonte dice davvero quello che GenAI ha riportato?</li>
+</ul>
+</li>
+<li>
+<p>prediligere, se possibile, la <strong>lingua inglese</strong></p>
+<ul>
+<li>LLM sono stati sicuramente <em>esposti</em> a più testi <em>inglesi</em> che italiani durante l’<em>allenamento</em></li>
+</ul>
+</li>
+</ul>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-esplorazione-sullargomento--con-chatgpt">Esempio: esplorazione sull’argomento <a href="https://en.wikipedia.org/wiki/Multi-agent_system">“Sistemi multi-agente”</a>, con <em>ChatGPT</em></h2>
+<p><span class="hint">(un argomento complesso qualsiasi, scelgo un mio tema di ricerca così ho un metro di giudizio)</span></p>
+<br>
+<blockquote>
+<p>Un sistema multi-agente (MAS) è un tipo di sistema composto da <strong>molteplici agenti indipendenti</strong> (ma <em>interattivi</em>), ciascuno capace di <em>percepire</em> il proprio ambiente e di intraprendere <em>azioni</em>.
+Gli agenti possono essere <em>modelli di IA</em>, programmi <em>software</em>, <em>robot</em> e altre <em>entità computazionali</em>.
+<em>Molteplici agenti</em> possono <em>cooperare</em> o verso un <em>obiettivo comune</em> che va oltre le capacità dei singoli agenti, con una maggiore adattabilità e robustezza.</p></blockquote>
+<p>(cf. <a href="https://www.gartner.com/en/information-technology/glossary/multiagent-systems">https://www.gartner.com/en/information-technology/glossary/multiagent-systems</a>)</p>
+<!-- <br>
+
+### Link alla conversazione completa
+
+<https://chatgpt.com/share/e/679a41e7-e164-8004-8f01-d135dde3892c> -->
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./search-engine/chatgpt/mas-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>Definizione sostanzialmente <strong>corretta</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./search-engine/chatgpt/mas-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>Caratteristiche sostanzialmente <strong>corrette</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./search-engine/chatgpt/mas-3.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>Le applicazioni <em>menzionate</em> sono <strong>corrette</strong></li>
+<li><em>Nessuna</em> garanzia di <strong>esaustività</strong>
+<ul>
+<li><strong>bias</strong> di campionamento?</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./search-engine/chatgpt/mas-4.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><em>Nessuna</em> garanzia di <strong>esaustività</strong></li>
+<li>Nessun riferimento per <a href="https://deepmind.google/discover/blog/alphastar-mastering-the-real-time-strategy-game-starcraft-ii/">AlphaStar</a></li>
+<li>Interserzione con <em>altre nicchie</em>
+<ul>
+<li><strong>blockchain</strong>, <strong>protocolli di consenso</strong></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./search-engine/chatgpt/mas-5.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>Gli aspetti <em>menzionati</em> hanno <strong>fondamenta solide</strong></li>
+<li>Lista <strong>incompleta</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./search-engine/chatgpt/mas-6.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>Tutte menzioni <strong>corrette</strong></li>
+<li><em>Nessuna</em> garanzia di <strong>esaustività</strong>
+<ul>
+<li><strong>bias</strong> di campionamento?</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><a href="https://arxiv.org/abs/1706.02275">
+<img src="./search-engine/chatgpt/mas-7.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</a>
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><a href="https://arxiv.org/abs/1706.02275">Link ad Arxiv</a> <strong>corretto</strong></li>
+<li>Riferimento <em>adeguato</em> al contesto corrente</li>
+<li>Riferimeto <strong>mancante</strong> a <a href="https://dl.acm.org/doi/10.5555/3295222.3295385">paper definitivo</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><a href="https://arxiv.org/abs/1903.08082">
+<img src="./search-engine/chatgpt/mas-8.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</a>
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>Riferimento <em>adeguato</em> al contesto corrente</li>
+<li><a href="https://arxiv.org/abs/1903.08082">Link ad Arxiv</a> <strong>incoerente</strong> col riferimento</li>
+<li>Il paper menzionato ha un <strong>altro URL</strong>:
+<ul>
+<li><a href="https://arxiv.org/abs/2011.05373">https://arxiv.org/abs/2011.05373</a></li>
+</ul>
+</li>
+<li>Riferimeto <strong>mancante</strong> a <a href="https://dl.acm.org/doi/10.5555/3495724.3497048">paper definitivo</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><a href="https://arxiv.org/abs/1906.01220">
+<img src="./search-engine/chatgpt/mas-9.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</a>
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>Riferimento <em><strong>in</strong>adeguato</em> al contesto corrente</li>
+<li><a href="https://arxiv.org/abs/1906.01220">Link ad Arxiv</a> <strong>incoerente</strong> col riferimento</li>
+<li>Il paper menzionato ha un <strong>altro URL</strong>:
+<ul>
+<li><a href="https://arxiv.org/abs/1809.03531">https://arxiv.org/abs/1809.03531</a></li>
+</ul>
+</li>
+<li>Riferimeto <strong>mancante</strong> a <a href="https://doi.org/10.1109/LRA.2019.2903261">paper definitivo</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><a href="https://arxiv.org/abs/1910.05789">
+<img src="./search-engine/chatgpt/mas-10.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</a>
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><a href="https://arxiv.org/abs/1910.05789">Link ad Arxiv</a> <strong>corretto</strong></li>
+<li>Riferimento <em>adeguato</em> al contesto corrente</li>
+<li>Riferimeto <strong>mancante</strong> a <a href="https://dl.acm.org/doi/10.5555/3454287.3454752">paper definitivo</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><a href="https://arxiv.org/abs/1803.08884">
+<img src="./search-engine/chatgpt/mas-11.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</a>
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><a href="https://arxiv.org/abs/1803.08884">Link ad Arxiv</a> <strong>corretto</strong></li>
+<li>Riferimento <em>adeguato</em> al contesto corrente</li>
+<li>Riferimeto <strong>mancante</strong> a <a href="https://dl.acm.org/doi/10.5555/3327144.3327252">paper definitivo</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</section>
+</section><section>
+<h2 id="genai-come-motore-di-ricerca-pt-2">GenAI come <em>motore di ricerca</em> (pt. 2)</h2>
+<blockquote>
+<p>Uno strumento forse <em>migliore</em> (ma più <em>costoso</em>) in ambito accademico,
+<br> potrebbe essere <a href="https://scite.ai">Scite</a></p></blockquote>
+<ul>
+<li>
+<p><img src="./logo-scite.svg" alt=""> è un <strong>database bibliografico</strong> che indicizza le citazioni nel contesto (cf. <strong>“Smart Citation Index”</strong>)</p>
+<ul>
+<li>citazioni classificate come <em>supportive</em>, <em>mentioning</em>, o <em>contrasting</em></li>
+<li>fonte: <a href="https://doi.org/10.18060/26528">“Evaluating the Accuracy of scite, a Smart Citation Index”</a></li>
+</ul>
+</li>
+<li>
+<p>Fornisce un LLM, <a href="https://scite.ai/assistant">Scite Assistant</a> ha accesso al database bibliografico</p>
+<ul>
+<li>interfaccia <strong>conversazionale</strong></li>
+<li><em>riferimenti bibliografici</em> eventualmente presenti nelle risposte vengono arricchiti con <strong>metadati</strong>
+<ul>
+<li>es. link all’articolo, evidenziazione del testo citato, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="interfaccia-di-scite-assistant">Interfaccia di <a href="https://scite.ai/assistant">Scite Assistant</a></h2>
+<p><img src="./homepage-scite.png" alt=""></p>
+</section><section>
+<h2 id="esempio-esplorazione-sullargomento--con-scite">Esempio: esplorazione sull’argomento <a href="https://en.wikipedia.org/wiki/Multi-agent_system">“Sistemi multi-agente”</a>, con <em>Scite</em></h2>
+
+
+
+
+
+
+<img src="./search-engine/scite/mas-1.svg" alt="" style="width: 100%; max-width: 95vw; max-height: 60vh; object-fit: contain; ">
+
+<ul>
+<li>Riferimenti bibliografici con <em>ipertesti</em>, e <em>metadati</em></li>
+<li>Nella parte <em>destra</em>, sono riportati i <em>dettagli</em> dei riferimenti bibliografici</li>
+</ul>
+</section><section>
+
+
+
+
+
+
+<img src="./search-engine/scite/mas-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+
+<ul>
+<li><span style="color: red;">Non</span> fa davvero riferimento alle <span style="color: red;">parole chiave menzionate in precedenza</span></li>
+<li><span style="color: red;">Bias di campionamento</span></li>
+</ul>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" id="writing">
+  
+<h2 id="genai-come-assistente-di-riscrittura">GenAI come <em>assistente di (ri)scrittura</em></h2>
+<h3 id="razionale-1">Razionale</h3>
+<br>
+<ul>
+<li><strong>Interrogare</strong> GenAI per generare testo da riusare <strong>verbatim</strong> è un approccio <span style="color: red;">naïf</span>
+<ul>
+<li>ci si affida in toto a GenAI, col rischio che sfuggano <span style="color: red;">allucinazioni</span></li>
+<li>si rischia di ereditare <span style="color: red;">bias</span> ed <span style="color: red;">errori semantici</span> senza accorgersene</li>
+</ul>
+</li>
+</ul>
+
+
+<span class="fragment ">
+  <blockquote>
+<ul>
+<li>Approccio più <em>furbo</em>: chiedere a GenAI di <strong>rielaborare</strong> un testo grezzo o <em>parziale</em>
+<ul>
+<li>es. una lista di <em>cose da dire</em>, argomenti da trattare, etc.</li>
+<li><em>controllo</em> e <em>responsabilità</em> del <strong>filo del discorso</strong> rimangono sull’utente</li>
+</ul>
+</li>
+</ul></blockquote>
+
+</span>
+
+</section><section>
+<h2 id="genai-come-assistente-di-riscrittura-1">GenAI come <em>assistente di (ri)scrittura</em></h2>
+<h3 id="consigli-sempre-validi-1">Consigli sempre validi</h3>
+<br>
+<ul>
+<li>tenere il <em>controllo</em> di <strong>cosa</strong> si vuole dire nel testo</li>
+<li>farsi <em>assistere</em> riguardo alla <strong>forma</strong> del testo</li>
+<li><strong>rivedere</strong> il testo prodotto per <em>errori</em>, <em>incongruenze</em>, <em>allucinazioni</em>
+<ul>
+<li>chiedere opportunamente <em>variazioni</em> fino a soddisfazione</li>
+</ul>
+</li>
+<li><strong>rivedere</strong> eventuali <em>riferimenti</em> a <em>fonti</em> o <em>citazioni</em> per <em>aderenza</em></li>
+<li>chiedersi se non ci sia <strong>mancanza</strong> di <em>informazioni</em> o <em>riferimenti</em> importanti</li>
+</ul>
+</section><section>
+<h2 id="esempio-scrittura-abstract-di-una-srl-inerente--con-chatgpt">Esempio: scrittura <em>abstract</em> di una <em>SRL</em> inerente <a href="https://en.wikipedia.org/wiki/Neuro-symbolic_AI">“IA Neuro-Simbolica”</a>, con <em>ChatGPT</em></h2>
+<p><span class="hint">(un argomento complesso qualsiasi, scelgo un mio interesse di ricerca ho un metro di giudizio)</span></p>
+<br>
+<blockquote>
+<p>IA <strong>Neuro-Simbolica</strong>: la combinazione di metodi <em>simbolici</em> [“IA classica”, NdA] con metodi basati su <em>reti neurali</em> artificiali.</p></blockquote>
+<p>(cf. <a href="https://ip.ios.semcs.net/articles/ai-communications/aic210084">Neuro-symbolic artificial intelligence</a>)</p>
+<blockquote>
+<p>Una <strong>revisione sistematica della letteratura</strong> (<em>SLR</em>) è un metodo accademico indipendente che mira a identificare e valutare tutta la <em>letteratura</em> rilevante su un <em>argomento</em> al fine di trarre conclusioni sulla questione in esame.
+[…]
+Viene seguito un <em>approccio metodologico formale</em> per ridurre le distorsioni causate da una selezione eccessivamente restrittiva della letteratura disponibile e per aumentare l’<em>affidabilità</em> della letteratura selezionata.</p></blockquote>
+<p>(cf. <a href="https://www.tu.berlin/en/wm/bibliothek/research-teaching/systematic-literature-reviews/description-of-the-systematic-literature-review-method">https://www.tu.berlin/en/wm/bibliothek/research-teaching/systematic-literature-reviews/description-of-the-systematic-literature-review-method</a>)</p>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="approccio-1-sconsigliato-senza-traccia">Approccio 1 (<span style="color: red;">Sconsigliato</span>): Senza traccia</h2>
+<!-- (link alla [conversazione completa](https://chatgpt.com/share/e/679b94b4-93e4-8004-9fae-457ba9f4bf07)) -->
+<img src="./rewriting/bad/nesy-slr-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./rewriting/bad/nesy-slr-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ol>
+<li>Frase generica, incontestabile, corretta</li>
+<li><span style="color: green;">Obiettivo dell’articolo</span></li>
+<li><span style="color: gold;">Obiettivo generico, sempre buono per rassegna</span></li>
+<li><span style="color: red;">Contributo specifico: suggerisce struttura articolo</span></li>
+<li><span style="color: gold;">Contributo generico</span></li>
+<li><span style="color: red;">Contributo specifico</span></li>
+<li>Frase di chiusura generica</li>
+</ol>
+<span class="fragment ">
+  <blockquote>
+<p>Uso sostanziale di GenIA</p></blockquote>
+</span>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="è-possibile-richiedere-modifiche">È possibile richiedere modifiche</h2>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./rewriting/bad/nesy-slr-3.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><img src="./rewriting/bad/nesy-slr-4.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+</div>
+</div>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="approccio-2-consigliato-con-traccia">Approccio 2 (<em>Consigliato</em>): Con traccia</h2>
+<!-- (link alla [conversazione completa](https://chatgpt.com/share/e/679b94c5-17d0-8004-9b4a-6687418f3569)) -->
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./rewriting/nesy-slr-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><h3 id="la-traccia">La traccia</h3>
+<ol>
+<li><span style="color: green;">Frase d’aggancio</span></li>
+<li><span style="color: lime;">Obiettivo dell’articolo</span></li>
+<li><span style="color: green;">Descrizione della metodologia</span></li>
+<li><span style="color: lime;">Dichiarazione contributi</span></li>
+<li><span style="color: green;">Indicazione dell’audicence inteso</span></li>
+</ol>
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./rewriting/nesy-slr-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><h3 id="analisi-del-risultato">Analisi del risultato</h3>
+<ol>
+<li><span style="color: green;">Frase d’aggancio</span></li>
+<li><span style="color: gold;">Libera interpretazione di GenIA</span></li>
+<li><span style="color: lime;">Obiettivo dell’articolo</span></li>
+<li><span style="color: green;">Descrizione della metodologia</span></li>
+<li><span style="color: lime;">Dichiarazione contributi</span></li>
+<li><span style="color: green;">Indicazione dell’audicence inteso</span></li>
+</ol>
+<blockquote>
+<p>Uso <em>non</em> sostanziale di GenIA</p></blockquote>
+</div>
+</div>
+</div>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h3 id="altri-tipi-di-supporto-alla-scrittura">Altri tipi di supporto alla scrittura</h3>
+<h2 id="supporto-alla-traduzione-automatica-pt-1">Supporto alla <em>traduzione automatica</em> (pt. 1)</h2>
+<blockquote>
+<p>Meglio strumenti consolidati (e.g. <strong>Google Translate</strong>) o <em>modelli fondazionali</em> (e.g. <strong>GPT</strong>)?</p></blockquote>
+<p>(posto che la traduzione fatta da esperti <em>umani</em> sarà sempre <em>migliore</em>)</p>
+</section><section>
+<h3 id="altri-tipi-di-supporto-alla-scrittura-1">Altri tipi di supporto alla scrittura</h3>
+<h2 id="supporto-alla-traduzione-automatica-pt-2">Supporto alla <em>traduzione automatica</em> (pt. 2)</h2>
+<p>Chiediamo a <strong>Scite Assistant</strong>:</p>
+<img src="./rewriting/google-translate-vs-chat-gpt.gif" alt="" style="width: 100%; max-width: 95vw; max-height: 60vh; object-fit: contain; ">
+</section><section>
+<h3 id="altri-tipi-di-supporto-alla-scrittura-2">Altri tipi di supporto alla scrittura</h3>
+<h2 id="supporto-alla-traduzione-automatica-pt-3">Supporto alla <em>traduzione automatica</em> (pt. 3)</h2>
+<img src="./rewriting/google-translate.png" alt="" style="width: 100%; max-width: 95vw; max-height: 60vh; object-fit: contain; ">
+<br>
+<p><strong>TL;DR:</strong> Google Translate è <em>preferibile</em> laddove sia richiesta <em>precisione</em></p>
+</section><section>
+<h3 id="altri-tipi-di-supporto-alla-scrittura-3">Altri tipi di supporto alla scrittura</h3>
+<h2 id="supporto-alla-traduzione-automatica-pt-4">Supporto alla <em>traduzione automatica</em> (pt. 4)</h2>
+<img src="./rewriting/translate-copilot.gif" alt="" style="width: 100%; max-width: 95vw; max-height: 60vh; object-fit: contain; ">
+<br>
+<p><strong>TL;DR:</strong> GPT <em>usabile</em> laddove il <strong>contesto</strong> possa aiutare la traduzione</p>
+</section><section>
+<h3 id="altri-tipi-di-supporto-alla-scrittura-4">Altri tipi di supporto alla scrittura</h3>
+<h2 id="supporto-alla-traduzione-automatica-pt-5">Supporto alla <em>traduzione automatica</em> (pt. 5)</h2>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./rewriting/translate-with-style.png" alt="" style="width: 100%; max-width: 95vw; max-height: 60vh; object-fit: contain; ">
+</div>
+<div class="col col-6" style="text-align: center;"><ul>
+<li>Richiesta di <em>transposizione</em> in lingua con uno <strong>stile specifico</strong></li>
+<li>Utile per migliorare la <em>qualità</em> scrittura <em>in lingua</em></li>
+</ul>
+</div>
+</div>
+</div>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h3 id="altri-tipi-di-supporto-alla-scrittura">Altri tipi di supporto alla scrittura</h3>
+<h2 id="supporto-alla-generazione-di-codice-di-programmazione">Supporto alla <em>generazione di codice</em> di programmazione</h2>
+<img src="./rewriting/bubble-sort-generate.gif" alt="" style="width: 100%; max-width: 95vw; max-height: 60vh; object-fit: contain; ">
+<p>(codice suggerito <strong>inefficiente</strong>, ma <em>funzionante</em>)</p>
+</section><section>
+<h3 id="altri-tipi-di-supporto-alla-scrittura-1">Altri tipi di supporto alla scrittura</h3>
+<h2 id="supporto-alla-documentazione-del-codice-di-programmazione">Supporto alla <em>documentazione del codice</em> di programmazione</h2>
+<img src="./rewriting/bubble-sort-explain.gif" alt="" style="width: 100%; max-width: 95vw; max-height: 60vh; object-fit: contain; ">
+<p>(spiegazione <strong>corretta</strong> ed articolata)</p>
+
+</section>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" id="reading">
+  
+<h2 id="genai-come-assistente-di-lettura">GenAI come <em>assistente di lettura</em></h2>
+<h3 id="razionale-2">Razionale</h3>
+<br>
+<ul>
+<li>
+<p>GenAI può essere usato per <em>acquisire</em> informazioni da <strong>documenti testuali</strong> [senza leggerli integralmente]</p>
+<ul>
+<li>e.g., <em>estrarre highlights</em> da un testo, <em>sintetizzare</em> un testo, etc.</li>
+</ul>
+</li>
+<li>
+<p>La stessa idea si può applicare a <strong>contenuti multimediali</strong></p>
+<ul>
+<li>e.g., <em>estrarre highlights</em> da un video, <em>trascrivere</em> un audio, etc.</li>
+</ul>
+</li>
+</ul>
+
+
+<span class="fragment ">
+  <blockquote>
+<p>Il testo [o contenuto] da cui estrarre informazioni <strong>deve essere fornito</strong> dall’<em>utente</em></p></blockquote>
+<ul>
+<li><em>Non presumere</em> che GenAI conosca il testo [o contenuto] in questione</li>
+</ul>
+
+</span>
+
+</section><section>
+<h2 id="genai-come-assistente-di-lettura-1">GenAI come <em>assistente di lettura</em></h2>
+<h3 id="consigli-sempre-validi-2">Consigli sempre validi</h3>
+<ul>
+<li>
+<p>Al crescere della <em>lunghezza</em> del testo, aumenta la probabilità di <strong>allucinazioni</strong></p>
+<ul>
+<li>idem per <em>durata</em> dei contenuti multimediali</li>
+</ul>
+</li>
+<li>
+<p><strong>Verificiare</strong> che il testo [o contenuto] fornito <em>non</em> contenga <em>informazioni</em> <strong>sensibili</strong> o <strong>riservate</strong></p>
+</li>
+<li>
+<p><strong>Verificare</strong> di avere il <em>diritto</em> di fornire a <em>terzi</em> [copie de] il contenuto</p>
+</li>
+<li>
+<p>Tenere presente la possibilità di inevitabili <strong>distorsioni</strong></p>
+<ul>
+<li><em>allucinazioni</em> $\rightarrow$ l’estrazione potrebbe inventare informazioni non presenti nell’originale</li>
+<li><em>lacune</em> $\rightarrow$ elementi importanti portebbero non essere estratti</li>
+</ul>
+</li>
+</ul>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-estrazione-dalla-traccia-della-prima-prova-di-italiano-maturità-2024">Esempio: estrazione dalla traccia della <strong>prima prova di Italiano</strong>, <em>maturità 2024</em></h2>
+<p>Si veda file <a href="https://www.istruzione.it/esame_di_stato/202324/Italiano/Ordinaria/P000_ORD24.pdf">P000_ORD24.pdf</a> — 7 pagine, ben dense</p>
+<img src="./reading/inspection/high-school-exam-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 60vh; object-fit: contain; ">
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./reading/inspection/high-school-exam-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><embed src="./P000_ORD24.pdf" width="100%" height="100%">
+</div>
+</div>
+</div>
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./reading/inspection/high-school-exam-3a.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><img src="./reading/inspection/P000_ORD24-pag2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="commenti">Commenti</h2>
+<ul>
+<li>
+<p>GenAI riesce a <strong>selezionare</strong> le informazioni <em>richieste</em> dal documento <em>fornito</em></p>
+<ul>
+<li>e <strong>riportarne</strong> una <em>sintesi</em></li>
+</ul>
+</li>
+<li>
+<p>L’idea è di usare GenAI come un <strong>motore di ricerca</strong> specifico per il/i documento/i in questione</p>
+</li>
+</ul>
+<span class="fragment ">
+  <blockquote>
+<ul>
+<li>Al crescere della dimensione del documento, aumenta la probabilità di <strong>allucinazioni</strong>, distorsioni, <strong>lacune</strong></li>
+</ul></blockquote>
+</span>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-sintesi-di-documento-policy-di-ateno-su-genai">Esempio: <strong>sintesi</strong> di documento (<em>Policy di Ateno su GenAI</em>)</h2>
+<p>Si veda file <a href="www.unibo.it/it/allegati/policy-per-un-uso-etico-e-responsabile-dell2019intelligenza-artificiale-generativa-nelle-attivita-di-didattica-e-ricerca/@@download/file/Policy-Generative-AI.pdf">Policy-Generative-AI.pdf</a></p>
+<img src="./reading/synthesis/policy-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 65vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/synthesis/policy-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/synthesis/policy-3.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/synthesis/policy-4.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/synthesis/policy-5.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<h2 id="commenti">Commenti</h2>
+<ul>
+<li>
+<p>GenAI riesce a <strong>sintetizzare</strong> in poche righe intere pagine di <em>policy</em></p>
+<ul>
+<li>cogliendo il <em>senso</em> generale del documento</li>
+</ul>
+</li>
+<li>
+<p>Rischia di <strong>omettere</strong> dalla sintesi: sfumature, eccezioni, <em>casi particolari</em></p>
+</li>
+</ul>
+<span class="fragment ">
+  <blockquote>
+<ul>
+<li>Evitare di basarsi <strong>esclusivamente</strong> sulla sintesi di GenAI per <em>interpretare</em> un testo</li>
+<li>Utile <strong>fare domande</strong> <em>specifiche</em> o <em>maliziose</em> sul documento per catturare ulteriori <em>dettagli</em></li>
+</ul></blockquote>
+</span>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-confronto-di-documenti-diversi">Esempio: <strong>confronto</strong> di documenti <em>diversi</em></h2>
+<p>Confrontiamo due <strong>articoli scientifici</strong> (su <em>tema simile</em>):</p>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col col-6" style="text-align: center;"><p><a href="https://arxiv.org/abs/2404.04108">https://arxiv.org/abs/2404.04108</a>
+<embed src="./2404.04108v2.pdf" width="100%" height="700px"></p>
+</div>
+<div class="col col-6" style="text-align: center;"><p><a href="https://aclanthology.org/2023.findings-acl.309/">https://aclanthology.org/2023.findings-acl.309/</a>
+<embed src="./2023.findings-acl.309.pdf" width="100%" height="700px"></p>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempio-confronto-di-documenti-diversi-1">Esempio: <strong>confronto</strong> di documenti <em>diversi</em></h2>
+<h3 id="idea-di-fondo-da-">Idea di fondo (da <a href="https://arxiv.org/abs/2404.04108">https://arxiv.org/abs/2404.04108</a>)</h3>
+<br>
+<p><img src="./reading/comparison/llm4kg.svg" alt=""></p>
+</section><section>
+<h2 id="esempio-confronto-di-documenti-diversi-2">Esempio: <strong>confronto</strong> di documenti <em>diversi</em></h2>
+<h3 id="idea-di-fondo-da--1">Idea di fondo (da <a href="https://aclanthology.org/2023.findings-acl.309/">https://aclanthology.org/2023.findings-acl.309/</a>)</h3>
+<br>
+<p><img src="./reading/comparison/bertnet.png" alt=""></p>
+</section><section>
+<img src="./reading/comparison/llm4kg-vs-harvest-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/comparison/llm4kg-vs-harvest-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/comparison/llm4kg-vs-harvest-3.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-confronto-di-versioni-diverse-dello-stesso-documento">Esempio: <strong>confronto</strong> di <em>versioni diverse</em> dello <em>stesso</em> documento</h2>
+<blockquote>
+<ul>
+<li>Per questo caso d’uso, <strong>GenAI</strong> <u>non</u> è lo strumento migliore</li>
+<li>Esistono strumenti <em>più adeguati</em>, <span style="color: red;">non basati su GenAI</span></li>
+</ul></blockquote>
+<ul>
+<li>
+<p>e.g. <a href="https://git-scm.com/">Git</a> + <a href="https://github.com/">GitHub</a> per <strong>versionare</strong> documenti testuali, e <em>collaborare</em> alla loro stesura <em>concorrente</em></p>
+</li>
+<li>
+<p>e.g. <a href="https://www.draftable.com/compare">Draftable</a> per <strong>comparare</strong> documenti Word, <em>PDF</em>, etc.</p>
+</li>
+</ul>
+</section><section>
+<h2 id="esempio-confronto-di-versioni-diverse-dello-stesso-documento-1">Esempio: <strong>confronto</strong> di <em>versioni diverse</em> dello <em>stesso</em> documento</h2>
+<p>Comparatiamo due diverse versioni di <a href="https://arxiv.org/abs/2404.04108">https://arxiv.org/abs/2404.04108</a></p>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col col-6" style="text-align: center;"><p>Aprile 2024:
+<a href="https://arxiv.org/abs/2404.04108v1">https://arxiv.org/abs/2404.04108v1</a>
+<embed src="https://arxiv.org/pdf/2404.04108v1" width="100%" height="700px"></p>
+</div>
+<div class="col col-6" style="text-align: center;"><p>Dicembre 2024:
+<a href="https://arxiv.org/abs/2404.04108v2">https://arxiv.org/abs/2404.04108v2</a>
+<embed src="https://arxiv.org/pdf/2404.04108v2" width="100%" height="700px"></p>
+</div>
+</div>
+</div>
+</section><section>
+<a href="https://draftable.com/compare/zRbeSplWOCxS">
+<img src="./reading/comparison/draftable.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</a>
+</section><section>
+<p><a href="https://draftable.com/compare/zRbeSplWOCxS">https://draftable.com/compare/zRbeSplWOCxS</a></p>
+<iframe src="https://draftable.com/compare/zRbeSplWOCxS" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="800px"></iframe>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-identificazione-di-plagio-potenziale-in-un-documento">Esempio: identificazione di <em>plagio</em> (potenziale) in un documento</h2>
+<blockquote>
+<ul>
+<li>Per questo caso d’uso, <strong>GenAI</strong> <u>non</u> è lo strumento migliore</li>
+<li>GenAI può essere usato per <em>identificare</em> <strong>similitudini concettuali</strong> tra testi</li>
+<li>Esistono strumenti <em>più adeguati</em>, <span style="color: red;">non basati su GenAI</span></li>
+</ul></blockquote>
+<ul>
+<li>e.g. <a href="https://www.compilatio.net/it">Compilatio</a> software ad hoc per <strong>l’identificazione del plagio</strong>
+<ul>
+<li>personale UniBO può usufruire gratuitamente</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<img src="./reading/comparison/similarity-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/comparison/compilatio.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<h2 id="esempio-analisi-della-novelty-di-un-documento">Esempio: analisi della <em>novelty</em> di un documento</h2>
+<img src="./reading/comparison/similarity-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/comparison/similarity-3.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-supporto-alla-revisione-paritaria-di-un-documento-sconsigliabile">Esempio: supporto alla <em>revisione paritaria</em> di un documento (<span style="color: red;">sconsigliabile!</span>)</h2>
+<img src="./reading/review/review-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/review/review-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/review/review-3.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./reading/review/review-4.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<h2 id="esempio-supporto-alla-revisione-di-un-documento">Esempio: supporto alla <em>revisione</em> di un documento</h2>
+<h3 id="aspetti-critici">Aspetti <span style="color: red;">critici</span></h3>
+<br>
+<ul>
+<li>
+<p>Upload del paper potrebbe comportare <strong>violazione</strong> della <strong>riservatezza</strong></p>
+<ul>
+<li>ricordarsi <em>escludere</em> il documento dai dati usabili per <em>futuri cicli di allenamento</em></li>
+</ul>
+</li>
+<li>
+<p>Si sta <strong>delegando</strong> a GenAI un processo <em>critico</em>, che ha un impatto su <em>altre persone</em> e sulla <em>comunità</em></p>
+<ul>
+<li>la <em>responsabilità</em> rimane sul revisore umano</li>
+</ul>
+</li>
+<li>
+<p>ChatGPT tende ad essere <strong>accondiscendente</strong> e <em>positivo</em>, riportando punti di forza / limitazioni riportati nel documento stesso</p>
+<ul>
+<li>questo è un bias, che potrebbe rendere la revisione troppo <em>superficiale</em></li>
+<li>altri LLM potrebbero avere lo <em>stesso bias</em>, o <em>bias opposti</em></li>
+</ul>
+</li>
+<li>
+<p>Si può richiedere una revisione <strong>aggressiva</strong> o <strong>critica</strong> … spostando il bias verso la <em>negatività</em></p>
+</li>
+</ul>
+<span class="fragment ">
+  <blockquote>
+<p>Meglio <em>limitarsi</em> ad <strong>ispezionare</strong> il documento con GenAI e <em>farsi un’idea</em> prima di esprimere un <strong>giudizio</strong></p></blockquote>
+</span>
+
+</section>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" id="data-processing">
+  
+<h2 id="genai-come-assistente-per-l">GenAI come assistente per <em>l’elaborazione dei dati</em></h2>
+<h3 id="razionale-3">Razionale</h3>
+<br>
+<ul>
+<li>
+<p>GenAI può essere usato per <strong>elaborare dati</strong>, anche <em>strutturati</em>, <em>semi-strutturati</em>, o <em>non strutturati</em></p>
+<ul>
+<li>e.g., <em>tabelle</em>, <em>dataset</em>, etc.</li>
+</ul>
+</li>
+<li>
+<p>Vari <strong>tipi di elaborazione</strong> possibili, es:</p>
+<ul>
+<li>(semplicifi) operazioni di <em>aggregazione</em> o <em>filtraggio</em> di dati</li>
+<li><em>visualizzazione</em> dei dati</li>
+<li>creazione di (semplici) modelli <em>predittivi</em></li>
+<li><em>generazione</em> di dati <em>sintetici</em></li>
+</ul>
+</li>
+<li>
+<p>Si istruisce GenAI ad operare come un <strong>analista dati</strong> o un <strong>data scientist</strong></p>
+<ul>
+<li>fornendo i <em>dati</em> e le operazioni da <em>eseguire</em>, valutando i <em>risultati</em></li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="genai-come-assistente-per-l-1">GenAI come assistente per <em>l’elaborazione dei dati</em></h2>
+<h3 id="disclaimer-1">Disclaimer</h3>
+<br>
+<ul>
+<li>
+<p><em>LLM</em>, di per loro, sono <strong>imprecisi</strong> e <em>non affidabili</em> per il calcolo e l’<em>analisi di dati</em></p>
+<ul>
+<li>specie al crescere del volume dei dati</li>
+</ul>
+</li>
+<li>
+<p>Tuttavia, <em>FM</em> posssono generare <strong>codice di programmazione</strong> (dietro le quinte) per <em>elaborare</em> i dati</p>
+<ul>
+<li><em>compensando</em> quindi la <em>limitata</em> capacità di analisi dei LLM</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="genai-come-assistente-per-l-2">GenAI come assistente per <em>l’elaborazione dei dati</em></h2>
+<h3 id="consigli-sempre-validi-3">Consigli sempre validi</h3>
+<br>
+<ul>
+<li>
+<p>Prima di caricare dati, <strong>verificare</strong> che non contengano <em>informazioni sensibili</em> o <em>riservate</em>, e di avere il <em>diritto</em> di fornirli a <em>terzi</em></p>
+<ul>
+<li><em>escludere</em> i dati dai futuri cicli di allenamento</li>
+</ul>
+</li>
+<li>
+<p>Fare richieste <em>precise</em>, <em>chiare</em>, e <em>possibili</em> (rispetto ai dati forniti)</p>
+<ul>
+<li>riguardanti operazioni che <em>in linea di principio</em> <strong>comprendi</strong> e che <strong>potresti fare senza GenAI</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Non fidarsi ciecamente</strong> dei risultati, <em>verificare</em> che siano <em>corretti</em></p>
+<ul>
+<li>specie laddove siano svolti <em>calcoli</em> su dati <em>numerici</em></li>
+</ul>
+</li>
+<li>
+<p>Chiedere il <strong>codice sorgente</strong> delle operazioni svolte, per <em>verificarle</em>, e renderle <strong>riproducibili</strong></p>
+</li>
+<li>
+<p><em>Non delegare</em> a GenAI operazioni che implichino punti di <strong>scelta</strong> e/o <strong>responsabilità</strong></p>
+<ul>
+<li>es. scelta di un <em>modello predittivo</em>, scelta di un’<em>operazione di aggregazione</em> o <em>discretizzazione</em>, etc.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-studio-attrattività-dei-corsi-unibo">Esempio: studio <em>attrattività</em> dei corsi UniBO</h2>
+<p>Sfruttando gli <a href="https://dati.unibo.it/dataset/degree-programmes-figures">open-data di Ateneo</a>,
+e ChatGPT,
+possiamo velocemente <em>analizzare</em> l’<strong>attrattività dei corsi</strong> UniBO nel tempo</p>
+<br>
+<span class="fragment ">
+  <h3 id="passi-concettuali">Passi concettuali</h3>
+<ol>
+<li>[Manuale] <strong>scaricare</strong> i file <em>CSV</em> con i dati dei corsi, <em>per ogni anno accademico</em></li>
+<li><strong>convogliare</strong> tutti i dati in un’unica tabella</li>
+<li><strong>aggregare</strong> i dati per <em>categoria del CdL</em></li>
+<li><strong>graficare</strong> tante <em>linee temporali</em> quante sono le <em>categorie</em> di CdL</li>
+<li>[Manuale] <strong>interpretare</strong> i grafici</li>
+</ol>
+</span>
+<br>
+<span class="fragment ">
+  <img src="./processing/actraction.png" alt="" style="width: 100%; max-width: 95vw; max-height: 40vh; object-fit: contain; ">
+</span>
+</section><section>
+<img src="./processing/actraction-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./processing/actraction-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./processing/actraction-3a.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><img src="./processing/actraction-3b.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+</div>
+</div>
+</section><section>
+<img src="./processing/actraction-4.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./processing/actraction-5.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./processing/actraction-6.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<h2 id="esempio-studio-attrattività-dei-corsi-unibo-1">Esempio: studio <em>attrattività</em> dei corsi UniBO</h2>
+<h3 id="commenti">Commenti</h3>
+<br>
+<ul>
+<li>
+<p>Rimane da <strong>verificare</strong> che il <em>codice generato</em> produca <em>davvero</em> i risultati mostrati da GenAI</p>
+</li>
+<li>
+<p>Il <strong>codice</strong> generato da GenAI è ciò che rende l’esercizio <em>ispezionabile</em> e <em>ripetibile</em></p>
+</li>
+<li>
+<p><span style="color: red;">Non è saggio delegare</span> un aspetto <strong>decisionale</strong> del processo a GenAI</p>
+<ul>
+<li>e.g., <strong>interpretare</strong> i risultati come <em>successo</em> o <em>fallimento</em> di una politica accademica</li>
+<li>e.g., <strong>categorizzare i CdL</strong> sulla base del loro <em>nome</em></li>
+</ul>
+</li>
+</ul>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-generazione-di-dati-sintetici">Esempio: generazione di <em>dati sintetici</em></h2>
+<p>In contesti <em>di ricerca</em> più essere interessante <strong>generare dati sintetici</strong>, <em>simili</em> a dati reali esistenti</p>
+<br>
+<span class="fragment ">
+  <h3 id="dettagli">Dettagli</h3>
+<p>(Comunemente, ci vuole <strong>controllabilità</strong> del <em>processo</em> di generazione)</p>
+<ol>
+<li>
+<p><strong>Senza GenAI</strong>, si procede così:</p>
+<ol>
+<li>[Difficile, error-prone] stima della <em>distribuzione di probabilità</em> dei dati reali</li>
+<li><em>campionamento</em> da questa distribuzione</li>
+</ol>
+</li>
+<li>
+<p><strong>Con GenAI</strong>, si evita la difficoltà del punto 1.1:</p>
+<ol>
+<li>istruire GenAI sulle <em>differenze attese</em> rispetto ai <em>dati reali</em>, forniti</li>
+<li>richiesta di <em>generazione</em></li>
+<li><em>reiterare</em> fino a <em>soddisfazione</em></li>
+</ol>
+</li>
+</ol>
+</span>
+</section><section>
+<h2 id="esempio-generazione-di-dati-sintetici-sul-datset-iris">Esempio: generazione di <em>dati sintetici</em> sul <a href="https://it.wikipedia.org/wiki/Dataset_Iris">datset Iris</a></h2>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Iris_dataset_scatterplot.svg" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><p>Nuova classe <em>sintetica</em>: “Iris Immagina”, in giallo</p>
+<img src="./processing/generation.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+</div>
+</div>
+</section><section>
+<img src="./processing/generation-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./processing/generation-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./processing/generation-3.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<img src="./processing/generation-4.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pandas</span> <span style="color:#204a87;font-weight:bold">as</span> <span style="color:#000">pd</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">numpy</span> <span style="color:#204a87;font-weight:bold">as</span> <span style="color:#000">np</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Caricare il dataset originale</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">file_path</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">"/mnt/data/iris.csv"</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">iris_df</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pd</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">read_csv</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">file_path</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Aggiungere i nomi delle colonne corretti</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">iris_df</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">columns</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">"sepal_length"</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">"sepal_width"</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">"petal_length"</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">"petal_width"</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">"class"</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Definire i parametri per la nuova classe</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">num_samples</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">150</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">sepal_length</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">np</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">random</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">normal</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">loc</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">7.0</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">scale</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0.4</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">num_samples</span><span style="color:#000;font-weight:bold">)</span>  <span style="color:#8f5902;font-style:italic"># Sepalo lungo</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">sepal_width</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">np</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">random</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">normal</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">loc</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">3.2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">scale</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0.3</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">num_samples</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">petal_length</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">np</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">random</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">normal</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">loc</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">2.0</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">scale</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0.2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">num_samples</span><span style="color:#000;font-weight:bold">)</span>  <span style="color:#8f5902;font-style:italic"># Petalo corto</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">petal_width</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">np</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">random</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">normal</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">loc</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">1.8</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">scale</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0.2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">num_samples</span><span style="color:#000;font-weight:bold">)</span>  <span style="color:#8f5902;font-style:italic"># Petalo largo</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Creare il nuovo dataframe</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">iris_immagina_df</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pd</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">DataFrame</span><span style="color:#000;font-weight:bold">({</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#4e9a06">"sepal_length"</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">sepal_length</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#4e9a06">"sepal_width"</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">sepal_width</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#4e9a06">"petal_length"</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">petal_length</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#4e9a06">"petal_width"</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">petal_width</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#4e9a06">"class"</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">"Iris-immagina"</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">num_samples</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">})</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># Unire i dati originali con quelli sintetici</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">extended_iris_df</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pd</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">concat</span><span style="color:#000;font-weight:bold">([</span><span style="color:#000">iris_df</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">iris_immagina_df</span><span style="color:#000;font-weight:bold">],</span> <span style="color:#000">ignore_index</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87;font-weight:bold">True</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><br>
+<span class="fragment ">
+  <p>Notare che GenAI ha scelto <strong>arbitrariamente</strong> (ma <em>ragionevolmente</em>):</p>
+<ul>
+<li>di usare <em>distribuzioni normali</em> per i dati sintetici
+<ul>
+<li>ed i <em>parametri</em> di queste distribuzioni</li>
+</ul>
+</li>
+<li>di generare dati multi-dimensionali <em>una componente per volta</em></li>
+</ul>
+</span>
+<span class="fragment ">
+  <blockquote>
+<p>Come?</p></blockquote>
+</span>
+</section><section>
+<img src="./processing/generation-5.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Original Mean (All Classes)</th>
+          <th>Original Std (All Classes)</th>
+          <th>Synthetic Mean (Iris-immagina)</th>
+          <th>Synthetic Std (Iris-immagina)</th>
+          <th>Rationale</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>sepal_length</code></td>
+          <td>5.85</td>
+          <td>0.83</td>
+          <td>7.0</td>
+          <td>0.4</td>
+          <td>Scelto per essere <em>più lungo</em> delle altre specie</td>
+      </tr>
+      <tr>
+          <td><code>sepal_width</code></td>
+          <td>3.05</td>
+          <td>0.43</td>
+          <td>3.2</td>
+          <td>0.3</td>
+          <td><em>Simile a Versicolor</em> per non essere un outlier estremo</td>
+      </tr>
+      <tr>
+          <td><code>petal_length</code></td>
+          <td>3.77</td>
+          <td>1.76</td>
+          <td>2.0</td>
+          <td>0.2</td>
+          <td><em>Corto</em> per distinguersi dalle altre specie</td>
+      </tr>
+      <tr>
+          <td><code>petal_width</code></td>
+          <td>1.21</td>
+          <td>0.76</td>
+          <td>1.8</td>
+          <td>0.2</td>
+          <td><em>Largo</em> per renderlo unico rispetto alle altre specie</td>
+      </tr>
+  </tbody>
+</table>
+</section><section>
+<h2 id="commenti">Commenti</h2>
+<ul>
+<li>
+<p>Rimane da <strong>verificare</strong> che il <em>codice generato</em> produca <em>davvero</em> i risultati mostrati da GenAI</p>
+</li>
+<li>
+<p>Il <strong>codice</strong> generato da GenAI è ciò che rende l’esercizio <em>ispezionabile</em> e <em>ripetibile</em></p>
+</li>
+<li>
+<p>La scelta dei parametri per la generazione dei dati è stata <strong>arbitraria</strong>, ma <em>ragionevole</em></p>
+<ul>
+<li>… GenAI ha correttamente <em>interpretato</em> le richieste dell’utente</li>
+</ul>
+</li>
+<li>
+<p>Meglio sarebbe <u>non</u> avere questo <span style="color: red;">margine di interpretazione</span></p>
+<ul>
+<li>i.e., l’utente dovrebbe specificare i <em>dettagli</em> di <strong>come</strong> generare i dati sintetici</li>
+</ul>
+</li>
+</ul>
+
+</section>
+</section>
+
+
+<section data-shortcode-section="">
+<section data-noprocess="" data-shortcode-slide="" id="content-generation">
+<h2 id="genai-come-assistente-alla-generazione-di-contenuti">GenAI come assistente alla <em>generazione di contenuti</em></h2>
+<h3 id="razionale">Razionale</h3>
+<ul>
+<li>
+<p>GenAI può essere usata per <em>generare contenuti</em> di vario genere (sia da <em>zero</em> che <em>modificando</em> contenuti esistenti)</p>
+<ul>
+<li>e.g., <em>immagini</em>, <em>video</em>, <em>audio</em> etc.</li>
+</ul>
+</li>
+<li>
+<p>Per la generazione di <strong>diagrammi</strong>, grafici, etc. è meglio <em>indurre</em> GenAI a generare <em>codice</em>, da <em>renderizzare</em> poi con strumenti <em>dedicati</em></p>
+<ul>
+<li>e.g., codice Python/<a href="https://matplotlib.org/">Matplotlib</a> per grafici, codice <a href="https://plantuml.com/">PlantUML</a> per diagrammi UML, etc.</li>
+</ul>
+</li>
+<li>
+<p>Può essere utile chiedere a GenAI di generare <strong>loghi</strong>, concept, copertine, etc. per <em>ispirazione</em></p>
+<ul>
+<li>in generale, GenAI funziona bene dove l’<em>intuizione</em> vale più della <em>precisione</em></li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="genai-come-assistente-alla-generazione-di-contenuti-1">GenAI come assistente alla <em>generazione di contenuti</em></h2>
+<h3 id="consigli-sempre-validi">Consigli sempre validi</h3>
+<ul>
+<li>
+<p><strong>Verificare</strong> che i contenuti generati siano <em>originali</em> e <em>non violino</em> <em>copyright</em></p>
+</li>
+<li>
+<p><strong>Non delegare</strong> a GenAI la <em>scelta</em> di <em>contenuti critici</em> o <em>sensibili</em></p>
+<ul>
+<li>e.g., <em>scelta</em> di un <em>logo</em> per un’azienda, <em>scelta</em> di un <em>graphical abstract</em> per un articolo, etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>Non fidarsi ciecamente</strong> dei risultati, <em>verificare</em> che siano <em>corretti</em>, e non contengano <em>bias</em> o <em>allucinazioni</em></p>
+</li>
+</ul>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-generazione-di-foto-di-fiori-immaginari">Esempio: generazione di <em>foto</em> di fiori <em>immaginari</em></h2>
+<img src="./generation/imagegen-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><p>Setosa
+<img src="./generation/setosa.png" alt=""></p>
+<p><a href="https://www.phytoimages.siu.edu/imgs/Cusman1/na/Iridaceae_Iris_setosa_82970.html">https://www.phytoimages.siu.edu/imgs/Cusman1/na/Iridaceae_Iris_setosa_82970.html</a></p>
+</div>
+<div class="col " style="text-align: center;"><p>Versicolor
+<img src="./generation/versicolor.jpg" alt=""></p>
+<p><a href="https://mgnv.org/plants/native-plants/perennials/iris-virginica/">https://mgnv.org/plants/native-plants/perennials/iris-virginica/</a></p>
+</div>
+<div class="col " style="text-align: center;"><p>Virginica
+<img src="./generation/virginica.webp" alt=""></p>
+<p><a href="https://bhwp.org/item/northern-blue-flag-iris-iris-versicolor/#tab-wccpf_fields_tab">https://bhwp.org/item/northern-blue-flag-iris-iris-versicolor/#tab-wccpf_fields_tab</a></p>
+</div>
+</div>
+</div>
+</section><section>
+<img src="./generation/imagegen-3.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><h3 id="tentativo-1">Tentativo 1</h3>
+<img src="./generation/immagina-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+<p><span style="color: red;">(troppo irrealistica)</span></p>
+</div>
+<div class="col " style="text-align: center;"><h3 id="tentativo-2">Tentativo 2</h3>
+<img src="./generation/immagina-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</div>
+</div>
+</div>
+</section><section>
+<blockquote>
+<p>Non è così facile ottenere elevata <strong>verosimiglianza</strong> nelle immagini generate</p></blockquote>
+
+</section>
+</section><section>
+
+
+<section data-shortcode-section="">
+<h2 id="esempio-generazione-di-immagini-di-copertina">Esempio: generazione di <em>immagini di copertina</em></h2>
+<p>Come ho ottenuto la copertina di questa presentazione?</p>
+<img src="./generation/front-1.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<h2 id="esempio-generazione-di-immagini-di-copertina-1">Esempio: generazione di <em>immagini di copertina</em></h2>
+<p>Noto un probabile <strong>bias</strong>: studenti/docenti stereotipati come <em>uomini bianchi</em></p>
+<img src="./generation/front-2.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<h2 id="esempio-generazione-di-immagini-di-copertina-2">Esempio: generazione di <em>immagini di copertina</em></h2>
+<p>Posso richiedere una <strong>modifica puntuale</strong> (notare la selezione dell’<em>area da modificare</em>)</p>
+<img src="./generation/front-3a.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<h2 id="esempio-generazione-di-immagini-di-copertina-3">Esempio: generazione di <em>immagini di copertina</em></h2>
+<p>Il risultato</p>
+<img src="./generation/front-3b.png" alt="" style="width: 100%; max-width: 95vw; max-height: 70vh; object-fit: contain; ">
+</section><section>
+<blockquote>
+<p>Non è così facile <strong>controllare</strong> con <em>precisione</em> la generazione di immagini</p></blockquote>
+
+</section>
+</section>
+
+<section data-noprocess="" data-shortcode-slide="" id="citations">
+  
+<h1 id="dichiarare--citare-limpiego-di-genai">Dichiarare / citare l’impiego di GenAI</h1>
+<h2 id="perché">Perché</h2>
+<ul>
+<li><strong>Trasparenza</strong> ed onestà — è giusto che i fruitori di un contenuto sappiano come è stato prodotto</li>
+<li><strong>etica</strong> accademica — è giusto dare <em>credito</em> alle fonti</li>
+<li><strong>accountability</strong> — è giusto che gli autori umani si prendano la <em>responsabilità</em> dell’impiego di GenAI</li>
+</ul>
+</section><section>
+<h2 id="dichiarare--citare-limpiego-di-genai-1">Dichiarare / citare l’impiego di GenAI</h2>
+<h3 id="quando-dichiarare">Quando dichiarare</h3>
+<blockquote>
+<p>Quando il contributo di GenAI è <strong>sostanziale</strong> al lavoro svolto</p></blockquote>
+<br>
+<h3 id="esempi">Esempi</h3>
+<ul>
+<li>
+<p>Produzione di <strong>contenuti originali</strong></p>
+<ul>
+<li>se la GenAI ha <em>generato idee nuove</em> o ha avuto un <em>ruolo significativo nella scrittura</em> di un documento</li>
+<li>se ha <em>contribuito alla formulazione</em> di un’ipotesi di ricerca o ha <em>suggerito nuove prospettive</em></li>
+</ul>
+</li>
+<li>
+<p><strong>Analisi di dati</strong> con GenAI</p>
+<ul>
+<li>se GenAI ha aiutato ad <em>interpretare dati</em>, fare <em>sintesi</em> o <em>individuare pattern</em> innovativi</li>
+<li>se GenAI ha prodotto <em>dati sintetici</em> o aiutato a <em>selezionare iper-parametri</em> di modelli predittivi</li>
+</ul>
+</li>
+<li>
+<p><strong>Generazione</strong> o <strong>rielaborazione</strong> di testi</p>
+<ul>
+<li>se hai utilizzato la GenAI per <em>scrivere una parte sostanziale</em> del testo</li>
+<li>se la GenAI ha <em>parafrasato</em>, <em>riscritto</em> o <em>ampliato</em> sezioni importanti</li>
+</ul>
+</li>
+<li>
+<p>Creazione di immagini, grafici, o <strong>contenuti audio/visivi</strong></p>
+</li>
+<li>
+<p><strong>Se richiesto</strong> da regolamenti, docenti o editori</p>
+<ul>
+<li>alcuni docenti o riviste possono avere <em>regole specifiche</em> che impongono la dichiarazione dell’uso di GenAI</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="dichiarare--citare-limpiego-di-genai-2">Dichiarare / citare l’impiego di GenAI</h2>
+<h3 id="quando-non-dichiarare">Quando <strong>non</strong> dichiarare</h3>
+<blockquote>
+<p>Quando il contributo di GenAI <strong>non</strong> è <strong>sostanziale</strong>, ma meramente di <em>supporto</em></p></blockquote>
+<br>
+<h3 id="esempi-1">Esempi</h3>
+<ul>
+<li>
+<p>Ricerche <strong>preliminari</strong> e brainstorming</p>
+<ul>
+<li>se hai usato la GenAI solo per <em>raccogliere informazioni</em> su un argomento, senza riportare testualmente i contenuti generati</li>
+</ul>
+</li>
+<li>
+<p><strong>Correzioni</strong> grammaticali e stilistiche</p>
+<ul>
+<li>se hai usato GenAI per <em>migliorare la leggibilità</em>, correggere errori grammaticali, o suggerire modifiche stilistiche.</li>
+</ul>
+</li>
+<li>
+<p><strong>Traduzione</strong> di frammenti di testo</p>
+<ul>
+<li>se la GenAI è stata usata per <em>tradurre frasi o documenti</em>, ma hai poi <em>rivisto</em> il testo <em>manualmente</em></li>
+</ul>
+</li>
+<li>
+<p>Uso di GenAI come <strong>assistente personale</strong></p>
+<ul>
+<li>se hai utilizzato AI per <em>riassumere articoli</em>, <em>fornire spiegazioni</em>, o suggerire titoli, ma non hai riportato testualmente le sue risposte</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="a-proposito-di-dichiarazioni">A proposito di dichiarazioni</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span>Queste slide sono state realizzate con l'aiuto di GitHub Copilot e ChatGPT.
+</span></span><span style="display:flex;"><span>Il primo è stato usato per velocizzare la stesura della prima bozza.
+</span></span><span style="display:flex;"><span>Entrambi sono stati usati per creare alcuni degli esempi e delle immagini qui presentate.
+</span></span><span style="display:flex;"><span>Ogni slide è stata rivista e verificata manualmente.
+</span></span><span style="display:flex;"><span>L'autore si prende la piena responsabilità per il contenuto di queste slide.
+</span></span></code></pre></div></section><section>
+<p><img src="./end.webp" alt="The end"></p>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src="/talk-genai-teaching/reveal-hugo/object-assign.js"></script>
+
+<a href="/talk-genai-teaching/reveal-js/dist/print/" id="print-location" style="display: none;"></a>
+
+<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"custom-theme.scss","custom_theme_compile":true,"custom_theme_options":{"enablesourcemap":true,"targetpath":"css/custom-theme.css"},"height":"1080","highlight_theme":"solarized-dark","history":true,"mermaid":[{}],"slide_number":true,"theme":"league","transition":"slide","transition_speed":"fast","width":"1920"}</script>
+<script type="application/json" id="reveal-hugo-page-params">null</script>
+
+<script src="/talk-genai-teaching/reveal-js/dist/reveal.js"></script>
+
+
+  
+  
+  <script type="text/javascript" src="/talk-genai-teaching/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/talk-genai-teaching/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/talk-genai-teaching/reveal-js/plugin/zoom/zoom.js"></script>
+  
+  <script type="text/javascript" src="/talk-genai-teaching/reveal-js/plugin/notes/notes.js"></script>
+  
+  
+  <script type="text/javascript" src="/talk-genai-teaching/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+
+  var revealHugoPlugins = {
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom ]
+   };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams),
+    camelize(revealHugoPlugins));
+  Reveal.initialize(options);
+</script>
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+</script>
+
+<script type="text/javascript" id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script>
+  if (/.*?(\?|&)print-pdf/.test(window.location.toString())) {
+      var ytVideos = document.getElementsByTagName("iframe")
+      for (let i = 0; i < ytVideos.length; i++) {
+          var videoFrame = ytVideos[i]
+          var isYouTube = /^https?:\/\/(www.)youtube\.com\/.*/.test(videoFrame.src)
+          if (isYouTube) {
+              console.log(`Removing ${videoFrame.src}`)
+              var parent = videoFrame.parentElement
+              videoFrame.remove()
+              var p = document.createElement('p')
+              p.append(
+                  document.createTextNode(
+                      "There was an embedded video here, but it is disabled in the printed version of the slides."
+                  )
+              )
+              p.append(document.createElement('br'))
+              p.append(
+                  document.createTextNode(
+                      `Visit instead ${
+                          videoFrame.src
+                      } or ${
+                          videoFrame.src.replace(
+                              /(^https?:\/\/(www.)youtube\.com)\/(embed\/)(\w+).*/,
+                              "https://www.youtube.com/watch?v=$4"
+                          )
+                      }`
+                  )
+              )
+              parent.appendChild(p)
+          }
+      }
+  }
+</script>
+
+
+    
+  
+
+</body></html>

@@ -35,18 +35,25 @@ Applicazione Web con un focus sulla formazione. Aiuta a creare materiali didatti
     Nel primo anno del corso di laurea triennale in Scienze Statistiche dell’Università di Bologna è stata sperimentata l’introduzione dell’AI-assisted programming come supporto didattico per l’insegnamento dell’informatica. Il contributo condivide i risultati di questa esperienza, ispirata al quadro metodologico delineato da Porter e Zingaro (Manning Publications, 2024), con un focus specifico sugli aspetti cognitivi, metacognitivi e motivazionali dell'apprendimento della programmazione. L’intervento descrive l’integrazione di strumenti di intelligenza artificiale generativa per l’assistenza alla scrittura del codice, l’analisi delle soluzioni e la personalizzazione del feedback, mettendo in luce i vantaggi e le criticità emersi.
     ```
 
-2. Personalizzazione e conoscenza del profilo d’aula con l’IA: clusterizzazione, stili di apprendimento e progettazione didattica
+1. Personalizzazione e conoscenza del profilo d’aula con l’IA: clusterizzazione, stili di apprendimento e progettazione didattica
 
     ```
     Questo intervento esplora l’impiego di strumenti di intelligenza artificiale per la personalizzazione dei contenuti didattici e la creazione di profili d’aula basati sui dati. Attraverso tecniche di clusterizzazione applicate ai background e ai comportamenti degli studenti universitari, è stato possibile individuare pattern ricorrenti utili alla progettazione di esperienze formative. Verranno presentate alcune esperienze di analisi dei profili tramite algoritmi di machine learning, con riferimento agli stili di apprendimento, al grado di familiarità con le tecnologie e alla progressione nei corsi. L’intervento discuterà le implicazioni operative dell’uso di tali strumenti per il supporto alla progettazione didattica. Verranno inoltre evidenziate le potenzialità dell’IA come strumento di supporto alla governance e al miglioramento continuo dell’offerta formativa.
     ```
 
-3. Sperimentazioni di IA nella didattica del diritto: il caso del DSG
+1. Sperimentazioni di IA nella didattica del diritto: il caso del DSG
     ```
     Nel Dipartimento di Scienze Giuridiche (DSG), alcune attività didattiche dell’a.a. 2024/2025, curate dalla Prof.ssa Elena Zucconi Galli Fonseca (Diritto Processuale Civile) e dalla Dott.ssa Angela Maria Felicetti (International Business Negotiation), hanno integrato l’uso di Intelligenza Artificiale in quattro forme innovative. Si è sperimentata l’analisi critica delle risposte fornite da modelli linguistici come ChatGPT su temi giuridici, discutendone insieme in aula per favorire un uso consapevole degli strumenti. Attraverso lo story-telling giuridico, l’IA ha trasformato casi tecnici in racconti narrativi, migliorando la comprensione degli studenti. Una lezione è stata dedicata allo scambio di buone pratiche tra pari sull’uso dell’IA nello studio del diritto. Infine, nel corso di negoziazione internazionale, l’IA è stata impiegata in simulazioni di role-play, facendo emergere le dinamiche delle trattative e il ruolo delle asimmetrie informative, promuovendo così riflessioni avanzate su strategie comunicative ed empatia negoziale.
     ```
 
-4. Pianini che usa AI non generativa per scovare progetti copiati
+1. Laboratorio su Bias e GenAI: sceneggiature inclusive tra media education e data literacy
+    ```
+    Laboratorio su Bias e GenAI: sceneggiature inclusive tra media education e data literacy
+    La sperimentazione didattica condotta da Elisa Farinacci, svolta nei corsi di Scienze della Comunicazione e DAMS (e durante un visiting negli Stati Uniti), ha esplorato l’uso critico dell’Intelligenza Artificiale Generativa (GenAI) nella scrittura di sceneggiature originali. Utilizzando strumenti come Google Bard e ChatGPT, gli studenti hanno imparato a progettare prompt efficaci e, parallelamente, a riconoscere e discutere eventuali bias di genere, etnia, abilismo e rappresentazione sociale presenti nei testi generati. Il laboratorio si inserisce in un contesto teorico legato alla giustizia rappresentativa e alla riflessione sui rischi dei pregiudizi sistemici nei dati di addestramento. La sperimentazione è parte di una ricerca interdisciplinare, in collaborazione con Salvatore Messina e Pasquale Cascarano, volta a integrare pedagogia e informatica per analizzare criticamente le sceneggiature prodotte, promuovendo una media education orientata allo sviluppo del pensiero critico e alla data literacy.
+    ```
+
+
+1. Pianini che usa AI non generativa per scovare progetti copiati
 
 > @giovaz94 se sei a conoscenza di altre cose simili, butta sù
 

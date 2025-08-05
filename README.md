@@ -25,7 +25,17 @@ Plugin di Google Chrome a supporto dei docenti. Aiuta a produrre materiale e/o c
 - <https://schoolai.com/>
 Applicazione Web con un focus sulla formazione. Aiuta a creare materiali didattici personalizzi, quiz, e materiali didattici vari, **con in più la possibilità di creare ChatBot per assistere gli studenti**
 
-> @giovaz94 se trovi altro butta sù che poi analizziamo e clusterizziamo
+- <https://www.fetchy.com/>
+Applicazione Web che permette di strutturare argomenti di lezione in base al tema, livello e durata della lezione
+
+- <https://quillbot.com/>
+Offre diverse soluzioni AI-Driven per l'analisi e stesura del testo. In particolar modo ha un supporto per verificare plagiarismo / generazione testo da strumenti LLM.
+
+- <https://yippity.io/>
+Applicazione che a partire da un testo, un url a un documento testuale o un documento permette di creare quiz, riassunti e mappe concettuali.
+
+- <https://web.diffit.me/>
+Applicazione Web che permette, in maniera analoga a fetchy, di creare esercizi, domande e riassunti a partire da del materiale in input (e.g. testo, documenti etc...)
 
 ## Analisi di esperienze note da analizzare
 

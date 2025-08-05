@@ -83,6 +83,8 @@ Applicazione Web con un focus sulla formazione. Aiuta a creare materiali didatti
 
 - [A cosa ci serve l’Intelligenza Arificiale?](https://gciatto.github.io/talk-ai-ita)
     * video [qui parte 1](https://youtu.be/p0MBuZS67nQ?si=rtDDPhVyk6Q2ZWoa), [qui parte 2](https://www.youtube.com/watch?v=fdBgl-bsx48)
+ 
+- [Teach with Generative AI @ Harvard](https://www.harvard.edu/ai/teaching-resources/)
 
 ## Vincoli
 

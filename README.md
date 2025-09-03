@@ -2,6 +2,35 @@
 
 Il seminario illustra, senza pretesa di esaustività, i principali casi d'uso e le principali soluzioni tecnologie di GenAI ad oggi disponibili per fini didattici, commentandone potenzialità e criticità, e la loro relazione con le linee guida di ateneo.
 
+## Scaletta
+
+1. Definizione di GenAI (immutata)
+1. Recap su modelli fondazionali, X-as-a-Service, implicazioni (immutato)
+1. Recap interfacce a GenAI (stringere)
+1. Modelli di utilizzo per educatori / discenti
+    + docenti
+        - supporto alla creazione contenuti
+            * es. materiali didattici (slide, dispense, etc)
+            * es. materiali di verifica dell'apprendimento (quiz, etc.)
+        - supporto all'analisi, valutazione, e feedback
+        - snellimento di attività amministrative (reportistica, lettere di presentazione, etc.)
+        - creazione di tutor AI personalizzati
+    + studenti
+        - assistenza alla scrittura, brainstorming
+        - ricerca e sintesi
+        - tutoraggio personalizzato e pratica
+        - livellamento competenze, superamento barriere
+1. Sfide/criticità dell'applicazione di GenAI all'educazione
+    - Integrità Accademica e Preoccupazioni per la Frode
+    - Rischi per la Privacy dei Dati e la Sicurezza
+    - Problemi di Bias, Disinformazione e Accuratezza
+    - Impatto sul Pensiero Critico e sull'Eccessiva Dipendenza
+    - Necessità di Sviluppo Professionale e Alfabetizzazione sull'IA
+1. Analisi delle soluzioni tecnologiche (vedi sotto)
+    - magari raggruppa per funzionalità (puoi riutilizzare i modelli di utilizzo di cui sopra) e fai 1 esempio per gruppo
+1. Commenti sulle sperimentazioni in corso in Ateneo (vedi sotto sotto)
+    + fa @gciatto
+
 ## Soluzioni tecnologiche da sondare (rispetto alle applicazioni didattiche possibili)
 
 - <https://www.slidesai.io>

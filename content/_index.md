@@ -43,6 +43,7 @@ outputs = ["Reveal"]
     4. [Esempio di GenAI come assistente per l'elaborazione dei dati](#data-processing)
     5. [Esempio di GenAI come generatore di contenuti](#content-generation)
 4. [Dichiarare / citare l'impiego di GenAI](#citations)
+5. [Utilizzo di GenAI in ambito accademico](#academic-use)
 
 {{% /section %}}
 
@@ -1706,5 +1707,65 @@ L'autore si prende la piena responsabilità per il contenuto di queste slide.
 ```
 
 ---
+
+{{% section %}}
+
+
+{{< slide id="academic-use" >}}
+
+
+## GenAI in ambito accademico.
+
+- Abbiamo visto vari esempi di __impiego__ generico di GenAI a supporto di attività generiche
+    + _generazione contenuti_, _supporto alla scrittura_, _assistenza nella ricerca_, _analisi dei dati_, _etc...
+
+- Con i _progressi ottenuti_, l’AI è oggi sempre più __integrata__ in ambiti diversi.
+
+- Anche il __mondo accademico__ si inserisce in questa tendenza, con GenAI a _supporto_ delle varie attività.
+
+{{% /section %}}
+
+---
+
+## GenAI in ambito accademico: differenziazione utilizzo.
+
+l'utilizzo di strumenti GenAI varia a seconda del __ruolo__ accademico considerato.
+
+<br/>
+
+### Docenti
+
+- I __Docenti__ la utilizzano per semplificare e migliorare vari aspetti della loro attività
+   + __Definizione Lezioni__: _delineazione_ di corsi e obiettivi di apprendimento
+
+   + __Creazione Materiale__: AI utile non solo per la _generazione_ di _slide_ o _quiz_ per esami ma può essere utilizzata anche per _definire_ nuovi casi d'uso per argomentare discussioni a lezione, letture consigliate o vere e proprie guide di studio .
+  
+   + __Feedback__: _monitoraggio_ e _valutazione_ del progresso degli studenti, con suggerimenti personalizzati per migliorare l'apprendimento.
+  
+   + __Attività Amministrative__: _Supporto nella creazione_ di reportistica, lettere presentazione, comunicazioni.
+  
+---
+
+## GenAI in ambito accademico: differenziazione utilizzo.
+
+l'utilizzo di strumenti GenAI varia a seconda del __ruolo__ accademico considerato.
+
+<br/>
+
+### Studenti
+
+- Gli __studenti__ la utilizzano per migliorare vari aspetti del loro apprendimento
+   + __Produzione Contenuti__: utilizzo classico in cui viene generato  _codice_, _testo_ o _immagini_.
+  
+   + __Comprensione Concettuale__: utilizzo mirato a __comprendere__ meglio i concetti studiati (_spiegazione contenuti lezione_, _ricerca su argomenti specifici_).
+
+   + __Arricchimento Materiale Prodotto__: miglioramento qualità del lavoro svolto (_correzione grammaticale_, _miglioramento stile di scrittura_, _refactoring codice prodotto_).
+
+   + __Brainstorming__: generazione di idee e spunti per progetti, tesi, etc.
+
+---
+
+
+
 
 ![The end](./end.webp)

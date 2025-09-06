@@ -1707,14 +1707,9 @@ L'autore si prende la piena responsabilità per il contenuto di queste slide.
 ```
 
 ---
-
-{{% section %}}
-
-
 {{< slide id="academic-use" >}}
 
-
-## GenAI in ambito accademico.
+## AI in ambito accademico.
 
 - Abbiamo visto vari esempi di __impiego__ generico di GenAI a supporto di attività generiche
     + _generazione contenuti_, _supporto alla scrittura_, _assistenza nella ricerca_, _analisi dei dati_, _etc...
@@ -1723,47 +1718,111 @@ L'autore si prende la piena responsabilità per il contenuto di queste slide.
 
 - Anche il __mondo accademico__ si inserisce in questa tendenza, con GenAI a _supporto_ delle varie attività.
 
-{{% /section %}}
-
 ---
 
-## GenAI in ambito accademico: differenziazione utilizzo.
+## AI in ambito accademico.
+L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
 
-l'utilizzo di strumenti GenAI varia a seconda del __ruolo__ accademico considerato.
+{{% multicol %}}
+{{% col %}}
 
-<br/>
-
+{{% fragment %}}
 ### Docenti
+- __Supporto__ alla creazione di contenuti didattici
+- __Sviluppo__ curriculum e __strutturazione__ delle lezioni
+- __Valutazione__ e __feedback__ sull'andamento del corso
+- __Supporto__ alle attività __amministrative__
+- __Creazione__ di tutoring AI personalizzato
+{{% /fragment %}}
 
-- I __Docenti__ la utilizzano per semplificare e migliorare vari aspetti della loro attività
-   + __Definizione Lezioni__: _delineazione_ di corsi e obiettivi di apprendimento
+{{% /col %}}
+{{% col %}}
 
-   + __Creazione Materiale__: AI utile non solo per la _generazione_ di _slide_ o _quiz_ per esami ma può essere utilizzata anche per _definire_ nuovi casi d'uso per argomentare discussioni a lezione, letture consigliate o vere e proprie guide di studio .
-  
-   + __Feedback__: _monitoraggio_ e _valutazione_ del progresso degli studenti, con suggerimenti personalizzati per migliorare l'apprendimento.
-  
-   + __Attività Amministrative__: _Supporto nella creazione_ di reportistica, lettere presentazione, comunicazioni.
-  
----
-
-## GenAI in ambito accademico: differenziazione utilizzo.
-
-l'utilizzo di strumenti GenAI varia a seconda del __ruolo__ accademico considerato.
-
-<br/>
-
+{{% fragment %}}
 ### Studenti
+- __Produzione__ contenuti per progetti o appunti
+- __Comprensione__ concettuale di argomenti complessi
+- __Arricchimento__ del materiale prodotto o studiato
+- __Brainstorming__ generazione idee per progetti o ricerche
+{{% /fragment %}}
 
-- Gli __studenti__ la utilizzano per migliorare vari aspetti del loro apprendimento
-   + __Produzione Contenuti__: utilizzo classico in cui viene generato  _codice_, _testo_ o _immagini_.
-  
-   + __Comprensione Concettuale__: utilizzo mirato a __comprendere__ meglio i concetti studiati (_spiegazione contenuti lezione_, _ricerca su argomenti specifici_).
-
-   + __Arricchimento Materiale Prodotto__: miglioramento qualità del lavoro svolto (_correzione grammaticale_, _miglioramento stile di scrittura_, _refactoring codice prodotto_).
-
-   + __Brainstorming__: generazione di idee e spunti per progetti, tesi, etc.
+{{% /col %}}
+{{% /multicol %}}
 
 ---
+## AI in ambito accademico: __Docenti__
+
+- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+
+### Caso 1: _Creazione di contenuti didattici_
+- I vari strumenti di AI possono essere adoperati per la generazione di vari contenuti
+- Slide e quiz interattivi per gli studenti sono gli esempi più comuni...ma non sono i soli:
+    + Possibile definire anche casi d'uso appositi per argomentare discussioni in classe
+    + Creazione di guide di studio per gli studenti.
+    + Generazione di esempi pratici per illustrare concetti teorici (codice, esercizi matematici, etc...).
+
+---
+
+## AI in ambito accademico: __Docenti__
+
+- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+
+### Caso 2: _Delineazione corsi e pianificazione lezioni_
+
+- Diversi strumenti AI possono essere usati come supporto per la delineazione dei vari aspetti di un corso:
+    + Definizione degli obiettivi di apprendimento.
+    + Strutturazionedi un curriculum coerente e completo.
+    + Suggerimenti su contenuti e risorse da includere come approfondimento.
+    + Suggerimenti su compiti o progetti per valutare gli studenti.
+    + Definizione di una metodologia di valutazione basata su competenze acquisite. 
+---
+
+## AI in ambito accademico: __Docenti__
+
+- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+
+### Caso 3: _Valutazione e feedback_
+
+- AI trova impiego anche nel _monitoraggio_ e _valutazione_ del progresso degli studenti, con suggerimenti personalizzati per migliorare l'apprendimento
+    + Analisi delle prestazioni degli studenti attraverso dati e metriche.
+    + Feedback personalizzato basato sulle risposte degli studenti nei quiz o compiti.
+    + Identificazione di aree di miglioramento
+    + Suggerimenti su risorse o strategie di studio personalizzate.
+  
+---
+
+## AI in ambito accademico: __Docenti__
+
+- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+
+### Caso 4: _Supporto attività amministrative_
+
+- L'efficacia nell'automatizzazione di compiti ripetitivi rende AI uno strumento utile per la gestione di varie attività amministrative
+    + Gestione delle comunicazioni con gli studenti (email, annunci, etc...).
+    + Gestione delle iscrizioni e registrazioni degli studenti.
+    + Monitoraggio delle scadenze accademiche e amministrative.
+  
+---
+
+## AI in ambito accademico: __Docenti__
+
+- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+
+### Caso 5: _Creazione di tutor AI personalizzati_
+
+- È possibile creare tutor AI personalizzati per assistere gli studenti al di fuori delle ore di lezione in grado di:
+    + Rispondere a domande frequenti sugli argomenti del corso.
+    + Fornire spiegazioni aggiuntive su concetti complessi.
+    + Fornire supporto personalizzato in base alle esigenze individuali degli studenti.
+  
+---
+
+
+
+
+
+
+
 
 
 

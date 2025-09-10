@@ -1817,6 +1817,61 @@ L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
   
 ---
 
+## AI in ambito accademico: __Studenti__
+
+- Gli __Studenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+
+
+### Caso 1: _Produzione di contenuti_
+- Gli studenti possono utilizzare AI per la generazione di vari contenuti:
+    + Creazione di appunti di studio sintetici e organizzati.
+    + Generazione di bozze per progetti o relazioni.
+    + Creazione di presentazioni per progetti accademici.
+
+---
+
+## AI in ambito accademico: __Studenti__
+
+- Gli __Studenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+
+
+### Caso 2: _Comprensione_
+- Diverse soluzioni AI sono in grado di aiutare gli studenti nello studio:
+    + Spiegazioni semplificate di concetti complessi.
+    + Risposte a domande specifiche su argomenti di studio.
+    + Suggerimenti per ulteriori letture o risorse di apprendimento.
+    + Esempi pratici per illustrare concetti teorici (codice, esercizi matematici, etc...).
+  
+---
+
+## AI in ambito accademico: __Studenti__
+
+- Gli __Studenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+
+### Caso 3: _Arricchimento materiale prodotto_
+
+- AI può aiutare a migliorare qualitativamente del materiale prodotto dagli studenti:
+    + Correzione grammaticale e stilistica di testi.
+    + Parafrasi o riformulazione di contenuti per maggiore chiarezza.
+    + Suggerimenti per migliorare la struttura o l'organizzazione del materiale.
+    + Strutturazione di codice per progetti di programmazione.
+    + Generazione di grafici o diagrammi per visualizzare dati o concetti.
+
+---
+
+## AI in ambito accademico: __Studenti__
+
+- Gli __Studenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+
+### Caso 4: _Brainstorming_
+
+- Strumenti AI possono essere affiancati agli studenti a supporto del processo creativo:
+    + Idee per progetti o ricerche.
+    + Refactoring di codice.
+    + Trovare soluzioni alternative a problemi complessi.
+    + Suggerimenti per migliorare l'efficacia di presentazioni o discorsi.
+---
+
 
 
 

@@ -44,6 +44,8 @@ outputs = ["Reveal"]
     5. [Esempio di GenAI come generatore di contenuti](#content-generation)
 4. [Dichiarare / citare l'impiego di GenAI](#citations)
 5. [Utilizzo di GenAI in ambito accademico](#academic-use)
+6. [Sfide e criticità dell'applicazione di GenAI all'educazionee](#challenges)
+
 
 {{% /section %}}
 
@@ -449,7 +451,7 @@ Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, C
 
 {{% /fragment %}}
 
----
+<!-- ---
 
 ## GenAI come _motore di ricerca_
 
@@ -494,11 +496,12 @@ Possiamo considerare FM come __esperti__ su tematiche che:
 
 (cf. <https://www.gartner.com/en/information-technology/glossary/multiagent-systems>)
 
-<!-- <br>
+<br>
 
 ### Link alla conversazione completa
+##da commentare
 
-<https://chatgpt.com/share/e/679a41e7-e164-8004-8f01-d135dde3892c> -->
+<https://chatgpt.com/share/e/679a41e7-e164-8004-8f01-d135dde3892c> 
 
 ---
 
@@ -745,7 +748,7 @@ Possiamo considerare FM come __esperti__ su tematiche che:
 
 ## Approccio 1 ({{% color "red" %}}Sconsigliato{{% /color %}}): Senza traccia
 
-<!-- (link alla [conversazione completa](https://chatgpt.com/share/e/679b94b4-93e4-8004-9fae-457ba9f4bf07)) -->
+(link alla [conversazione completa](https://chatgpt.com/share/e/679b94b4-93e4-8004-9fae-457ba9f4bf07)) 
 
 {{< image src="./rewriting/bad/nesy-slr-1.png" width="100%" max-h="70vh" >}}
 
@@ -791,7 +794,7 @@ Possiamo considerare FM come __esperti__ su tematiche che:
 
 ## Approccio 2 (_Consigliato_): Con traccia
 
-<!-- (link alla [conversazione completa](https://chatgpt.com/share/e/679b94c5-17d0-8004-9b4a-6687418f3569)) -->
+da commentare (link alla [conversazione completa](https://chatgpt.com/share/e/679b94c5-17d0-8004-9b4a-6687418f3569)) 
 
 {{% multicol %}}
 {{% col %}}
@@ -1704,7 +1707,7 @@ Il primo è stato usato per velocizzare la stesura della prima bozza.
 Entrambi sono stati usati per creare alcuni degli esempi e delle immagini qui presentate.
 Ogni slide è stata rivista e verificata manualmente.
 L'autore si prende la piena responsabilità per il contenuto di queste slide.
-```
+```-->
 
 ---
 {{< slide id="academic-use" >}}
@@ -1871,15 +1874,106 @@ L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
     + Trovare soluzioni alternative a problemi complessi.
     + Suggerimenti per migliorare l'efficacia di presentazioni o discorsi.
 ---
+{{< slide id="challenges" >}}
+
+## Sfide e criticità dell'applicazione di GenAI all'educazione
+
+- L'integrazione di AI generativa nell'educazione presenta enormi _opportunità_ sia per __studenti__ che __docenti__ 
+- Tuttavia è giusto considerare anche varie {{% color "red" %}}criticità{{% /color %}} che possono emergere nell'adozione delle varie soluzioni:
+  + Possibili __impatti negativi__ sull'apprendimento
+  + Questioni __etiche__ e di __privacy__
+  + Facilità di __abuso__ degli strumenti AI
+- Vi è un dibattito in corso su come bilanciare i vari benefici offerti dall'AI con le potenziali sfide etiche, pedagogiche e pratiche.
+
+Si vuole __evitare__ che l'AI diventi un __ostacolo__ piuttosto che un __supporto__ all'apprendimento.
+  
+---
+
+## Integrità Accademica e Preoccupazioni per la Frode
+
+- Vi sono preoccupazioni sempre più diffuse riguardo l'utilizzo di strumenti AI nel {{% color "red" %}}compromettere valutazioni date agli studenti e nell'integrità accademica{{% /color %}}.
+- Non vi è un __controllo diretto__ su come gli studenti utilizzano questi strumenti, e ciò può portare a:
+  + {{% color "red" %}}Plagio{{% /color %}} o presentazione di lavoro non originale.
+  + {{% color "red" %}}Difficoltà {{% /color %}}nel valutare le competenze reali degli studenti.
+  + Erosione della fiducia tra studenti e docenti.
+---
+
+## Integrità Accademica e Preoccupazioni per la Frode
+
+- Questo ha comportato la __nascita__ di discussioni sull'effettivo utilizzo di AI in ambito accademico.
+- Alcuni sostengono l'uso dell' AI debba essere __rigorosamente limitato__ o __vietato__ in certi contesti educativi.
+- Altri, invece, vedono nell'AI un'_opportunità_ per migliorare l'apprendimento e l'insegnamento, a patto che venga utilizzata in maniera __responsabile__.
+---
+
+## Integrità Accademica e Preoccupazioni per la Frode
+
+- Una delle soluzioni proposte è l'adozione di __sistemi di rilevamento__ di contenuti generati da AI. Tuttavia, questi presentano varie limitazioni:
+    + Non rilevano direttamente il "plagio" ma piuttosto identificano testi che "sembrano" generati da AI (_similarità_).
+    + Sono {{% color "red" %}}limitati{{% /color %}} in ciò che possono rilevare (esempio il riscrivere un testo generato da AI con parole proprie).
+    + Possono produrre {{% color "red" %}}falsi positivi{{% /color %}}, penalizzando ingiustamente studenti.
+    + Possono essere {{% color "red" %}}aggirati{{% /color %}} con tecniche semplici.
+
+---
+
+## Rischi per la Privacy dei Dati e la Sicurezza
+
+- Dati caricati su piattaforme AI possono essere utilizzati per __addestrare modelli futuri__
+- Ciò può comportare {{% color "red" %}}rischi per la privacy{{% /color %}}, specialmente se i dati contengono informazioni __sensibili__ o __personali__.
+- Le istituzioni educative hanno __responsabilità__ che gli strumenti AI _aderiscano_ a normative sulla privacy e protezione dei dati (es. _GDPR_, _FERPA_, _COPPA_).
+- Le istituzioni devono decidere se __limitare__ gli strumenti popolari o __investire__ in soluzioni dedicate e conformi.
+
+---
+
+## Problemi di Bias, Disinformazione e Accuratezza
+
+- I modelli AI possono {{% color "red" %}} riflettere e amplificare errori{{% /color %}} presenti nei dati di addestramento.
+- Ciò può portare a {{% color "red" %}}disinformazione{{% /color %}} o {{% color "red" %}} rappresentazioni distorte{{% /color %}} di argomenti.
+- Gli studenti potrebbero {{% color "red" %}}accettare informazioni errate{{% /color %}} come verità, {{% color "red" %}}compromettendo{{% /color %}} la qualità dell'apprendimento.
+- Risulta __fondamentale__ _accrescere una capacità di utilizzo responsabile e critica_ degli strumenti AI.
+
+---
+
+## Problemi di Bias, Disinformazione e Accuratezza
 
 
+- Studenti e docenti devono essere _consapevoli_ dei limiti e potenziali errori degli strumenti AI.
+- È importante _insegnare_ a _valutare criticamente_ le informazioni generate da AI e a verificare le fonti ed eventuali bias.
+- Gli educatori devono __progettare__ compiti che richiedano un'_analisi critica_ degli output dell'IA, promuovendo competenze che vanno oltre la semplice ricerca di informazioni. 
+- IA da strumento che fornisce risposte a strumento che _supporta il pensiero critico_ e la _risoluzione di problemi_.
+  
+---
 
+## Impatto sul Pensiero Critico e sull'Eccessiva Dipendenza
 
+- Abbiamo visto come __potenzialmente__ strumenti AI siano in grado:
+  + Di fornire _facilmente_ accesso a risposte rapide.
+  + Generare _immediatamente_ contenuti su richiesta.
 
+- Tale facilità può portare a una {{% color "red" %}}dipendenza{{% /color %}} eccessiva dagli strumenti AI
+- Diversi ostacoli all'apprendimento e allo sviluppo del pensiero critico:
+  + {{% color "red" %}}Riduzione{{% /color %}} della capacità di ricerca indipendente.
+  + {{% color "red" %}}Diminuzione{{% /color %}} della capacità di analisi critica delle informazioni.
+  + {{% color "red" %}}Minore sviluppo{{% /color %}} di competenze di risoluzione dei problemi.
+  
+---
 
+## Impatto sul Pensiero Critico e sull'Eccessiva Dipendenza
 
+- Ricerche evidenziano come però, l'uso di AI generativa:
+  + Possano _incrementare la creatività_,
+  + _Facilitare_ un apprendimento più profondo se usata per _aumentare la conoscenza e la costruzione di idee_.
 
+- A livello educativo è necessario progettare attività che __incoraggino__ l'uso critico e riflessivo degli strumenti AI, __promuovendo__ un equilibrio tra l'uso di AI e lo sviluppo di competenze umane fondamentali.
+  
+---
 
+## Necessità di Sviluppo Professionale e Alfabetizzazione sull'IA
+
+- Molti docenti {{% color "red" %}}non hanno ancora ricevuto{{% /color %}} una formazione adeguata sull’uso dell’IA, nonostante la sua diffusione crescente.
+- I distretti scolastici stanno iniziando a introdurre _linee guida_ e programmi di _formazione_ per docenti e studenti.
+- È stato suggerito che un modulo o un corso dedicato ai __chatbot IA__ dovrebbe diventare una componente __obbligatoria__ dei corsi di laurea per garantire che gli studenti siano _informati sull'uso di tali strumenti_.
+
+---
 
 
 ![The end](./end.webp)

@@ -368,7 +368,7 @@ Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, C
 
 {{< slide id="modes" >}}
 
-# Principali __modalità d'utilizzo__
+# Principali __modalità d'utilizzo__ _generali_
 
 ## Categorizzate per __ruolo di GenAI__
 
@@ -386,18 +386,9 @@ Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, C
 
 {{< slide id="academic-use" >}}
 
-## AI in ambito accademico.
+# Principali __impieghi__ di GenAI in ambito educativo
 
-- Abbiamo visto vari esempi di __impiego__ generico di GenAI a supporto di attività generiche
-    + _generazione contenuti_, _supporto alla scrittura_, _assistenza nella ricerca_, _analisi dei dati_, _etc...
 
-- Con i _progressi ottenuti_, l’AI è oggi sempre più __integrata__ in ambiti diversi.
-
-- Anche il __mondo accademico__ si inserisce in questa tendenza, con GenAI a _supporto_ delle varie attività.
-
----
-
-## AI in ambito accademico.
 
 L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
 
@@ -405,54 +396,102 @@ L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
 {{% col %}}
 
 {{% fragment %}}
-### Docenti
-- __Supporto__ alla creazione di contenuti didattici
-- __Sviluppo__ curriculum e __strutturazione__ delle lezioni
-- __Valutazione__ e __feedback__ sull'andamento del corso
-- __Supporto__ alle attività __amministrative__
-- __Creazione__ di tutoring AI personalizzato
+## Docenti
+- __Progettazione__ _curricula_, _sillabi_, struttura delle _lezioni_, etc.
+- Supporto alla __creazione__ di _contenuti didattici_
+- Supporto alla __valutazione__ e al __feedback__ per gli studenti
+- __Supporto__ alle _attività amministrative_
+- Creazione di __tutori AI__ personalizzati per gli studenti
 {{% /fragment %}}
 
 {{% /col %}}
 {{% col %}}
 
 {{% fragment %}}
-### Studenti
-- __Produzione__ contenuti per progetti o appunti
-- __Comprensione__ concettuale di argomenti complessi
-- __Arricchimento__ del materiale prodotto o studiato
-- __Brainstorming__ generazione idee per progetti o ricerche
+## Studenti
+- __Produzione__ di _contenuti_ per lo studio <!-- (riassunti, appunti, etc.) --> o _elaborati_ 
+- __Ricerca__ e __sintesi__ di informazioni da _fonti varie_
+- __Tutoraggio__ _personalizzato_ e pratica
+- __Arricchimento__ del _materiale_ di studio <!-- (e.g. sbobinatura, traduzione) -->
+<!-- - __Brainstorming__ generazione idee per progetti o ricerche -->
 {{% /fragment %}}
 
 {{% /col %}}
 {{% /multicol %}}
 
 ---
-## AI in ambito accademico: __Docenti__
 
-- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+## GenAI in ambito educativo: __Docenti__
 
-### Caso 1: _Creazione di contenuti didattici_
+<!-- - I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche. -->
+
+### __Progettazione__ di _contenuti didattici_ (Overview)
+
+GenAI utile per _delineare_ dei vari aspetti di un __percorso didattico__, tra cui:
++ Definizione degli _obiettivi di apprendimento_
++ Strutturazione di un _sillabo_ coerente e completo
++ Suggerimenti su contenuti e _risorse_ da includere come _approfondimento_
++ Suggerimenti su _compiti_ o _proposte di progetto_ per gli studenti
++ Definizione di una _metodologia di valutazione_ basata su criteri chiari
+
+---
+
+## GenAI in ambito educativo: __Docenti__
+
+### __Progettazione__ di _contenuti didattici_ (Pattern di prompt utili)
+
+- `Progetta il sillabo per un corso su X`
+    - assume che `X` sia un argomento ben definito
+
+- `Suggerisci una diversa struttura per questa dispensa affinché sia più incrementale` 
+    - \[allegando la dispensa]
+    - approccio incrementale spesso più efficace
+
+- `Struttura una presentazione per una lezione su questo capitolo del libro X`
+    - \[allegando il capitolo/libro]
+
+---
+
+## GenAI in ambito educativo: __Docenti__
+
+### __Progettazione__ di _contenuti didattici_ (Esempio)
+
+- `Struttura una lezione su canto V della Divina Commedia, livello liceo scientifico.`
+    + caricando il _testo del canto_, e la _pagina Wikipedia_ corrispondente
+
+> TODO Embed result somehow in the slide: https://chatgpt.com/share/68c839ce-cd08-8008-b695-7bb277f0a72d
+
+---
+
+## GenAI in ambito educativo: __Docenti__
+
+### __Progettazione__ di _contenuti didattici_ (Note)
+
+- Meglio seguire un approccio gerarchico:
+    + prima la struttura generale delle lezioni
+        + poi la struttura di ogni lezione
+            + poi la struttura di ogni slide
+                + ...
+
+- Sempre meglio partire da materiale pre-esistente e allegarlo al prompt
+    * attenzione ai diritti d'autore
+
+- Fornire suggerimenti sugli aspetti salienti da considerare
+
+---
+
+## GenAI in ambito educativo: __Docenti__
+
+<!-- - I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche. -->
+
+### Supporto alla __creazione__ di _contenuti didattici_
 - I vari strumenti di AI possono essere adoperati per la generazione di vari contenuti
 - Slide e quiz interattivi per gli studenti sono gli esempi più comuni...ma non sono i soli:
     + Possibile definire anche casi d'uso appositi per argomentare discussioni in classe
     + Creazione di guide di studio per gli studenti.
     + Generazione di esempi pratici per illustrare concetti teorici (codice, esercizi matematici, etc...).
 
----
 
-## AI in ambito accademico: __Docenti__
-
-- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
-
-### Caso 2: _Delineazione corsi e pianificazione lezioni_
-
-- Diversi strumenti AI possono essere usati come supporto per la delineazione dei vari aspetti di un corso:
-    + Definizione degli obiettivi di apprendimento.
-    + Strutturazionedi un curriculum coerente e completo.
-    + Suggerimenti su contenuti e risorse da includere come approfondimento.
-    + Suggerimenti su compiti o progetti per valutare gli studenti.
-    + Definizione di una metodologia di valutazione basata su competenze acquisite. 
 ---
 
 ## AI in ambito accademico: __Docenti__

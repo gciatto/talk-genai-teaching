@@ -14,6 +14,7 @@
         * specificare l'obiettivo dell'elaborato che si va a redigere
         * fornire copie delle fonti da cui si vuole attingere
         * attenti al diritto d'autore
+  
 * __Ricerca__ e __sintesi__ di informazioni da _fonti varie_, __brainstorming__ idee
     + Pattern: 
         * Quali sono i punti chiave di [argomento]?
@@ -26,6 +27,7 @@
         * Eventi di canto V della Divina Commedia
     + Note:
         * siate consci dei limiti di precisione / copertura delle fonti
+        * Assicurarsi che le fonti siano affidabili e che effettivamente dicano quello che si pensa dicano
         * utile farsi domande al meta-livello (es. struttura tipica di un saggio)
         * attenti al diritto d'autore
 * __Tutoraggio__ _personalizzato_ e pratica
@@ -34,10 +36,14 @@
             + fornire testi di riferimento
         * Genera esercizi/domande su [argomento] con soluzioni
         * Q/A interattivo su materiale di studio [da fornire]
+        * Creami un argomento di discussione su [argomento]
     + Esempi:
         * Chi erano già Paolo e Francesca? Dov'è gradara? Com'era la situazione politica della Romagna all'epoca? Perchè Dante riporta questo episodio nello specifico?
     + Note:
         * attenti al diritto d'autore
+        * Se si generano delle risposte, ricontrollarle, specie se si tratta di domande aperte
+        * Se crei un argomento di discussione, è necessario verificare quali tipologia di domande può generare e se sono pertinenti.
+
 * __Arricchimento__ del _materiale_ di studio (e.g. sbobinatura, traduzione)
     + Pattern:
         * Sbobina questo audio [fornire file]

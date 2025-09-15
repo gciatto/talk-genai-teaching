@@ -57,7 +57,7 @@ Applicazione Web con un focus sulla formazione. Aiuta a creare materiali didatti
 - <https://www.fetchy.com/>
 Applicazione Web che permette di strutturare argomenti di lezione in base al tema, livello e durata della lezione
 
-- <https://quillbot.com/>
+- *<https://quillbot.com/>
 Offre diverse soluzioni AI-Driven per l'analisi e stesura del testo. In particolar modo ha un supporto per verificare plagiarismo / generazione testo da strumenti LLM.
 
 - <https://yippity.io/>
@@ -65,6 +65,11 @@ Applicazione che a partire da un testo, un url a un documento testuale o un docu
 
 - <https://web.diffit.me/>
 Applicazione Web che permette, in maniera analoga a fetchy, di creare esercizi, domande e riassunti a partire da del materiale in input (e.g. testo, documenti etc...)
+
+- *<https://notebooklm.google.com>
+Applicazione Web di Google che permette di creare un quaderno di appunti intelligente, che può essere interrogato in linguaggio naturale. Si basa su modelli di GenAI proprietari di Google. Particolarmente indicato quando l'utente ha già delle fonti di conoscenza da cui attingere (documenti, libri, appunti, etc.)
+
+\* già presentati in altro seminario
 
 ## Analisi di esperienze note da analizzare
 

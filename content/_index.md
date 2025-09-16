@@ -427,7 +427,7 @@ L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
 
 ### __Progettazione__ di _contenuti didattici_ (Overview)
 
-GenAI utile per _delineare_ dei vari aspetti di un __percorso didattico__, tra cui:
+GenAI utile per _delineare_ i vari aspetti di un __percorso didattico__, tra cui:
 + Definizione degli _obiettivi di apprendimento_
 + Strutturazione di un _sillabo_ coerente e completo
 + Suggerimenti su contenuti e _risorse_ da includere come _approfondimento_
@@ -459,7 +459,12 @@ GenAI utile per _delineare_ dei vari aspetti di un __percorso didattico__, tra c
 - `Struttura una lezione su canto V della Divina Commedia, livello liceo scientifico.`
     + caricando il _testo del canto_, e la _pagina Wikipedia_ corrispondente
 
-> TODO Embed result somehow in the slide: https://chatgpt.com/share/68c839ce-cd08-8008-b695-7bb277f0a72d
+
+<br>
+
+{{< image src="./teaching/divine-comedy-structure.png" max-h="50vh" alt="Esempio di struttura di lezione generata da ChatGPT" >}}
+
+\[conversazione completa: <https://chatgpt.com/share/68c986ed-ab5c-8008-ace0-26f3c6edccc8>]
 
 ---
 
@@ -467,16 +472,16 @@ GenAI utile per _delineare_ dei vari aspetti di un __percorso didattico__, tra c
 
 ### __Progettazione__ di _contenuti didattici_ (Note)
 
-- Meglio seguire un approccio gerarchico:
+- Meglio seguire un approccio __gerarchico__:
     + prima la struttura generale delle lezioni
         + poi la struttura di ogni lezione
             + poi la struttura di ogni slide
                 + ...
 
-- Sempre meglio partire da materiale pre-esistente e allegarlo al prompt
+- Sempre meglio partire da __materiale pre-esistente__ e _allegarlo_ al prompt
     * attenzione ai diritti d'autore
 
-- Fornire suggerimenti sugli aspetti salienti da considerare
+- Fornire __suggerimenti__ sugli aspetti salienti da considerare _nel prompt_
 
 ---
 
@@ -484,12 +489,64 @@ GenAI utile per _delineare_ dei vari aspetti di un __percorso didattico__, tra c
 
 <!-- - I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche. -->
 
-### Supporto alla __creazione__ di _contenuti didattici_
-- I vari strumenti di AI possono essere adoperati per la generazione di vari contenuti
-- Slide e quiz interattivi per gli studenti sono gli esempi più comuni...ma non sono i soli:
-    + Possibile definire anche casi d'uso appositi per argomentare discussioni in classe
-    + Creazione di guide di studio per gli studenti.
-    + Generazione di esempi pratici per illustrare concetti teorici (codice, esercizi matematici, etc...).
+### Supporto alla __creazione__ di _contenuti didattici_ (Overview)
+<!-- - I vari strumenti di AI possono essere adoperati per la generazione di vari contenuti -->
+<!-- - Slide e quiz interattivi per gli studenti sono gli esempi più comuni...ma non sono i soli: -->
+
+GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
+
++ _Slides_ / presentazioni
++ _Dispense_ / materiale da studiare
++ _Casi di studio_ / __esempi__
++ Esercizi / _quiz_ / _test_ di vario tipo
+
+---
+
+## GenAI in ambito educativo: __Docenti__
+
+### Supporto alla __creazione__ di _contenuti didattici_ (Pattern di prompt utili)
+
+- <u>`Genera`</u> `il sillabo per un corso su X`
+    - assume che `X` sia un argomento ben definito
+
+- <u>`Riscrivi`</u> `questa dispensa affinché sia più incrementale` 
+    - \[allegando la dispensa]
+    - approccio incrementale spesso più efficace
+
+- <u>`Genera`</u> `una presentazione per una lezione su questo capitolo del libro X`
+    - \[allegando il capitolo/libro]
+
+---
+
+## GenAI in ambito educativo: __Docenti__
+
+### Supporto alla __creazione__ di _contenuti didattici_ (Esempio)
+
+- `Genera le slide di una lezione su canto V della Divina Commedia, livello liceo scientifico`
+    + caricando il _testo del canto_, e la _pagina Wikipedia_ corrispondente
+    + magari avendo fornito la _struttura generale_ nelle __interazioni precedenti__
+
+<br>
+
+{{< image src="./teaching/divine-comedy-slides.png" max-h="50vh" alt="Esempio di generazioni di slide da ChatGPT" >}}
+\[slide generate visibili [qui](https://docs.google.com/presentation/d/1-6cSMomDG--L2GfOJQmAQ9wzNDCm9ng5fJ8czOYuzqY/edit?usp=sharing)]
+
+\[conversazione completa: <https://chatgpt.com/share/68c986ed-ab5c-8008-ace0-26f3c6edccc8>]
+
+---
+
+## GenAI in ambito educativo: __Docenti__
+
+### Supporto alla __creazione__ di _contenuti didattici_ (Note)
+
+- Meglio _progettare la scaletta_ __prima di__ chiedere la _generazione del contenuto_
+    * i.e. flusso logico delle slide
+
+- Meglio fornire __materiale pre-esistente__ e _allegarlo_ al prompt
+    * attenzione ai diritti d'autore
+
+- Meglio richiedere la generazione di elementi singoli (es. slide) __uno alla volta__
+    * e.g., `Genera la slide 1`, `Genera la slide 2`, etc.
 
 ---
 

@@ -33,7 +33,7 @@
 <br> Dipartimento di Informatica — Scienza e Ingegneria (DISI), Sede di Cesena,
 <br> Alma Mater Studiorum—Università di Bologna</p>
 <img src="./front.png" alt="" style="max-width: 95vw; max-height: 50vh; object-fit: contain; ">
-<p><span class="hint">(versione presentazione: 2025-09-15)</span></p>
+<p><span class="hint">(versione presentazione: 2025-09-16)</span></p>
 </section><section>
 <h2 id="link-a-queste-slide">Link a queste slide</h2>
 <p><a href="https://gciatto.github.io/talk-genai-teaching/">https://gciatto.github.io/talk-genai-teaching/</a></p>
@@ -510,7 +510,7 @@
 <h2 id="genai-in-ambito-educativo-docenti">GenAI in ambito educativo: <strong>Docenti</strong></h2>
 <!-- - I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche. -->
 <h3 id="progettazione-di-contenuti-didattici-overview"><strong>Progettazione</strong> di <em>contenuti didattici</em> (Overview)</h3>
-<p>GenAI utile per <em>delineare</em> dei vari aspetti di un <strong>percorso didattico</strong>, tra cui:</p>
+<p>GenAI utile per <em>delineare</em> i vari aspetti di un <strong>percorso didattico</strong>, tra cui:</p>
 <ul>
 <li>Definizione degli <em>obiettivi di apprendimento</em></li>
 <li>Strutturazione di un <em>sillabo</em> coerente e completo</li>
@@ -552,14 +552,22 @@
 </ul>
 </li>
 </ul>
-<blockquote>
-<p>TODO Embed result somehow in the slide: <a href="https://chatgpt.com/share/68c839ce-cd08-8008-b695-7bb277f0a72d">https://chatgpt.com/share/68c839ce-cd08-8008-b695-7bb277f0a72d</a></p></blockquote>
+<br>
+
+
+
+
+
+
+<img src="./teaching/divine-comedy-structure.png" alt="Esempio di struttura di lezione generata da ChatGPT" style="max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+
+<p>[conversazione completa: <a href="https://chatgpt.com/share/68c986ed-ab5c-8008-ace0-26f3c6edccc8">https://chatgpt.com/share/68c986ed-ab5c-8008-ace0-26f3c6edccc8</a>]</p>
 </section><section>
 <h2 id="genai-in-ambito-educativo-docenti-3">GenAI in ambito educativo: <strong>Docenti</strong></h2>
 <h3 id="progettazione-di-contenuti-didattici-note"><strong>Progettazione</strong> di <em>contenuti didattici</em> (Note)</h3>
 <ul>
 <li>
-<p>Meglio seguire un approccio gerarchico:</p>
+<p>Meglio seguire un approccio <strong>gerarchico</strong>:</p>
 <ul>
 <li>prima la struttura generale delle lezioni
 <ul>
@@ -577,47 +585,306 @@
 </ul>
 </li>
 <li>
-<p>Sempre meglio partire da materiale pre-esistente e allegarlo al prompt</p>
+<p>Sempre meglio partire da <strong>materiale pre-esistente</strong> e <em>allegarlo</em> al prompt</p>
 <ul>
 <li>attenzione ai diritti d’autore</li>
 </ul>
 </li>
 <li>
-<p>Fornire suggerimenti sugli aspetti salienti da considerare</p>
+<p>Fornire <strong>suggerimenti</strong> sugli aspetti salienti da considerare <em>nel prompt</em></p>
 </li>
 </ul>
 </section><section>
 <h2 id="genai-in-ambito-educativo-docenti-4">GenAI in ambito educativo: <strong>Docenti</strong></h2>
 <!-- - I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche. -->
-<h3 id="supporto-alla-creazione-di-contenuti-didattici">Supporto alla <strong>creazione</strong> di <em>contenuti didattici</em></h3>
+<h3 id="supporto-alla-creazione-di-contenuti-didattici-overview">Supporto alla <strong>creazione</strong> di <em>contenuti didattici</em> (Overview)</h3>
+<!-- - I vari strumenti di AI possono essere adoperati per la generazione di vari contenuti -->
+<!-- - Slide e quiz interattivi per gli studenti sono gli esempi più comuni...ma non sono i soli: -->
+<p>GenAI utile per <em>generare</em> effettivamente i contenuti didattici, tra cui:</p>
 <ul>
-<li>I vari strumenti di AI possono essere adoperati per la generazione di vari contenuti</li>
-<li>Slide e quiz interattivi per gli studenti sono gli esempi più comuni…ma non sono i soli:
+<li><em>Slides</em> / presentazioni</li>
+<li><em>Dispense</em> / materiale da studiare</li>
+<li><em>Casi di studio</em> / <strong>esempi</strong></li>
+<li>Esercizi / <em>quiz</em> / <em>test</em> di vario tipo</li>
+</ul>
+</section><section>
+<h2 id="genai-in-ambito-educativo-docenti-5">GenAI in ambito educativo: <strong>Docenti</strong></h2>
+<h3 id="supporto-alla-creazione-di-contenuti-didattici-pattern-di-prompt-utili">Supporto alla <strong>creazione</strong> di <em>contenuti didattici</em> (Pattern di prompt utili)</h3>
 <ul>
-<li>Possibile definire anche casi d’uso appositi per argomentare discussioni in classe</li>
-<li>Creazione di guide di studio per gli studenti.</li>
-<li>Generazione di esempi pratici per illustrare concetti teorici (codice, esercizi matematici, etc…).</li>
+<li>
+<p><u><code>Genera</code></u> <code>il sillabo per un corso su X</code></p>
+<ul>
+<li>assume che <code>X</code> sia un argomento ben definito</li>
+</ul>
+</li>
+<li>
+<p><u><code>Riscrivi</code></u> <code>questa dispensa affinché sia più incrementale</code></p>
+<ul>
+<li>[allegando la dispensa]</li>
+<li>approccio incrementale spesso più efficace</li>
+</ul>
+</li>
+<li>
+<p><u><code>Genera</code></u> <code>una presentazione per una lezione su questo capitolo del libro X</code></p>
+<ul>
+<li>[allegando il capitolo/libro]</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="genai-in-ambito-educativo-docenti-6">GenAI in ambito educativo: <strong>Docenti</strong></h2>
+<h3 id="supporto-alla-creazione-di-contenuti-didattici-esempio">Supporto alla <strong>creazione</strong> di <em>contenuti didattici</em> (Esempio)</h3>
+<ul>
+<li><code>Genera le slide di una lezione su canto V della Divina Commedia, livello liceo scientifico</code>
+<ul>
+<li>caricando il <em>testo del canto</em>, e la <em>pagina Wikipedia</em> corrispondente</li>
+<li>magari avendo fornito la <em>struttura generale</em> nelle <strong>interazioni precedenti</strong></li>
+</ul>
+</li>
+</ul>
+<br>
+<p>
+
+
+
+
+
+<img src="./teaching/divine-comedy-slides.png" alt="Esempio di generazioni di slide da ChatGPT" style="max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+
+[slide generate visibili <a href="https://docs.google.com/presentation/d/1-6cSMomDG--L2GfOJQmAQ9wzNDCm9ng5fJ8czOYuzqY/edit?usp=sharing">qui</a>]</p>
+<p>[conversazione completa: <a href="https://chatgpt.com/share/68c986ed-ab5c-8008-ace0-26f3c6edccc8">https://chatgpt.com/share/68c986ed-ab5c-8008-ace0-26f3c6edccc8</a>]</p>
+</section><section>
+<h2 id="genai-in-ambito-educativo-docenti-7">GenAI in ambito educativo: <strong>Docenti</strong></h2>
+<h3 id="supporto-alla-creazione-di-contenuti-didattici-note">Supporto alla <strong>creazione</strong> di <em>contenuti didattici</em> (Note)</h3>
+<ul>
+<li>
+<p>Meglio <em>progettare la scaletta</em> <strong>prima di</strong> chiedere la <em>generazione del contenuto</em></p>
+<ul>
+<li>i.e. flusso logico delle slide</li>
+</ul>
+</li>
+<li>
+<p>Meglio fornire <strong>materiale pre-esistente</strong> e <em>allegarlo</em> al prompt</p>
+<ul>
+<li>attenzione ai diritti d’autore</li>
+</ul>
+</li>
+<li>
+<p>Meglio richiedere la generazione di elementi singoli (es. slide) <strong>uno alla volta</strong></p>
+<ul>
+<li>e.g., <code>Genera la slide 1</code>, <code>Genera la slide 2</code>, etc.</li>
 </ul>
 </li>
 </ul>
 </section><section>
 <h2 id="ai-in-ambito-accademico-docenti">AI in ambito accademico: <strong>Docenti</strong></h2>
-<ul>
-<li>I <strong>Docenti</strong> utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.</li>
-</ul>
-<h3 id="caso-3-valutazione-e-feedback">Caso 3: <em>Valutazione e feedback</em></h3>
+<h3 id="supporto-alla-valutazione-degli-studenti">Supporto alla <strong>valutazione</strong> degli studenti</h3>
 <ul>
 <li>AI trova impiego anche nel <em>monitoraggio</em> e <em>valutazione</em> del progresso degli studenti, con suggerimenti personalizzati per migliorare l’apprendimento
 <ul>
-<li>Analisi delle prestazioni degli studenti attraverso dati e metriche.</li>
-<li>Feedback personalizzato basato sulle risposte degli studenti nei quiz o compiti.</li>
-<li>Identificazione di aree di miglioramento</li>
-<li>Suggerimenti su risorse o strategie di studio personalizzate.</li>
+<li><em>Analisi</em> delle prestazioni degli studenti attraverso <em>dati</em> e <em>metriche</em>.</li>
+<li><em>Feedback personalizzato</em> basato sulle risposte degli studenti nei <em>quiz</em> o <em>compiti</em>.</li>
+<li><em>Identificazione</em> di aree di miglioramento</li>
+<li><em>Suggerimenti</em> su <em>risorse</em> o <em>strategie</em> di studio personalizzate.</li>
 </ul>
 </li>
 </ul>
 </section><section>
 <h2 id="ai-in-ambito-accademico-docenti-1">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="supporto-alla-valutazione-degli-studenti-1">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+<ul>
+<li>
+<p><code>Valuta la risposta X data alla domanda Y secondo questi criteri di valutazione: ...</code></p>
+<table>
+  <thead>
+      <tr>
+          <th>Tipo</th>
+          <th>Descrizione</th>
+          <th>Peso / Valore</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Informazioni attese</strong></td>
+          <td>informazione 1</td>
+          <td>p1</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>informazione 2</td>
+          <td>p2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>informazione N</td>
+          <td>pN</td>
+      </tr>
+      <tr>
+          <td><strong>Errori tipici</strong></td>
+          <td>errore tipico 1</td>
+          <td>-e1</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>errore tipico 2</td>
+          <td>-e2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>errore tipico M</td>
+          <td>-eM</td>
+      </tr>
+      <tr>
+          <td><strong>Fattori bonus/malus</strong></td>
+          <td>fattore 1 (bonus)</td>
+          <td>+b1</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>fattore 2 (malus)</td>
+          <td>-b2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>fattore K (malus)</td>
+          <td>-bK</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p><code>Data la risposta A calcola il punteggio totale e fornisci un feedback costruttivo</code></p>
+<ul>
+<li>La scala di valutazione va da 0 a 30, eventuali mezzi punti sono arrotondati per difetto</li>
+<li>interrompi il ragionamento e chiedimi come procedere se incontri elementi non coperti dalla griglia</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-docenti-2">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="supporto-alla-valutazione-degli-studenti-2">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+<ul>
+<li>
+<p><code>L'esito di questo compito X ha dato questo risultato Y. Suggerisci un feedback costruttivo per lo studente basato su queste mie opinioni grezze: ...</code></p>
+<ul>
+<li>Le opinioni grezze possono essere ad esempio:
+<ul>
+<li>“La risposta è corretta ma manca di esempi pratici”</li>
+<li>“La spiegazione è chiara ma alcuni passaggi sono troppo sintetici”</li>
+<li>“L’argomento è ben coperto ma la struttura del testo è confusa in alcuni punti”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>La media dei voti di questo quiz è Z. Suggerisci materiale di approfondimento</code></p>
+<ul>
+<li>Potresti consigliare risorse aggiuntive come articoli, video o esercizi pratici per aiutare gli studenti a comprendere meglio gli argomenti in cui hanno avuto difficoltà.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-docenti-3">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="supporto-alla-valutazione-degli-studenti-3">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+<ul>
+<li>
+<p>Domanda esempio:
+<br>
+<span style="color: grey; font-style: italic;">
+“Nel Canto V dell’Inferno, Dante incontra Paolo e Francesca. Analizza come l’autore intreccia amore e colpa nella rappresentazione dei due personaggi, mettendo in evidenza gli strumenti poetici e retorici utilizzati per suscitare empatia nel lettore, e discuti in che modo questo episodio contribuisce alla visione dantesca della giustizia divina”
+</span></p>
+</li>
+<li>
+<p>Griglia di valutazione:</p>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Tipo</th>
+          <th>Descrizione</th>
+          <th>Peso / Valore</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Informazioni attese</strong></td>
+          <td>Contestualizzazione del canto V</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Presentazione della pena dei lussuriosi (bufera infernale)</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Racconto di Paolo e Francesca: dinamica della vicenda</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Analisi dei temi amore/colpa/peccato ed empatia suscitata</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Collegamento alla visione della giustizia divina e al progetto etico-teologico di Dante</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td><strong>Errori tipici</strong></td>
+          <td>Riassunto meramente narrativo senza analisi</td>
+          <td>-2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Confondere canto o collocazione nell’Inferno</td>
+          <td>-1</td>
+      </tr>
+      <tr>
+          <td><strong>Fattori bonus/malus</strong></td>
+          <td>Uso di citazioni testuali mirate (anche brevi)</td>
+          <td>+2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Argomentazione poco coerente o priva di struttura</td>
+          <td>-2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Approfondimento critico originale (es. riflessione sul rapporto tra eros e logos)</td>
+          <td>+2</td>
+      </tr>
+  </tbody>
+</table>
+</section><section>
+<h2 id="ai-in-ambito-accademico-docenti-4">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="supporto-alla-valutazione-degli-studenti-4">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+<ul>
+<li>
+<p>Risposta esempio <em>buona</em> (voto 26/30):
+<br>
+<span style="color: grey; font-style: italic;">
+“Nel canto V Dante colloca i lussuriosi nel secondo cerchio, travolti dalla bufera che simboleggia la passione incontrollata. L’incontro con Paolo e Francesca, introdotto dal giudizio di Minosse, è narrato con forte pathos: Francesca parla per entrambi, presentando l’amore come forza inevitabile, alimentata dalla lettura (“Galeotto fu ’l libro”). Dante utilizza un registro lirico che suscita empatia, ma al tempo stesso mostra come la mancanza di responsabilità trasformi l’amore in colpa. Il canto esprime così la tensione tra pietà umana e giustizia divina.”
+</span></p>
+</li>
+<li>
+<p>Risposta esempio <span style="color: red;"> non accurata </span> (voto 14/30):
+<br>
+<span style="color: grey; font-style: italic;">
+“Nel canto V Dante incontra Paolo e Francesca, uccisi dal marito di lei dopo essersi innamorati leggendo un libro. Dante si commuove e sviene. L’episodio è famoso perché parla di un amore romantico che colpisce ancora oggi.”
+</span></p>
+</li>
+</ul>
+<blockquote>
+<p>TODO Embed result somehow in the slide: <a href="https://chatgpt.com/share/e/68c941b1-3088-8004-acfa-21fa935fb69f">https://chatgpt.com/share/e/68c941b1-3088-8004-acfa-21fa935fb69f</a></p></blockquote>
+</section><section>
+<h2 id="ai-in-ambito-accademico-docenti-5">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="supporto-alla-valutazione-degli-studenti-5">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+</section><section>
+<h2 id="ai-in-ambito-accademico-docenti-6">AI in ambito accademico: <strong>Docenti</strong></h2>
 <ul>
 <li>I <strong>Docenti</strong> utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.</li>
 </ul>
@@ -632,7 +899,7 @@
 </li>
 </ul>
 </section><section>
-<h2 id="ai-in-ambito-accademico-docenti-2">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h2 id="ai-in-ambito-accademico-docenti-7">AI in ambito accademico: <strong>Docenti</strong></h2>
 <ul>
 <li>I <strong>Docenti</strong> utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.</li>
 </ul>

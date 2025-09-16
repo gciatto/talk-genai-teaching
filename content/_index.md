@@ -491,22 +491,112 @@ GenAI utile per _delineare_ dei vari aspetti di un __percorso didattico__, tra c
     + Creazione di guide di studio per gli studenti.
     + Generazione di esempi pratici per illustrare concetti teorici (codice, esercizi matematici, etc...).
 
+---
+
+## AI in ambito accademico: __Docenti__
+
+### Supporto alla __valutazione__ degli studenti
+
+- AI trova impiego anche nel _monitoraggio_ e _valutazione_ del progresso degli studenti, con suggerimenti personalizzati per migliorare l'apprendimento
+    + _Analisi_ delle prestazioni degli studenti attraverso _dati_ e _metriche_.
+    + _Feedback personalizzato_ basato sulle risposte degli studenti nei _quiz_ o _compiti_.
+    + _Identificazione_ di aree di miglioramento
+    + _Suggerimenti_ su _risorse_ o _strategie_ di studio personalizzate.
+  
+---
+
+## AI in ambito accademico: __Docenti__
+
+### Supporto alla __valutazione__ degli studenti
+
+- `Valuta la risposta X data alla domanda Y secondo questi criteri di valutazione: ...`
+    | Tipo                   | Descrizione        | Peso / Valore |
+    |------------------------|--------------------|---------------|
+    | **Informazioni attese**| informazione 1     | p1            |
+    |                        | informazione 2     | p2            |
+    |                        | informazione N     | pN            |
+    | **Errori tipici**      | errore tipico 1    | -e1           |
+    |                        | errore tipico 2    | -e2           |
+    |                        | errore tipico M    | -eM           |
+    | **Fattori bonus/malus**| fattore 1 (bonus)  | +b1           |
+    |                        | fattore 2 (malus)  | -b2           |
+    |                        | fattore K (malus)  | -bK           |
+
+   
+- `Data la risposta A calcola il punteggio totale e fornisci un feedback costruttivo`
+    + La scala di valutazione va da 0 a 30, eventuali mezzi punti sono arrotondati per difetto
+    + interrompi il ragionamento e chiedimi come procedere se incontri elementi non coperti dalla griglia
+--- 
+
+## AI in ambito accademico: __Docenti__
+
+### Supporto alla __valutazione__ degli studenti
+
+- `L'esito di questo compito X ha dato questo risultato Y. Suggerisci un feedback costruttivo per lo studente basato su queste mie opinioni grezze: ...`
+    + Le opinioni grezze possono essere ad esempio:
+        - "La risposta è corretta ma manca di esempi pratici"
+        - "La spiegazione è chiara ma alcuni passaggi sono troppo sintetici"
+        - "L'argomento è ben coperto ma la struttura del testo è confusa in alcuni punti"
+
+- `La media dei voti di questo quiz è Z. Suggerisci materiale di approfondimento`
+    + Potresti consigliare risorse aggiuntive come articoli, video o esercizi pratici per aiutare gli studenti a comprendere meglio gli argomenti in cui hanno avuto difficoltà.
+  
+---
+
+## AI in ambito accademico: __Docenti__
+
+### Supporto alla __valutazione__ degli studenti
+
+- Domanda esempio: 
+<br/>
+<span style="color: grey; font-style: italic;">
+    "Nel Canto V dell’Inferno, Dante incontra Paolo e Francesca. Analizza come l’autore intreccia amore e colpa nella rappresentazione dei due personaggi, mettendo in evidenza gli strumenti poetici e retorici utilizzati per suscitare empatia nel lettore, e discuti in che modo questo episodio contribuisce alla visione dantesca della giustizia divina"
+</span>
+
+- Griglia di valutazione:
+
+| Tipo                    | Descrizione                                                                                   | Peso / Valore |
+| ----------------------- | --------------------------------------------------------------------------------------------- | ------------- |
+| **Informazioni attese** | Contestualizzazione del canto V                               | 2             |          
+|                         | Presentazione della pena dei lussuriosi (bufera infernale)                                    | 2             |
+|                         | Racconto di Paolo e Francesca: dinamica della vicenda                                         | 2             |
+|                         | Analisi dei temi amore/colpa/peccato ed empatia suscitata                                     | 3             |
+|                         | Collegamento alla visione della giustizia divina e al progetto etico-teologico di Dante       | 3             |
+| **Errori tipici**       | Riassunto meramente narrativo senza analisi                                                   | -2            |
+|                         | Confondere canto o collocazione nell’Inferno                                                  | -1            |
+| **Fattori bonus/malus** | Uso di citazioni testuali mirate (anche brevi)                                                | +2            |
+|                         | Argomentazione poco coerente o priva di struttura                                             | -2            |
+|                         | Approfondimento critico originale (es. riflessione sul rapporto tra eros e logos)             | +2            |
 
 ---
 
 ## AI in ambito accademico: __Docenti__
 
-- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+### Supporto alla __valutazione__ degli studenti
 
-### Caso 3: _Valutazione e feedback_
+- Risposta esempio _buona_ (voto 26/30):
+<br/>
+<span style="color: grey; font-style: italic;">
+    "Nel canto V Dante colloca i lussuriosi nel secondo cerchio, travolti dalla bufera che simboleggia la passione incontrollata. L’incontro con Paolo e Francesca, introdotto dal giudizio di Minosse, è narrato con forte pathos: Francesca parla per entrambi, presentando l’amore come forza inevitabile, alimentata dalla lettura (“Galeotto fu ’l libro”). Dante utilizza un registro lirico che suscita empatia, ma al tempo stesso mostra come la mancanza di responsabilità trasformi l’amore in colpa. Il canto esprime così la tensione tra pietà umana e giustizia divina."
+</span>
 
-- AI trova impiego anche nel _monitoraggio_ e _valutazione_ del progresso degli studenti, con suggerimenti personalizzati per migliorare l'apprendimento
-    + Analisi delle prestazioni degli studenti attraverso dati e metriche.
-    + Feedback personalizzato basato sulle risposte degli studenti nei quiz o compiti.
-    + Identificazione di aree di miglioramento
-    + Suggerimenti su risorse o strategie di studio personalizzate.
-  
+- Risposta esempio {{% color "red" %}} non accurata {{% /color %}} (voto 14/30):
+<br/>
+<span style="color: grey; font-style: italic;">
+    "Nel canto V Dante incontra Paolo e Francesca, uccisi dal marito di lei dopo essersi innamorati leggendo un libro. Dante si commuove e sviene. L’episodio è famoso perché parla di un amore romantico che colpisce ancora oggi."
+</span>
+
+> TODO Embed result somehow in the slide: https://chatgpt.com/share/e/68c941b1-3088-8004-acfa-21fa935fb69f
+
 ---
+
+## AI in ambito accademico: __Docenti__
+
+### Supporto alla __valutazione__ degli studenti
+
+---
+
+
 
 ## AI in ambito accademico: __Docenti__
 

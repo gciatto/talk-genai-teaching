@@ -42,6 +42,7 @@
         5. ri-proporziona il punteggio rispetto al peso della domanda nel quiz
     + Esempio:
         - Farei anche qui un esempio con la divina commedia, generando la griglia di valutazione + una risposta buona e una meno buona
+  
 * Supporto alla creazione di __feedback__ personalizzati
     + Come sopra ma senza specificare i punteggi
     + Oppure: data la domanda `DDD`, la risposta `RRR`, e la lista di mie opinioni grezze `OOO` formula un feedback costruttivo

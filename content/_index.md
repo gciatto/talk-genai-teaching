@@ -734,73 +734,167 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     + Refactoring di codice.
     + Trovare soluzioni alternative a problemi complessi.
     + Suggerimenti per migliorare l'efficacia di presentazioni o discorsi.
+
 ---
+
+{{< slide id="technologies" >}}
+
+# TBD carrellata di esempi su tecnologie
+
+---
+
 {{< slide id="challenges" >}}
 
-## Sfide e criticità dell'applicazione di GenAI all'educazione
+# Sfide e __criticità__ dell'applicazione di GenAI all'educazione
 
-- L'integrazione di AI generativa nell'educazione presenta enormi _opportunità_ sia per __studenti__ che __docenti__ 
-- Tuttavia è giusto considerare anche varie {{% color "red" %}}criticità{{% /color %}} che possono emergere nell'adozione delle varie soluzioni:
-  + Possibili __impatti negativi__ sull'apprendimento
-  + Questioni __etiche__ e di __privacy__
-  + Facilità di __abuso__ degli strumenti AI
-- Vi è un dibattito in corso su come bilanciare i vari benefici offerti dall'AI con le potenziali sfide etiche, pedagogiche e pratiche.
+---
 
-Si vuole __evitare__ che l'AI diventi un __ostacolo__ piuttosto che un __supporto__ all'apprendimento.
+## Sfide e __criticità__ dell'applicazione di GenAI all'educazione
+
+<!-- - L'integrazione di AI generativa nell'educazione presenta enormi _opportunità_ sia per __studenti__ che __docenti__  -->
+<!-- - Tuttavia è giusto considerare anche varie {{% color "red" %}}criticità{{% /color %}} che possono emergere nell'adozione delle varie soluzioni: -->
++ Possibili __impatti negativi__ sull'apprendimento
+    - es. mancato sviluppo di _competenze_, eccessiva _dipendenza_ dagli strumenti
++ Questioni __etiche__, __legali__ e di __privacy__
+    - es. è giusto usage GenAI per _correzioni_ e {{% color "red" %}}valutazioni{{% /color %}}?
+    - es. problemi legati al _diritto d'autore_ nell'uso di _materiali protetti_ come _input_
+    - es. _plagio_ accidentale o volontario
+    - es. data _leak_ di informazioni sensibili
++ Facilità di __abuso__ degli strumenti AI da parte di _studenti_
+    - es. _frode_ nello svolgimento di compiti, esami, etc.
+<!-- - Vi è un dibattito in corso su come bilanciare i vari benefici offerti dall'AI con le potenziali sfide etiche, pedagogiche e pratiche. -->
+
+<!-- Si vuole __evitare__ che l'AI diventi un __ostacolo__ piuttosto che un __supporto__ all'apprendimento. -->
   
 ---
 
-## Integrità Accademica e Preoccupazioni per la Frode
+## Potenziali abusi degli strumenti GenAI
 
-- Vi sono preoccupazioni sempre più diffuse riguardo l'utilizzo di strumenti AI nel {{% color "red" %}}compromettere valutazioni date agli studenti e nell'integrità accademica{{% /color %}}.
-- Non vi è un __controllo diretto__ su come gli studenti utilizzano questi strumenti, e ciò può portare a:
-  + {{% color "red" %}}Plagio{{% /color %}} o presentazione di lavoro non originale.
-  + {{% color "red" %}}Difficoltà {{% /color %}}nel valutare le competenze reali degli studenti.
-  + Erosione della fiducia tra studenti e docenti.
----
+<!-- - Vi sono preoccupazioni sempre più diffuse riguardo l'utilizzo di strumenti AI nel {{% color "red" %}}compromettere valutazioni date agli studenti e nell'integrità accademica{{% /color %}}. -->
+Un __controllo diretto__ su come gli studenti utilizzano GenAI è spesso {{% color "red" %}}impraticabile{{% /color %}}
++ è __possibile__ che gli studenti abusino degli strumenti generativi
++ è {{% color "red" %}}difficile{{% /color %}} _verificare_ le competenze _reali_ degli studenti
 
-## Integrità Accademica e Preoccupazioni per la Frode
+{{% fragment %}}
+
+### Al tempo stesso
+
++ È impratico {{% color "red" %}}vietare completamente{{% /color %}} l'uso di GenAI
++ È importante __educare__ all'uso _corretto_ e _responsabile_ degli strumenti AI
+
+{{% /fragment %}}
+
+<!-- ---
+
+## __Potenziali__ abusi degli strumenti GenAI
 
 - Questo ha comportato la __nascita__ di discussioni sull'effettivo utilizzo di AI in ambito accademico.
 - Alcuni sostengono l'uso dell' AI debba essere __rigorosamente limitato__ o __vietato__ in certi contesti educativi.
-- Altri, invece, vedono nell'AI un'_opportunità_ per migliorare l'apprendimento e l'insegnamento, a patto che venga utilizzata in maniera __responsabile__.
+- Altri, invece, vedono nell'AI un'_opportunità_ per migliorare l'apprendimento e l'insegnamento, a patto che venga utilizzata in maniera __responsabile__. -->
+
 ---
 
-## Integrità Accademica e Preoccupazioni per la Frode
+## __Prevenire__ abusi degli strumenti GenAI (pt. 1)
 
-- Una delle soluzioni proposte è l'adozione di __sistemi di rilevamento__ di contenuti generati da AI. Tuttavia, questi presentano varie limitazioni:
+<!-- - Una delle soluzioni proposte è l'adozione di __sistemi di rilevamento__ di contenuti generati da AI. Tuttavia, questi presentano varie limitazioni:
     + Non rilevano direttamente il "plagio" ma piuttosto identificano testi che "sembrano" generati da AI (_similarità_).
     + Sono {{% color "red" %}}limitati{{% /color %}} in ciò che possono rilevare (esempio il riscrivere un testo generato da AI con parole proprie).
     + Possono produrre {{% color "red" %}}falsi positivi{{% /color %}}, penalizzando ingiustamente studenti.
-    + Possono essere {{% color "red" %}}aggirati{{% /color %}} con tecniche semplici.
+    + Possono essere {{% color "red" %}}aggirati{{% /color %}} con tecniche semplici. -->
+
+### Strumenti di rilevamento automatico
+
+- ... della _similarità_ tra elaborati (per evitare che gli studenti si copino a vicenda)
+    + e.g., [Turnitin](https://www.turnitin.com/), <https://github.com/DanySK/code-plagiarism-detector>
+
+- ... del _plagio_ (per evitare che gli studenti copino da fonti esterne)
+    + e.g., [Compilatio](https://www.compilatio.net/it)
+
+- ... di _errori_ di grammatica e stile (per evitare che gli studenti presentino elaborati con errori banali)
+    + e.g., [Grammarly](https://www.grammarly.com/)
+
+- ... di _contenuti generati da AI_ (per evitare che gli studenti usino AI per generare i loro elaborati)
+    + e.g., [GPTZero](https://gptzero.me/), [OpenAI AI Text Classifier](https://platform.openai.com/ai-text-classifier)
+
+### Note
+
+- Hanno una funzione di __deterrenza__
+- Hanno __margine d'errore__, tanto maggiore quanto più _complessa_ la rilevazione
+    + es. rilevazione di testi generati da AI è {{% color "red" %}}molto imprecisa{{% /color %}}
+    + $\rightarrow$ dicono dove guardare, __non certificano__ problemi
 
 ---
 
-## Rischi per la Privacy dei Dati e la Sicurezza
+## __Prevenire__ abusi degli strumenti GenAI (pt. 2)
+
+### Strategie di verifica
+
+- Evitare compiti che possano essere __svolti__ in toto __con GenAI__
+    + es. risposte multiple, calcoli di cui si debba riportare solo il risultato, etc.
+
+- Considerare __modalità di verifica__ in cui l'impiego di GenAI è {{% color "red" %}}poco pratico{{% /color %}}
+    + es. esami _orali_, scritti su carta, etc.
+
+- Tenere la verifica in __ambienti controllati__ dove l'accesso alla rete sia {{% color "red" %}}limitato{{% /color %}}
+    + es. nei laboratori del DISI è prassi limitare i siti Web accessibili durante gli esami al solo [eol.unibo.it](https://eol.unibo.it)
+
+- _Progettare_ compiti che richiedano __competenze specifiche__ difficilmente replicabili con GenAI...
+    + es. analisi critica, riflessioni personali, applicazioni pratiche, etc.
+
+- ... da verificare con __modalità orali__ o __pratiche__
+    + es. discussioni, presentazioni, progetti, etc.
+
+---
+
+## Protezione dei dati e privacy
 
 - Dati caricati su piattaforme AI possono essere utilizzati per __addestrare modelli futuri__
-- Ciò può comportare {{% color "red" %}}rischi per la privacy{{% /color %}}, specialmente se i dati contengono informazioni __sensibili__ o __personali__.
-- Le istituzioni educative hanno __responsabilità__ che gli strumenti AI _aderiscano_ a normative sulla privacy e protezione dei dati (es. _GDPR_, _FERPA_, _COPPA_).
-- Le istituzioni devono decidere se __limitare__ gli strumenti popolari o __investire__ in soluzioni dedicate e conformi.
+- Ciò può comportare {{% color "red" %}}rischi per la protezione dei dati{{% /color %}}, specialmente se i dati contengono informazioni __sensibili__ o __personali__
+    + es. informazioni _anagrafiche_ sugli _studenti_ e le loro _prestazioni_ accademiche
+<!-- - Le istituzioni educative hanno __responsabilità__ che gli strumenti AI _aderiscano_ a normative sulla privacy e protezione dei dati (es. _GDPR_, _FERPA_, _COPPA_).
+- Le istituzioni devono decidere se __limitare__ gli strumenti popolari o __investire__ in soluzioni dedicate e conformi. -->
+
+{{% fragment %}}
+
+> Fondamentale essere consci del livello di protezione dei dati offerto dagli strumenti AI adottati.
+- in assenza di informazioni chiare, __meglio assumere il peggio__ e __limitare l'uso__ di tali strumenti
+    + idem in caso di _non-configurabilità_ delle impostazioni di privacy
+
+{{% /fragment %}}
 
 ---
 
 ## Problemi di Bias, Disinformazione e Accuratezza
 
-- I modelli AI possono {{% color "red" %}} riflettere e amplificare errori{{% /color %}} presenti nei dati di addestramento.
+<!-- - I modelli AI possono {{% color "red" %}} riflettere e amplificare errori{{% /color %}} presenti nei dati di addestramento.
 - Ciò può portare a {{% color "red" %}}disinformazione{{% /color %}} o {{% color "red" %}} rappresentazioni distorte{{% /color %}} di argomenti.
 - Gli studenti potrebbero {{% color "red" %}}accettare informazioni errate{{% /color %}} come verità, {{% color "red" %}}compromettendo{{% /color %}} la qualità dell'apprendimento.
-- Risulta __fondamentale__ _accrescere una capacità di utilizzo responsabile e critica_ degli strumenti AI.
+- Risulta __fondamentale__ _accrescere una capacità di utilizzo responsabile e critica_ degli strumenti AI. -->
 
----
+- GenAI può generare informazioni incomplete, imprecise, __sbagliate__, o incoerenti
 
-## Problemi di Bias, Disinformazione e Accuratezza
+- Occorre rivedere sempre il materiale generato, sia lato docenti che lato studenti
+
+- Per mitigare l'<u>imprecisione</u>, è utile _fornire_ __contesto__ e __dettagli__ nei prompt, e allegare __fonti__ di riferimento
+    + contesto $\approx$ chi sei, cosa stai facendo
+    + dettagli $\approx$ cosa ti serve, come lo vuoi
+    + fonti $\approx$ materiale di riferimento, esempi
+
+- Per mitigare l'<u>incompletezza</u>, è utile:
+    1. sfruttare la generazione _poco alla volta_, __gerarchicamente__, e ricorsivamente 
+        + es. prima i capitoli, poi le sezioni di ogni capitolo, poi i paragrafi di ogni sezione, etc.
+    2. chiedere __esplicitamente__ di includere certi aspetti
+        + es. fornendo una scaletta di cose da includere, esempi, etc.
+
+<!-- --- -->
+
+<!-- ## Problemi di Bias, Disinformazione e Accuratezza
 
 
 - Studenti e docenti devono essere _consapevoli_ dei limiti e potenziali errori degli strumenti AI.
 - È importante _insegnare_ a _valutare criticamente_ le informazioni generate da AI e a verificare le fonti ed eventuali bias.
 - Gli educatori devono __progettare__ compiti che richiedano un'_analisi critica_ degli output dell'IA, promuovendo competenze che vanno oltre la semplice ricerca di informazioni. 
-- IA da strumento che fornisce risposte a strumento che _supporta il pensiero critico_ e la _risoluzione di problemi_.
+- IA da strumento che fornisce risposte a strumento che _supporta il pensiero critico_ e la _risoluzione di problemi_. -->
   
 ---
 
@@ -835,6 +929,5 @@ Si vuole __evitare__ che l'AI diventi un __ostacolo__ piuttosto che un __support
 - È stato suggerito che un modulo o un corso dedicato ai __chatbot IA__ dovrebbe diventare una componente __obbligatoria__ dei corsi di laurea per garantire che gli studenti siano _informati sull'uso di tali strumenti_.
 
 ---
-
 
 ![The end](./end.webp)

@@ -9,11 +9,14 @@ import fitty from 'fitty';
  */
 export default class SlideContent {
 
+	allowedToPlay = true;
+
 	constructor( Reveal ) {
 
 		this.Reveal = Reveal;
 
 		this.startEmbeddedIframe = this.startEmbeddedIframe.bind( this );
+		this.preventIframeAutoFocus = this.preventIframeAutoFocus.bind( this );
 		this.ensureMobileMediaPlaying = this.ensureMobileMediaPlaying.bind( this );
 
 	}
@@ -60,12 +63,17 @@ export default class SlideContent {
 			slide.style.display = displayValue;
 		}
 
-		// Media elements with data-src attributes
+		// Media and iframe elements with data-src attributes
 		queryAll( slide, 'img[data-src], video[data-src], audio[data-src], iframe[data-src]' ).forEach( element => {
-			if( element.tagName !== 'IFRAME' || this.shouldPreload( element ) ) {
+			const isIframe = element.tagName === 'IFRAME';
+			if( !isIframe || this.shouldPreload( element ) ) {
 				element.setAttribute( 'src', element.getAttribute( 'data-src' ) );
 				element.setAttribute( 'data-lazy-loaded', '' );
 				element.removeAttribute( 'data-src' );
+
+				if( isIframe ) {
+					element.addEventListener( 'load', this.preventIframeAutoFocus );
+				}
 			}
 		} );
 
@@ -332,7 +340,11 @@ export default class SlideContent {
 						// If autoplay does not work, ensure that the controls are visible so
 						// that the viewer can start the media on their own
 						if( promise && typeof promise.catch === 'function' && el.controls === false ) {
-							promise.catch( () => {
+							promise
+							.then( () => {
+								this.allowedToPlay = true;
+							})
+							.catch( () => {
 								el.controls = true;
 
 								// Once the video does start playing, hide the controls again
@@ -432,7 +444,19 @@ export default class SlideContent {
 			// Don't restart if media is already playing
 			if( event.target.paused || event.target.ended ) {
 				event.target.currentTime = 0;
-				event.target.play();
+				const promise = event.target.play();
+
+				if( promise && typeof promise.catch === 'function' ) {
+					promise
+						.then( () => {
+							this.allowedToPlay = true;
+						} )
+						.catch( ( error ) => {
+							if( error.name === 'NotAllowedError' ) {
+								this.allowedToPlay = false;
+							}
+						} );
+				}
 			}
 		}
 
@@ -449,6 +473,8 @@ export default class SlideContent {
 	startEmbeddedIframe( event ) {
 
 		let iframe = event.target;
+
+		this.preventIframeAutoFocus( event );
 
 		if( iframe && iframe.contentWindow ) {
 
@@ -514,6 +540,7 @@ export default class SlideContent {
 			// Generic postMessage API for non-lazy loaded iframes
 			queryAll( element, 'iframe' ).forEach( el => {
 				if( el.contentWindow ) el.contentWindow.postMessage( 'slide:stop', '*' );
+				el.removeEventListener( 'load', this.preventIframeAutoFocus );
 				el.removeEventListener( 'load', this.startEmbeddedIframe );
 			});
 
@@ -540,6 +567,48 @@ export default class SlideContent {
 					el.removeAttribute( 'src' );
 				} );
 			}
+		}
+
+	}
+
+	/**
+	 * Checks whether media playback is blocked by the browser. This
+	 * typically happens when media playback is initiated without a
+	 * direct user interaction.
+	 */
+	isNotAllowedToPlay() {
+
+		return !this.allowedToPlay;
+
+	}
+
+	/**
+	 * Prevents iframes from automatically focusing themselves.
+	 *
+	 * @param {Event} event
+	 */
+	preventIframeAutoFocus( event ) {
+
+		const iframe = event.target;
+
+		console.log(111)
+
+		if( iframe && this.Reveal.getConfig().preventIframeAutoFocus ) {
+
+			let elapsed = 0;
+			const interval = 100;
+			const maxTime = 1000;
+			const checkFocus = () => {
+				if( document.activeElement === iframe ) {
+					document.activeElement.blur();
+				} else if( elapsed < maxTime ) {
+					elapsed += interval;
+					setTimeout( checkFocus, interval );
+				}
+			};
+
+			setTimeout( checkFocus, interval );
+
 		}
 
 	}

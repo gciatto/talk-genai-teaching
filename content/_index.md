@@ -649,16 +649,6 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ## AI in ambito accademico: __Docenti__
 
-### Supporto alla __valutazione__ degli studenti
-
----
-
-
-
-## AI in ambito accademico: __Docenti__
-
-- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
-
 ### Caso 4: _Supporto attività amministrative_
 
 - L'efficacia nell'automatizzazione di compiti ripetitivi rende AI uno strumento utile per la gestione di varie attività amministrative
@@ -670,7 +660,54 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ## AI in ambito accademico: __Docenti__
 
-- I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+### Caso 4: _Supporto attività amministrative_
+- `Genera una email per informare gli studenti del corso X che la lezione di domani è spostata a data Y`
+
+- `Genera una lettera di benvenuto per i nuovi studenti iscritti al corso X`    
+    + includendo informazioni su:
+        * struttura del corso
+        * modalità di valutazione
+        * risorse disponibili
+        * contatti utili
+
+- `Crea una lettera di raccomandazione per lo studente Y basata su queste informazioni: ...`
+    + informazioni sullo studente (es. voti, progetti, etc...)
+    + informazioni sul destinatario (es. università, azienda, etc...)
+  
+- `Data questo questionario di feedback degli studenti, genera un report sintetico con i punti chiave e suggerimenti per migliorare il corso X`
+    + \[allegando il questionario]
+
+---
+
+## AI in ambito accademico: __Docenti__
+
+### Caso 4: _Supporto attività amministrative_
+
+- Immaginiamo di voler inviare una email di benvenuto agli studenti iscritti al corso:
+  
+- `Generami una lettera sintetica di benvenuto agli studenti del mio corso sull'opera "La divina commedia" di Dante Alighieri. Il corso tratterà del background di Dante e inquadrerà gli aspetti essenziali dei vari canti.`
+  + Descrizione del corso: `Il corso tratterà del background di Dante e inquadrerà gli aspetti essenziali dei vari gironi.`
+  + Descrizione modalità esame: `L'esame è costituito da una parte scritta più una parte orale (l'ultima accessibile solamente superando quella scritta).`
+  + Descrizione risorse: `Le lezioni saranno basate su slide e dispense, con materiale di approfondimento consigliato.`
+  + Orario lezioni: 
+    * Lunedì 9:00 - 11:00
+    * Mercoledì 14:00 - 16:00
+    * Giovedì 10:00 - 12:00
+  + Eventuali contatti: `ugo.rossi@unibo.it`
+
+---
+
+## AI in ambito accademico: __Docenti__
+
+### Caso 4: _Supporto attività amministrative_
+
+- Risultato generato:
+
+> TODO Here report a screenshot from ChatGPT
+
+---
+
+## AI in ambito accademico: __Docenti__
 
 ### Caso 5: _Creazione di tutor AI personalizzati_
 
@@ -681,10 +718,32 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
   
 ---
 
+## AI in ambito accademico: __Docenti__
+
+### Caso 5: _Creazione di tutor AI personalizzati_
+
+- Esistono varie piattaforme che permettono di creare facilmente dei bot personalizzati basati su modelli di linguaggio. 
+- In questo esempio vediamo come sia possibile crearne uno utilizzando [SchoolAI](https://schoolai.com/).
+  + Si crea uno "spazio di lavoro", inserendo il nome del corso e una breve descrizione.
+  + Si caricano i materiali di riferimento (dispense, slide, link a pagine web, etc...).
+  + Eventualmente vengono fornite altre informazioni utili (copertina del corso, tonality, etc...).
+- Una volta creato lo spazio di lavoro, si può iniziare a chattare con il bot, che risponderà in base al materiale caricato.
+
+<div style="display:flex; gap:30px; justify-content:center; align-items:flex-start;">
+  <figure style="text-align:center;">
+    {{< image src="./schoolai/setup.png" max-h="40vh" alt="SchoolAI Setup" >}}
+    <figcaption><p style="font-size: 24px; font-style: italic;">Setup dello spazio di lavoro</p></figcaption>
+  </figure>
+
+  <figure style="text-align:center;">
+    {{< image src="./schoolai/chat.png" max-h="40vh" alt="SchoolAI Chat" >}}
+    <figcaption><p style="font-size: 24px; font-style: italic;">Chat con il tutor AI</p></figcaption>
+  </figure>
+</div>
+
+---
+
 ## AI in ambito accademico: __Studenti__
-
-- Gli __Studenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
-
 
 ### Caso 1: _Produzione di contenuti_
 - Gli studenti possono utilizzare AI per la generazione di vari contenuti:
@@ -693,39 +752,159 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     + Creazione di presentazioni per progetti accademici.
 
 ---
+## AI in ambito accademico: __Studenti__
+
+### Caso 1: _Produzione di contenuti_
+- `Data il documento caricato, trova errori, incongruenze, punti di attacco e suggerimenti per migliorarlo`
+    + \[allegando la bozza]
+
+- `Integra insieme questi due appunti di lezione in un unico documento coerente e ben strutturato`
+    + \[allegando i due appunti]
+    + opzionalmente: `Evidenzia le parti ridondanti o contraddittorie`
+    + opzionalmente: `Aggiungi un sommario all'inizio`
+  
+- `Data questa scaletta, generami una bozza per questo capitolo di tesi`
+    + Si possono integrare eventuali riferimenti bibliografici
+    + Si può anche chiedere di mantenere uno stile specifico (formale, informale, tecnico, etc...)
+
+---
 
 ## AI in ambito accademico: __Studenti__
 
-- Gli __Studenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+### Caso 1: _Produzione di contenuti_
 
+- `Generazione parafrasi canto V della Divina Commedia`
+  
+- Risposta generata:
+<span style="color: grey; font-style: italic;">
+"Dante e Virgilio scendono nel secondo cerchio dell’Inferno, dove le anime sono giudicate da Minosse, che assegna a ciascuna la pena. Qui sono puniti i lussuriosi, trascinati per sempre da una bufera infernale che simboleggia la passione incontrollata che li travolse in vita. Dante vede tra loro celebri figure come Semiramide, Didone, Cleopatra, Elena, Achille, Paride e Tristano. In particolare, il poeta si sofferma su due anime che volano insieme: Paolo e Francesca da Rimini. Francesca racconta che l’amore tra loro nacque leggendo la storia di Lancillotto e Ginevra, e che, al punto in cui i protagonisti si baciarono, anche Paolo la baciò: fu l’inizio della loro condanna. La vicenda tocca profondamente Dante, che, preso dalla pietà, sviene."
+</span>
+
+---
+
+## AI in ambito accademico: __Studenti__
+
+### Caso 1: _Produzione di contenuti_
+
+- La produzione di contenuti permette di avere una base di partenza su cui lavorare.
+
+- Nella produzione di contenuti con AI è importante:
+    + Fornire un occhio di riguardo ad aspetti relativi a {{% color "red" %}}diritti d'autore{{% /color %}} e {{% color "red" %}}plagio{{% /color %}}.
+    + __Verificare__ sempre l'_accuratezza_ e la _correttezza_ delle informazioni generate.
+
+- Spesso si usa come approccio per _superare_ un eventuale blocco creativo.
+  + Si __genera__ una bozza, poi la si _rielabora_ e _migliora_.
+
+- È importante __specificare__ chiaramente il contesto e gli obiettivi nel prompt.
+  + Più il prompt è dettagliato, più è probabile che il risultato sia pertinente.
+---
+
+## AI in ambito accademico: __Studenti__
 
 ### Caso 2: _Comprensione_
 - Diverse soluzioni AI sono in grado di aiutare gli studenti nello studio:
-    + Spiegazioni semplificate di concetti complessi.
-    + Risposte a domande specifiche su argomenti di studio.
-    + Suggerimenti per ulteriori letture o risorse di apprendimento.
-    + Esempi pratici per illustrare concetti teorici (codice, esercizi matematici, etc...).
+    + __Spiegazioni__ _semplificate_ di concetti complessi.
+    + __Risposte__ a domande _specifiche_ su argomenti di studio.
+    + __Suggerimenti__ per ulteriori _letture_ o _risorse di apprendimento_.
+    + __Esempi__ pratici per _illustrare_ concetti teorici (codice, esercizi matematici, etc...).
+
+---
+
+## AI in ambito accademico: __Studenti__
+
+### Caso 2: _Comprensione_
+- `Spiegami in termini semplici il concetto di X`
+    + \[inserendo il concetto X]
+
+- `Nel seguente documento cosa si intender per A?`
+    + \[allegando il documento]
+    + opzionalmente: `Spiegami con un esempio pratico`
+  
+- `Quali sono le differenze principali tra i concetti A e B?`
+    + Specifica sempre un _contesto_ per i concetti A e B.
+    + Ad esempio, "In ambito matematico, quali sono le differenze tra funzione e relazione?"
   
 ---
 
 ## AI in ambito accademico: __Studenti__
 
-- Gli __Studenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+### Caso 2: _Comprensione_
+- `All'interno del canto V della Divina Commedia, cosa rappresenta la bufera infernale?`
+- Risposta generata:
+<span style="color: grey; font-style: italic;">
+    "La bufera infernale simboleggia la passione amorosa incontrollata dei lussuriosi, che in vita li trascinò senza misura e che ora li tormenta eternamente nel contrappasso."
+</span>
 
-### Caso 3: _Arricchimento materiale prodotto_
-
-- AI può aiutare a migliorare qualitativamente del materiale prodotto dagli studenti:
-    + Correzione grammaticale e stilistica di testi.
-    + Parafrasi o riformulazione di contenuti per maggiore chiarezza.
-    + Suggerimenti per migliorare la struttura o l'organizzazione del materiale.
-    + Strutturazione di codice per progetti di programmazione.
-    + Generazione di grafici o diagrammi per visualizzare dati o concetti.
+{{< image src="./student/bufera-infernale-chatgpt.png" max-h="50vh" alt="Risposta di chat gpt sulla bufera infernale" >}}
 
 ---
 
 ## AI in ambito accademico: __Studenti__
 
-- Gli __Studenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.
+### Caso 3: _Arricchimento materiale prodotto_
+
+- AI può aiutare a _migliorare_ qualitativamente del materiale prodotto dagli studenti:
+    + __Correzione__ grammaticale e stilistica di testi.
+    + __Parafrasi__ o __riformulazione__ di contenuti per maggiore chiarezza.
+    + __Suggerimenti__ per migliorare la struttura o l'organizzazione del materiale.
+    + __Strutturazione__ di codice per progetti di programmazione.
+    + __Generazione__ di grafici o diagrammi per visualizzare dati o concetti.
+
+---
+
+## AI in ambito accademico: __Studenti__
+
+### Caso 3: _Arricchimento materiale prodotto_
+
+- `Sbobina questa traccia audio`
+    + \[allegando la traccia audio]
+
+- `Traduci questo testo in X`
+    + \[allegando il testo].
+    + \[specificando la lingua X].
+    + opzionalmente è possibile anche chiedere una traduzione con un certo stile (formale, informale, tecnico, etc...).
+
+- `Fai il riassunto di questo video [fornire file]`
+  + \[allegando il video]
+
+---
+
+## AI in ambito accademico: __Studenti__
+
+### Caso 3: _Arricchimento materiale prodotto_
+
+- `Traduci questo testo in inglese, mantieni un tono discorsivo e formale`
+<br/>
+<span style="color: grey; font-style: italic;">
+"La Divina Commedia non è una semplice opera letteraria, racchiude al suo interno tutto ciò che riguarda le scienze umane. Viaggiando con Dante attraverso l'oltretomba, il lettore conosce lentamente i fatti storici degli anni in cui il poema fu scritto, le travagliate vicissitudini politiche, il pensiero filosofico e teologico ed anche i cruenti fatti di sangue."
+</span>
+
+- Traduzione generata: 
+<span style="color: grey; font-style: italic;">
+"The Divine Comedy is not merely a literary work; it encompasses within itself the entirety of the human sciences. By journeying with Dante through the afterlife, the reader gradually comes to know the historical events of the years in which the poem was written, the turbulent political struggles, the philosophical and theological thought, as well as the violent and bloody occurrences of the time."
+</span>
+
+{{< image src="./student/divine-commedy-comment-traduction.png" max-h="50vh" alt="Traduzione commento sulla divina commedia" >}}
+
+---
+
+## AI in ambito accademico: __Studenti__
+
+### Caso 3: _Arricchimento materiale prodotto_
+
+- Nel caso della sbobinatura, è sempre importante controllare l'accuratezza del testo che viene generato.
+  + Spesso vengono commessi errori di trascrizione, specialmente con nomi propri o termini tecnici.
+  + È sempre bene _rileggere_ e _correggere_ il testo sbobinato.
+
+- Nel caso della traduzione, è importante considerare il contesto e il pubblico a cui è destinato il testo tradotto.
+  + È consigliabile fornire indicazioni chiare sullo stile e sul tono desiderati.
+  + Anche in questo caso, è sempre bene rileggere e correggere la traduzione generata.
+
+- Come per la produzione di contenuti, anche in questo caso, è fondamentale verificare che non vi siano {{% color "red" %}}problemi di plagio o diritti d'autore{{% /color %}}.
+
+---
+
+## AI in ambito accademico: __Studenti__
 
 ### Caso 4: _Brainstorming_
 
@@ -734,6 +913,46 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     + Refactoring di codice.
     + Trovare soluzioni alternative a problemi complessi.
     + Suggerimenti per migliorare l'efficacia di presentazioni o discorsi.
+
+---
+
+## AI in ambito accademico: __Studenti__
+
+### Caso 4: _Brainstorming_
+
+- `Quali sono i punti chiave di queste slide/appunti/capitolo?`
+    + \[allegando il materiale]
+  
+- `Fornisci un elenco di domande aperte su questo argomento`
+    + \[specificando l'argomento]
+  
+- `Suggerisci idee per un progetto di ricerca su X`
+    + \[specificando l'argomento X]
+    + opzionalmente: `Concentrati su approcci innovativi o interdisciplinari`
+
+- `Data questa tesi/articolo, suggerisci 5 idee per estenderla`
+    + \[allegando la tesi/articolo]
+
+---
+
+
+## AI in ambito accademico: __Studenti__
+
+### Caso 4: _Brainstorming_
+
+- `Quali sono gli eventi del canto V della Divina Commedia?`
+<br/>
+{{< image src="./student/divine-commedy-event.png" max-h="50vh" alt="Eventi canto 5 divina commedia chiesto a ChatGPT" >}}
+
+---
+
+## AI in ambito accademico: __Studenti__
+
+### Caso 4: _Brainstorming_
+
+- Anche in questo caso, è necessario verificare l'accuratezza delle fonti quando si fanno ricerche.
+
+
 
 ---
 

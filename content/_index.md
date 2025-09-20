@@ -440,14 +440,14 @@ GenAI utile per _delineare_ i vari aspetti di un __percorso didattico__, tra cui
 
 ### __Progettazione__ di _contenuti didattici_ (Pattern di prompt utili)
 
-- `Progetta il sillabo per un corso su X`
+- <u>`Progetta`</u>` il sillabo per un corso su X`
     - assume che `X` sia un argomento ben definito
 
-- `Suggerisci una diversa struttura per questa dispensa affinché sia più incrementale` 
+- <u>`Suggerisci`</u>` una diversa struttura per questa dispensa affinché sia più incrementale` 
     - \[allegando la dispensa]
     - approccio incrementale spesso più efficace
 
-- `Struttura una presentazione per una lezione su questo capitolo del libro X`
+- <u>`Struttura`</u>` una presentazione per una lezione su questo capitolo del libro X`
     - \[allegando il capitolo/libro]
 
 ---
@@ -566,7 +566,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ### Supporto alla __valutazione__ degli studenti
 
-- `Valuta la risposta X data alla domanda Y secondo questi criteri di valutazione: ...`
+- <u>`Valuta`</u> `la risposta X data alla domanda Y secondo questi criteri di valutazione: ...`
     | Tipo                   | Descrizione        | Peso / Valore |
     |------------------------|--------------------|---------------|
     | **Informazioni attese**| informazione 1     | p1            |
@@ -580,22 +580,22 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     |                        | fattore K (malus)  | -bK           |
 
    
-- `Data la risposta A calcola il punteggio totale e fornisci un feedback costruttivo`
-    + La scala di valutazione va da 0 a 30, eventuali mezzi punti sono arrotondati per difetto
-    + interrompi il ragionamento e chiedimi come procedere se incontri elementi non coperti dalla griglia
+- `Data la risposta A ` <u>`calcola`</u> ` il punteggio totale e fornisci un feedback costruttivo`
+    + Possibile anche definire la __scala di valutazione__ (e.g., 0-30, A-F, etc.)
+    + Il feedback può includere suggerimenti su come _migliorare_, _punti di forza_ della risposta, e _aree che necessitano di ulteriore approfondimento_.
 --- 
 
 ## AI in ambito accademico: __Docenti__
 
 ### Supporto alla __valutazione__ degli studenti
 
-- `L'esito di questo compito X ha dato questo risultato Y. Suggerisci un feedback costruttivo per lo studente basato su queste mie opinioni grezze: ...`
+- `L'esito di questo compito X ha dato questo risultato Y.` <u>`Suggerisci`</u> ` un feedback costruttivo per lo studente basato su queste mie opinioni grezze: ...`
     + Le opinioni grezze possono essere ad esempio:
         - "La risposta è corretta ma manca di esempi pratici"
         - "La spiegazione è chiara ma alcuni passaggi sono troppo sintetici"
         - "L'argomento è ben coperto ma la struttura del testo è confusa in alcuni punti"
 
-- `La media dei voti di questo quiz è Z. Suggerisci materiale di approfondimento`
+- `La media dei voti di questo quiz è Z.` <u>`Suggerisci`</u> ` materiale di approfondimento`
     + Potresti consigliare risorse aggiuntive come articoli, video o esercizi pratici per aiutare gli studenti a comprendere meglio gli argomenti in cui hanno avuto difficoltà.
   
 ---
@@ -643,7 +643,8 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     "Nel canto V Dante incontra Paolo e Francesca, uccisi dal marito di lei dopo essersi innamorati leggendo un libro. Dante si commuove e sviene. L’episodio è famoso perché parla di un amore romantico che colpisce ancora oggi."
 </span>
 
-> TODO Embed result somehow in the slide: https://chatgpt.com/share/e/68c941b1-3088-8004-acfa-21fa935fb69f
+{{< image src="./teaching/divine-comedy-eval.png" max-h="50vh" alt="Correzione risposte tramite ChatGPT" >}}
+
 
 ---
 
@@ -661,20 +662,20 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 ## AI in ambito accademico: __Docenti__
 
 ### Caso 4: _Supporto attività amministrative_
-- `Genera una email per informare gli studenti del corso X che la lezione di domani è spostata a data Y`
+- <u>`Genera`</u> ` una email per informare gli studenti del corso X che la lezione di domani è spostata a data Y`
 
-- `Genera una lettera di benvenuto per i nuovi studenti iscritti al corso X`    
+- <u>`Genera`</u> ` una lettera di benvenuto per i nuovi studenti iscritti al corso X`
     + includendo informazioni su:
         * struttura del corso
         * modalità di valutazione
         * risorse disponibili
         * contatti utili
 
-- `Crea una lettera di raccomandazione per lo studente Y basata su queste informazioni: ...`
+- <u>`Crea`</u> ` una lettera di raccomandazione per lo studente Y basata su queste informazioni: ...`
     + informazioni sullo studente (es. voti, progetti, etc...)
     + informazioni sul destinatario (es. università, azienda, etc...)
-  
-- `Data questo questionario di feedback degli studenti, genera un report sintetico con i punti chiave e suggerimenti per migliorare il corso X`
+
+- `Dato questo questionario di feedback degli studenti,` <u>`genera`</u> ` un report sintetico con i punti chiave e suggerimenti per migliorare il corso X`
     + \[allegando il questionario]
 
 ---
@@ -701,9 +702,8 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ### Caso 4: _Supporto attività amministrative_
 
-- Risultato generato:
-
-> TODO Here report a screenshot from ChatGPT
+### Risultato generato:
+{{< image src="./teaching/welcome-letter-chatgpt.png" max-h="80vh" alt="Welcome letter written with ChatGPT" >}}
 
 ---
 
@@ -711,10 +711,10 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ### Caso 5: _Creazione di tutor AI personalizzati_
 
-- È possibile creare tutor AI personalizzati per assistere gli studenti al di fuori delle ore di lezione in grado di:
-    + Rispondere a domande frequenti sugli argomenti del corso.
-    + Fornire spiegazioni aggiuntive su concetti complessi.
-    + Fornire supporto personalizzato in base alle esigenze individuali degli studenti.
+- È possibile __creare__ tutor AI personalizzati per _assistere_ gli studenti al di fuori delle ore di lezione in grado di:
+    + __Rispondere__ a domande _frequenti_ sugli argomenti del corso.
+    + __Fornire spiegazioni__ aggiuntive su _concetti complessi_.
+    + __Fornire supporto__ personalizzato in base alle _esigenze_ individuali degli studenti.
   
 ---
 
@@ -722,12 +722,12 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ### Caso 5: _Creazione di tutor AI personalizzati_
 
-- Esistono varie piattaforme che permettono di creare facilmente dei bot personalizzati basati su modelli di linguaggio. 
+- Esistono varie _piattaforme_ che permettono di _creare facilmente_ dei bot personalizzati basati su modelli di linguaggio. 
 - In questo esempio vediamo come sia possibile crearne uno utilizzando [SchoolAI](https://schoolai.com/).
-  + Si crea uno "spazio di lavoro", inserendo il nome del corso e una breve descrizione.
-  + Si caricano i materiali di riferimento (dispense, slide, link a pagine web, etc...).
-  + Eventualmente vengono fornite altre informazioni utili (copertina del corso, tonality, etc...).
-- Una volta creato lo spazio di lavoro, si può iniziare a chattare con il bot, che risponderà in base al materiale caricato.
+  + Si crea uno __"spazio di lavoro"__, inserendo il nome del corso e una breve descrizione.
+  + Si __caricano__ i materiali di riferimento (dispense, slide, link a pagine web, etc...).
+  + Eventualmente vengono fornite altre _informazioni utili_ (copertina del corso, tonality, etc...).
+- Una volta creato lo spazio di lavoro, si può _iniziare a chattare_ con il bot, che risponderà in base al materiale caricato.
 
 <div style="display:flex; gap:30px; justify-content:center; align-items:flex-start;">
   <figure style="text-align:center;">
@@ -746,19 +746,19 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 ## AI in ambito accademico: __Studenti__
 
 ### Caso 1: _Produzione di contenuti_
-- Gli studenti possono utilizzare AI per la generazione di vari contenuti:
-    + Creazione di appunti di studio sintetici e organizzati.
-    + Generazione di bozze per progetti o relazioni.
-    + Creazione di presentazioni per progetti accademici.
+- Gli studenti possono utilizzare AI per la _generazione_ di vari contenuti:
+    + __Creazione__ di appunti di studio _sintetici_ e _organizzati_.
+    + __Generazione__ di bozze per _progetti_ o _relazioni_.
+    + __Creazione__ di presentazioni per _progetti accademici_.
 
 ---
 ## AI in ambito accademico: __Studenti__
 
 ### Caso 1: _Produzione di contenuti_
-- `Data il documento caricato, trova errori, incongruenze, punti di attacco e suggerimenti per migliorarlo`
+- `Dato il documento caricato,` <u>`trova errori `</u> `,` <u>`incongruenze `</u> `,` <u>`punti di attacco `</u> `e` <u>`suggerimenti `</u> `per migliorarlo`
     + \[allegando la bozza]
 
-- `Integra insieme questi due appunti di lezione in un unico documento coerente e ben strutturato`
+- <u>`Integra`</u>` insieme questi due appunti di lezione in un unico documento coerente e ben strutturato`
     + \[allegando i due appunti]
     + opzionalmente: `Evidenzia le parti ridondanti o contraddittorie`
     + opzionalmente: `Aggiungi un sommario all'inizio`
@@ -946,21 +946,95 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ---
 
-## AI in ambito accademico: __Studenti__
-
-### Caso 4: _Brainstorming_
-
-- Anche in questo caso, è necessario verificare l'accuratezza delle fonti quando si fanno ricerche.
-
-
-
----
-
 {{< slide id="technologies" >}}
 
-# TBD carrellata di esempi su tecnologie
+# Esempi di __tecnologie__ GenAI
 
 ---
+
+## Esempi di __tecnologie__ GenAI
+
+- __Esistono__ vari _strumenti_ basati su AI generativa che possono _assistere_ studenti e docenti in vari modi.
+- Facciamo una breve panormica di alcune delle soluzioni più _comuni_ e _interessanti_.
+- Alcuni di questi forniti con una modalità __gratuita__ mentre altri richiedono un __abbonamento__ o __pagamento__ per funzionalità avanzate.
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Chat Testuali_
+- [ChatGPT](https://chat.openai.com/) - Piattaforma utilizzata per la generazione di contenuti in base alle richieste degli utenti.
+  + Supporta conversazioni contestuali e risposte personalizzate.
+  + Utilizzata per vari scopi in ambito educativo come spiegazioni, generazione di appunti, risoluzione di esercizi, etc.
+- [Claude](https://www.anthropic.com/index/claude-2) - Elabora grandi quantità di informazioni.
+  + Elabora una grande quantità di informazioni e contenuti.
+  + In grado di generare idee, produrre testi e codice.
+- [Microsoft Copilot](https://bard.google.com/) - Strumento LLM di Microsoft
+  + Integrato in vari prodotti Microsoft come Word, Excel, PowerPoint, etc.
+  + Aiuta a generare contenuti, analizzare dati e automatizzare compiti ripetitivi.
+  + Per l'educazione è usato per snellire la pianificazione delle lezioni, le valutazioni del lavoro e la creazione di materiali didattici.
+- [Gemini](https://gemini.google.com/?hl=it) - Modello di linguaggio Google:
+  + Eccelle in compiti che richiedono analisi dei dati in tempo reale e elaborazione multimodale.
+  + Come per le altre alternative, è usato per generare contenuti, rispondere a domande e assistere in vari task.
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Assistenti per la scrittura_
+- [Grammarly](https://www.grammarly.com/) - Assistente di scrittura AI:
+  + Aiuta a migliorare la grammatica, lo stile e la chiarezza dei testi.
+  + Utile per studenti e docenti per la revisione di saggi, email e altri documenti.
+- [QuillBot](https://quillbot.com/) - Strumento di parafrasi:
+  + Permette di riformulare testi mantenendo il significato originale.
+  + Utile per evitare il plagio e migliorare la qualità della scrittura.
+- [DeepL](https://www.deepl.com/) - Traduttore e assistente di scrittura:
+  + Offre traduzioni di alta qualità e suggerimenti per migliorare la scrittura.
+  + Utile per studenti e docenti che lavorano con testi in diverse lingue.
+  
+---
+
+## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
+
+- [TeachMeAI](https://teachmeai.com/) - Piattaforma educativa AI:
+  + Offre strumenti per creare lezioni interattive e personalizzate.
+  + Dispone di una vasta libreria di strumenti per:
+    * Creare risorse didattiche
+    * Supporti educativi speciali (BES)
+    * Compiti amministrativi
+- [Eduaide AI](https://www.eduaide.ai/) - Fornisce una serie di strumenti basati su AI per docenti e studenti
+  + Semplifica la pianificazione delle lezioni.
+  + Valuta grado padronanza degli studenti.
+  + Crea materiali didattici personalizzati.
+
+- [Diffit](https://web.diffit.me/) - Piattaforma per creare risorse educative fatte su misura
+  + In base alle esigenze specifiche degli studenti.
+  + Crea riassunti, quiz, etc.
+
+- [SchoolAI](https://schoolai.com/) - Presenta diversi strumenti AI per insegnanti e studenti.
+    + Possibile creare tutor AI personalizzati basati su materiali di corso specifici.
+    + Presente uno strumento chiamato "Dot" per guidare gli studenti attraverso il processo di apprendimento.
+       * In base al loro stile di apprendimento e alle loro esigenze.
+    + Strumenti appositi per monitorare i progressi degli studenti e adattare le lezioni di conseguenza.
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Valutazione e Feedback_
+
+- [Turnitin](https://www.turnitin.com/) - Strumento di rilevamento del plagio:
+  + Utilizzato per verificare l'originalità dei lavori degli studenti.
+  + Aiuta a mantenere l'integrità accademica.
+
+- [EssayGrader](https://essaygrader.ai/) - Strumento di valutazione automatica:
+  + Fornisce feedback immediato sui saggi degli studenti.
+  + Valuta aspetti come grammatica, coerenza e struttura.
+  + Ha integrazione con piattaforme LMS come Canvas e Google Classroom.
+
+- [Kahoot](https://kahoot.com/) - Piattaforma di apprendimento basata su giochi:
+  + Permette di creare quiz interattivi e giochi educativi.
+  + Utilizza AI per analizzare le risposte degli studenti e fornire feedback in tempo reale.
+
+
+---
+
+
+
 
 {{< slide id="challenges" >}}
 

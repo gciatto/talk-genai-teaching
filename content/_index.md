@@ -552,74 +552,73 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ## AI in ambito accademico: __Docenti__
 
-### Supporto alla __valutazione__ degli studenti
+### Supporto alla __valutazione__ degli studenti (Overview)
 
-- AI trova impiego anche nel _monitoraggio_ e _valutazione_ del progresso degli studenti, con suggerimenti personalizzati per migliorare l'apprendimento
-    + _Analisi_ delle prestazioni degli studenti attraverso _dati_ e _metriche_.
-    + _Feedback personalizzato_ basato sulle risposte degli studenti nei _quiz_ o _compiti_.
-    + _Identificazione_ di aree di miglioramento
-    + _Suggerimenti_ su _risorse_ o _strategie_ di studio personalizzate.
++ _Valutazione semi-automatica_ delle risposte degli studenti
++ _Feedback personalizzato_ basato sulle risposte degli studenti nei _quiz_ o _compiti_
++ _Identificazione_ di aree di miglioramento/approfondimento
+<!-- + _Suggerimenti_ su _risorse_ o _strategie_ di studio personalizzate. -->
   
 ---
 
 ## AI in ambito accademico: __Docenti__
 
-### Supporto alla __valutazione__ degli studenti
+### Supporto alla __valutazione__ degli studenti (Pattern di prompt utili)
 
 - <u>`Valuta`</u> `la risposta X data alla domanda Y secondo questi criteri di valutazione: ...`
     | Tipo                   | Descrizione        | Peso / Valore |
     |------------------------|--------------------|---------------|
-    | **Informazioni attese**| informazione 1     | p1            |
-    |                        | informazione 2     | p2            |
-    |                        | informazione N     | pN            |
-    | **Errori tipici**      | errore tipico 1    | -e1           |
-    |                        | errore tipico 2    | -e2           |
-    |                        | errore tipico M    | -eM           |
-    | **Fattori bonus/malus**| fattore 1 (bonus)  | +b1           |
-    |                        | fattore 2 (malus)  | -b2           |
-    |                        | fattore K (malus)  | -bK           |
+    | **Informazioni attese**| informazione $1$     | $p_1$            |
+    |                        | informazione $2$     | $p_2$           |
+    |                        | informazione $N$     | $p_N$            |
+    | **Errori tipici**      | errore tipico $1$    | $-e_1$           |
+    |                        | errore tipico $2$    | $-e_2$           |
+    |                        | errore tipico $M$    | $-e_M$           |
+    | **Fattori bonus/malus**| fattore $1$ (bonus)  | $+b_1$           |
+    |                        | fattore $2$ (malus)  | $-b_2$           |
+    |                        | fattore $K$ (malus)  | $-b_K$           |
 
    
-- `Data la risposta A ` <u>`calcola`</u> ` il punteggio totale e fornisci un feedback costruttivo`
-    + Possibile anche definire la __scala di valutazione__ (e.g., 0-30, A-F, etc.)
-    + Il feedback può includere suggerimenti su come _migliorare_, _punti di forza_ della risposta, e _aree che necessitano di ulteriore approfondimento_.
+- `... calcola il punteggio totale e fornisci un feedback costruttivo`
+    <!-- + La scala di valutazione va da 0 a 30, eventuali mezzi punti sono arrotondati per difetto -->
+    + \[opt] `interrompi il ragionamento e chiedimi come procedere se incontri elementi non coperti dalla griglia`
+
 --- 
 
 ## AI in ambito accademico: __Docenti__
 
-### Supporto alla __valutazione__ degli studenti
+### Supporto alla __valutazione__ degli studenti (Pattern di prompt utili, cont.)
 
-- `L'esito di questo compito X ha dato questo risultato Y.` <u>`Suggerisci`</u> ` un feedback costruttivo per lo studente basato su queste mie opinioni grezze: ...`
+- `Riposta X alla domanda Y, segue opinione grezza, aiutami a dare un feedback costruttivo`
     + Le opinioni grezze possono essere ad esempio:
         - "La risposta è corretta ma manca di esempi pratici"
         - "La spiegazione è chiara ma alcuni passaggi sono troppo sintetici"
         - "L'argomento è ben coperto ma la struttura del testo è confusa in alcuni punti"
 
-- `La media dei voti di questo quiz è Z.` <u>`Suggerisci`</u> ` materiale di approfondimento`
-    + Potresti consigliare risorse aggiuntive come articoli, video o esercizi pratici per aiutare gli studenti a comprendere meglio gli argomenti in cui hanno avuto difficoltà.
-  
+- `Risposta X alla domanda Y, giudizio Z, suggerisci materiali di approfondimento per lo studente`
+    + fornire copia dei materiali didattici se si vuole che GenAI attinga da essi
 ---
 
 ## AI in ambito accademico: __Docenti__
 
-### Supporto alla __valutazione__ degli studenti
+### Supporto alla __valutazione__ degli studenti (Esempio completo)
 
-- Domanda esempio: 
+- _Domanda_ esempio: 
 <br/>
 <span style="color: grey; font-style: italic;">
     "Nel Canto V dell’Inferno, Dante incontra Paolo e Francesca. Analizza come l’autore intreccia amore e colpa nella rappresentazione dei due personaggi, mettendo in evidenza gli strumenti poetici e retorici utilizzati per suscitare empatia nel lettore, e discuti in che modo questo episodio contribuisce alla visione dantesca della giustizia divina"
 </span>
 
-- Griglia di valutazione:
+- _Griglia_ di valutazione:
 
 | Tipo                    | Descrizione                                                                                   | Peso / Valore |
 | ----------------------- | --------------------------------------------------------------------------------------------- | ------------- |
-| **Informazioni attese** | Contestualizzazione del canto V                               | 2             |          
+| **Informazioni attese** | Contestualizzazione del canto V                                                               | 2             |
 |                         | Presentazione della pena dei lussuriosi (bufera infernale)                                    | 2             |
 |                         | Racconto di Paolo e Francesca: dinamica della vicenda                                         | 2             |
 |                         | Analisi dei temi amore/colpa/peccato ed empatia suscitata                                     | 3             |
 |                         | Collegamento alla visione della giustizia divina e al progetto etico-teologico di Dante       | 3             |
-| **Errori tipici**       | Riassunto meramente narrativo senza analisi                                                   | -2            |
+| **Errori tipici**       | {{% color="red" %}}Riassunto meramente narrativo senza analisi {{% /color %}}                 | -2            |
 |                         | Confondere canto o collocazione nell’Inferno                                                  | -1            |
 | **Fattori bonus/malus** | Uso di citazioni testuali mirate (anche brevi)                                                | +2            |
 |                         | Argomentazione poco coerente o priva di struttura                                             | -2            |
@@ -644,7 +643,6 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 </span>
 
 {{< image src="./teaching/divine-comedy-eval.png" max-h="50vh" alt="Correzione risposte tramite ChatGPT" >}}
-
 
 ---
 

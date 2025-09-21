@@ -892,15 +892,15 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ### Caso 3: _Arricchimento materiale prodotto_
 
-- Nel caso della sbobinatura, è sempre importante controllare l'accuratezza del testo che viene generato.
-  + Spesso vengono commessi errori di trascrizione, specialmente con nomi propri o termini tecnici.
+- Nel caso della sbobinatura, è sempre importante __controllare__ l'accuratezza del testo che viene generato.
+  + Spesso vengono commessi {{% color "red" %}}errori di trascrizione{{% /color %}}, specialmente con nomi propri o termini tecnici.
   + È sempre bene _rileggere_ e _correggere_ il testo sbobinato.
 
-- Nel caso della traduzione, è importante considerare il contesto e il pubblico a cui è destinato il testo tradotto.
-  + È consigliabile fornire indicazioni chiare sullo stile e sul tono desiderati.
-  + Anche in questo caso, è sempre bene rileggere e correggere la traduzione generata.
+- Nel caso della traduzione, è importante considerare il _contesto_ e il _pubblico_ a cui è destinato il testo tradotto.
+  + È consigliabile fornire __indicazioni__ chiare sullo _stile_ e sul _tono_ desiderati.
+  + Anche in questo caso, è sempre bene _rileggere_ e _correggere_ la traduzione generata.
 
-- Come per la produzione di contenuti, anche in questo caso, è fondamentale verificare che non vi siano {{% color "red" %}}problemi di plagio o diritti d'autore{{% /color %}}.
+- Come per la produzione di contenuti è fondamentale __verificare__ che non vi siano {{% color "red" %}}problemi di plagio o diritti d'autore{{% /color %}}.
 
 ---
 
@@ -908,11 +908,11 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ### Caso 4: _Brainstorming_
 
-- Strumenti AI possono essere affiancati agli studenti a supporto del processo creativo:
-    + Idee per progetti o ricerche.
-    + Refactoring di codice.
-    + Trovare soluzioni alternative a problemi complessi.
-    + Suggerimenti per migliorare l'efficacia di presentazioni o discorsi.
+- Strumenti AI possono essere affiancati agli studenti a __supporto__ del _processo creativo_:
+    + __Idee__ per progetti o ricerche.
+    + __Refactoring__ di codice.
+    + Trovare __soluzioni__ alternative a problemi complessi.
+    + __Suggerimenti__ per migliorare l'_efficacia_ di presentazioni o discorsi.
 
 ---
 
@@ -959,7 +959,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 - Alcuni di questi forniti con una modalità __gratuita__ mentre altri richiedono un __abbonamento__ o __pagamento__ per funzionalità avanzate.
 
 ---
-
+<!--
 ## Esempi di __tecnologie__ GenAI: _Chat Testuali_
 - [ChatGPT](https://chat.openai.com/) - Piattaforma utilizzata per la generazione di contenuti in base alle richieste degli utenti.
   + Supporta conversazioni contestuali e risposte personalizzate.
@@ -1030,10 +1030,319 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
   + Permette di creare quiz interattivi e giochi educativi.
   + Utilizza AI per analizzare le risposte degli studenti e fornire feedback in tempo reale.
 
+---
+-->
+## Esempi di __tecnologie__ GenAI: _Chat Testuali_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/chatgpt-main-screen.png"  alt="ChatGPT Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [ChatGPT](https://chat.openai.com/) - Piattaforma utilizzata per la generazione di contenuti in base alle richieste degli utenti.
+  + Supporta conversazioni contestuali e risposte personalizzate.
+  + Utilizzata per vari scopi in ambito educativo come spiegazioni, generazione di appunti, risoluzione di esercizi, etc.
+
+- Prevede sia una versione __gratuita__ che una a __pagamento__.
+  + La versione a pagamento offre accesso illimitato a modelli più avanzati.
+  + La versione gratuita ha limitazioni di utilizzo giornaliero e accesso (fallback) a modelli meno potenti.
+{{% /col %}}
+
+{{% /multicol %}}
+
 
 ---
 
+## Esempi di __tecnologie__ GenAI: _Chat Testuali_
 
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/claude-main-screen.png"  alt="Claude Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [Claude](https://claude.ai/) - Elabora grandi quantità di informazioni.
+  + Elabora una grande quantità di informazioni e contenuti.
+  + In grado di generare idee, produrre testi e codice.
+
+- Prevede sia una versione __gratuita__ che una a __pagamento__.
+    + In entrambe è possibile sfruttare l'_ultima_ versione del modello
+    + In base al piano di abbonamento si hanno __limiti di utilizzo__ differenti.
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Chat Testuali_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/copilot-main-screen.png" alt="Copilot Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [Microsoft Copilot](https://copilot.microsoft.com/) - Strumento LLM di Microsoft
+  + Integrato in vari prodotti come Word, Excel, PowerPoint, etc.
+  + Aiuta a generare contenuti, analizzare dati e automatizzare compiti ripetitivi.
+  + Per l'educazione è usato per snellire la pianificazione delle lezioni, le valutazioni del lavoro e la creazione di materiali didattici.
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Chat Testuali_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/gemini-main-screen.png" alt="Gemini Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [Gemini](https://gemini.google.com/?hl=it) - Modello di linguaggio Google:
+  + Eccelle in compiti che richiedono analisi dei dati in tempo reale e elaborazione multimodale.
+  + Come per le altre alternative, è usato per generare contenuti, rispondere a domande e assistere in vari task.  
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Assistenti per la scrittura_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/grammarly-main-screen.png" alt="Grammarly Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [Grammarly](https://www.grammarly.com/) - Assistente di scrittura AI:
+  + Aiuta a migliorare la grammatica, lo stile e la chiarezza dei testi.
+  + Utile per studenti e docenti per la revisione di saggi, email e altri documenti.
+
+- Disponibile in diverse estensioni per browser, app desktop e integrazioni con software di scrittura.
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Assistenti per la scrittura_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/quillbot-main-screen.png" alt="QuillBot Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [QuillBot](https://quillbot.com/) - Strumento di parafrasi:
+  + Permette di riformulare testi mantenendo il significato originale.
+  + Utile per evitare il plagio e migliorare la qualità della scrittura.
+
+- Fornisce varie modalità di utilizzo:
+   + Correzione grammaticale
+   + Detettore di plagio
+   + Traduzione
+   + Creatore di citazioni
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Assistenti per la scrittura_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/deepl-main-screen.png" alt="DeepL Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [DeepL](https://www.deepl.com/) - Traduttore e assistente di scrittura:
+  + Offre traduzioni di alta qualità e suggerimenti per migliorare la scrittura.
+  + Utile per studenti e docenti che lavorano con testi in diverse lingue.
+
+- Utilizzabile come applicazione web o desktop.
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Assistenti per la scrittura_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/deepl-main-screen.png" alt="DeepL Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [DeepL](https://www.deepl.com/) - Traduttore e assistente di scrittura:
+  + Offre traduzioni di alta qualità e suggerimenti per migliorare la scrittura.
+  + Utile per studenti e docenti che lavorano con testi in diverse lingue.
+
+- Utilizzabile come applicazione web o desktop.
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
+
+{{% multicol %}}
+
+{{% col %}}
+> Imppossibile navigare al sito
+{{% /col %}}
+
+{{% col %}}
+- [TeachMeAI](https://teachmeai.com/) - Piattaforma educativa AI:
+  + Offre strumenti per creare lezioni interattive e personalizzate.
+  + Dispone di una vasta libreria di strumenti per:
+    * Creare risorse didattiche
+    * Supporti educativi speciali (BES)
+    * Compiti amministrativi
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/eduaide-main-screen.png" alt="Eduaide.Ai Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [Eduaide AI](https://www.eduaide.ai/) - Fornisce una serie di strumenti basati su AI per docenti e studenti
+  + Semplifica la pianificazione delle lezioni.
+  + Valuta grado padronanza degli studenti.
+  + Crea materiali didattici personalizzati.
+
+- Fornisce molteplici funzionalità specifiche a supporto dei docenti come:
+  + Strumenti di valutazione automatizzati.
+  + Analisi delle performance degli studenti.
+  + Raccomandazioni personalizzate per il miglioramento.
+
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/diffit-main-screen.png" width="100%" alt="Diffit Schermata Principale" >}}
+{{% /col %}}
+
+{{% col %}}
+- [Diffit](https://web.diffit.me/) - Piattaforma per creare risorse educative fatte su misura
+  + In base alle esigenze specifiche degli studenti.
+  + Crea riassunti, quiz, etc.
+
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/school-ai-chat.png" alt="SchoolAI Schermata Chat con Dot" >}}
+{{% /col %}}
+
+{{% col %}}
+- [SchoolAI](https://schoolai.com/) - Presenta diversi strumenti AI per insegnanti e studenti.
+    + Possibile creare tutor AI personalizzati basati su materiali di corso specifici.
+    + Presente uno strumento chiamato "Dot" per guidare gli studenti attraverso il processo di apprendimento.
+       * In base al loro stile di apprendimento e alle loro esigenze.
+    + Strumenti appositi per monitorare i progressi degli studenti e adattare le lezioni di conseguenza.
+
+- Permette di definire "spazi di lavoro" personalizzati per ogni corso.
+  + A questi possono accedervi, con permessi differenti sia studenti che docenti.
+
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Valutazione e Feedback_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/turnitin-home-page.png" width="100%" alt="Turnitin Schermata Home" >}}
+{{% /col %}}
+
+{{% col %}}
+- [Turnitin](https://www.turnitin.com/) - Strumento di rilevamento del plagio:
+  + Utilizzato per verificare l'originalità dei lavori degli studenti.
+  + Aiuta a mantenere l'integrità accademica.
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Valutazione e Feedback_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/easygrader-main-screen.png" alt="EasyGrader Schermata Home" >}}
+{{% /col %}}
+
+{{% col %}}
+- [EssayGrader](https://essaygrader.ai/) - Strumento di valutazione automatica:
+  + Fornisce feedback immediato sui saggi degli studenti.
+  + Valuta aspetti come grammatica, coerenza e struttura.
+  + Ha integrazione con piattaforme LMS come Canvas e Google Classroom.
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Valutazione e Feedback_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/kahoot-quiz-creation.png" alt="Kahoot Schermata Creazione Quiz" >}}
+{{% /col %}}
+
+{{% col %}}
+- [Kahoot](https://kahoot.com/) - Piattaforma di apprendimento basata su giochi:
+  + Permette di creare quiz interattivi e giochi educativi.
+  + Utilizza AI per analizzare le risposte degli studenti e fornire feedback in tempo reale.
+
+- Usato in vari corsi per rendere l'apprendimento più coinvolgente e interattivo.
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
 
 
 {{< slide id="challenges" >}}

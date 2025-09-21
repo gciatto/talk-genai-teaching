@@ -523,20 +523,20 @@
 <h3 id="progettazione-di-contenuti-didattici-pattern-di-prompt-utili"><strong>Progettazione</strong> di <em>contenuti didattici</em> (Pattern di prompt utili)</h3>
 <ul>
 <li>
-<p><code>Progetta il sillabo per un corso su X</code></p>
+<p><u><code>Progetta</code></u><code> il sillabo per un corso su X</code></p>
 <ul>
 <li>assume che <code>X</code> sia un argomento ben definito</li>
 </ul>
 </li>
 <li>
-<p><code>Suggerisci una diversa struttura per questa dispensa affinché sia più incrementale</code></p>
+<p><u><code>Suggerisci</code></u><code> una diversa struttura per questa dispensa affinché sia più incrementale</code></p>
 <ul>
 <li>[allegando la dispensa]</li>
 <li>approccio incrementale spesso più efficace</li>
 </ul>
 </li>
 <li>
-<p><code>Struttura una presentazione per una lezione su questo capitolo del libro X</code></p>
+<p><u><code>Struttura</code></u><code> una presentazione per una lezione su questo capitolo del libro X</code></p>
 <ul>
 <li>[allegando il capitolo/libro]</li>
 </ul>
@@ -694,7 +694,7 @@
 <h3 id="supporto-alla-valutazione-degli-studenti-1">Supporto alla <strong>valutazione</strong> degli studenti</h3>
 <ul>
 <li>
-<p><code>Valuta la risposta X data alla domanda Y secondo questi criteri di valutazione: ...</code></p>
+<p><u><code>Valuta</code></u> <code>la risposta X data alla domanda Y secondo questi criteri di valutazione: ...</code></p>
 <table>
   <thead>
       <tr>
@@ -753,10 +753,10 @@
 </table>
 </li>
 <li>
-<p><code>Data la risposta A calcola il punteggio totale e fornisci un feedback costruttivo</code></p>
+<p><code>Data la risposta A </code> <u><code>calcola</code></u> <code> il punteggio totale e fornisci un feedback costruttivo</code></p>
 <ul>
-<li>La scala di valutazione va da 0 a 30, eventuali mezzi punti sono arrotondati per difetto</li>
-<li>interrompi il ragionamento e chiedimi come procedere se incontri elementi non coperti dalla griglia</li>
+<li>Possibile anche definire la <strong>scala di valutazione</strong> (e.g., 0-30, A-F, etc.)</li>
+<li>Il feedback può includere suggerimenti su come <em>migliorare</em>, <em>punti di forza</em> della risposta, e <em>aree che necessitano di ulteriore approfondimento</em>.</li>
 </ul>
 </li>
 </ul>
@@ -765,7 +765,7 @@
 <h3 id="supporto-alla-valutazione-degli-studenti-2">Supporto alla <strong>valutazione</strong> degli studenti</h3>
 <ul>
 <li>
-<p><code>L'esito di questo compito X ha dato questo risultato Y. Suggerisci un feedback costruttivo per lo studente basato su queste mie opinioni grezze: ...</code></p>
+<p><code>L'esito di questo compito X ha dato questo risultato Y.</code> <u><code>Suggerisci</code></u> <code> un feedback costruttivo per lo studente basato su queste mie opinioni grezze: ...</code></p>
 <ul>
 <li>Le opinioni grezze possono essere ad esempio:
 <ul>
@@ -777,7 +777,7 @@
 </ul>
 </li>
 <li>
-<p><code>La media dei voti di questo quiz è Z. Suggerisci materiale di approfondimento</code></p>
+<p><code>La media dei voti di questo quiz è Z.</code> <u><code>Suggerisci</code></u> <code> materiale di approfondimento</code></p>
 <ul>
 <li>Potresti consigliare risorse aggiuntive come articoli, video o esercizi pratici per aiutare gli studenti a comprendere meglio gli argomenti in cui hanno avuto difficoltà.</li>
 </ul>
@@ -878,16 +878,16 @@
 </span></p>
 </li>
 </ul>
-<blockquote>
-<p>TODO Embed result somehow in the slide: <a href="https://chatgpt.com/share/e/68c941b1-3088-8004-acfa-21fa935fb69f">https://chatgpt.com/share/e/68c941b1-3088-8004-acfa-21fa935fb69f</a></p></blockquote>
+
+
+
+
+
+
+<img src="./teaching/divine-comedy-eval.png" alt="Correzione risposte tramite ChatGPT" style="max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+
 </section><section>
 <h2 id="ai-in-ambito-accademico-docenti-5">AI in ambito accademico: <strong>Docenti</strong></h2>
-<h3 id="supporto-alla-valutazione-degli-studenti-5">Supporto alla <strong>valutazione</strong> degli studenti</h3>
-</section><section>
-<h2 id="ai-in-ambito-accademico-docenti-6">AI in ambito accademico: <strong>Docenti</strong></h2>
-<ul>
-<li>I <strong>Docenti</strong> utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.</li>
-</ul>
 <h3 id="caso-4-supporto-attività-amministrative">Caso 4: <em>Supporto attività amministrative</em></h3>
 <ul>
 <li>L’efficacia nell’automatizzazione di compiti ripetitivi rende AI uno strumento utile per la gestione di varie attività amministrative
@@ -899,89 +899,818 @@
 </li>
 </ul>
 </section><section>
-<h2 id="ai-in-ambito-accademico-docenti-7">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h2 id="ai-in-ambito-accademico-docenti-6">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="caso-4-supporto-attività-amministrative-1">Caso 4: <em>Supporto attività amministrative</em></h3>
 <ul>
-<li>I <strong>Docenti</strong> utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.</li>
+<li>
+<p><u><code>Genera</code></u> <code> una email per informare gli studenti del corso X che la lezione di domani è spostata a data Y</code></p>
+</li>
+<li>
+<p><u><code>Genera</code></u> <code> una lettera di benvenuto per i nuovi studenti iscritti al corso X</code></p>
+<ul>
+<li>includendo informazioni su:
+<ul>
+<li>struttura del corso</li>
+<li>modalità di valutazione</li>
+<li>risorse disponibili</li>
+<li>contatti utili</li>
 </ul>
-<h3 id="caso-5-creazione-di-tutor-ai-personalizzati">Caso 5: <em>Creazione di tutor AI personalizzati</em></h3>
+</li>
+</ul>
+</li>
+<li>
+<p><u><code>Crea</code></u> <code> una lettera di raccomandazione per lo studente Y basata su queste informazioni: ...</code></p>
 <ul>
-<li>È possibile creare tutor AI personalizzati per assistere gli studenti al di fuori delle ore di lezione in grado di:
+<li>informazioni sullo studente (es. voti, progetti, etc…)</li>
+<li>informazioni sul destinatario (es. università, azienda, etc…)</li>
+</ul>
+</li>
+<li>
+<p><code>Dato questo questionario di feedback degli studenti,</code> <u><code>genera</code></u> <code> un report sintetico con i punti chiave e suggerimenti per migliorare il corso X</code></p>
 <ul>
-<li>Rispondere a domande frequenti sugli argomenti del corso.</li>
-<li>Fornire spiegazioni aggiuntive su concetti complessi.</li>
-<li>Fornire supporto personalizzato in base alle esigenze individuali degli studenti.</li>
+<li>[allegando il questionario]</li>
 </ul>
 </li>
 </ul>
 </section><section>
-<h2 id="ai-in-ambito-accademico-studenti">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h2 id="ai-in-ambito-accademico-docenti-7">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="caso-4-supporto-attività-amministrative-2">Caso 4: <em>Supporto attività amministrative</em></h3>
 <ul>
-<li>Gli <strong>Studenti</strong> utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.</li>
+<li>
+<p>Immaginiamo di voler inviare una email di benvenuto agli studenti iscritti al corso:</p>
+</li>
+<li>
+<p><code>Generami una lettera sintetica di benvenuto agli studenti del mio corso sull'opera "La divina commedia" di Dante Alighieri. Il corso tratterà del background di Dante e inquadrerà gli aspetti essenziali dei vari canti.</code></p>
+<ul>
+<li>Descrizione del corso: <code>Il corso tratterà del background di Dante e inquadrerà gli aspetti essenziali dei vari gironi.</code></li>
+<li>Descrizione modalità esame: <code>L'esame è costituito da una parte scritta più una parte orale (l'ultima accessibile solamente superando quella scritta).</code></li>
+<li>Descrizione risorse: <code>Le lezioni saranno basate su slide e dispense, con materiale di approfondimento consigliato.</code></li>
+<li>Orario lezioni:
+<ul>
+<li>Lunedì 9:00 - 11:00</li>
+<li>Mercoledì 14:00 - 16:00</li>
+<li>Giovedì 10:00 - 12:00</li>
 </ul>
+</li>
+<li>Eventuali contatti: <code>ugo.rossi@unibo.it</code></li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-docenti-8">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="caso-4-supporto-attività-amministrative-3">Caso 4: <em>Supporto attività amministrative</em></h3>
+<h3 id="risultato-generato">Risultato generato:</h3>
+
+
+
+
+
+
+<img src="./teaching/welcome-letter-chatgpt.png" alt="Welcome letter written with ChatGPT" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+
+</section><section>
+<h2 id="ai-in-ambito-accademico-docenti-9">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="caso-5-creazione-di-tutor-ai-personalizzati">Caso 5: <em>Creazione di tutor AI personalizzati</em></h3>
+<ul>
+<li>È possibile <strong>creare</strong> tutor AI personalizzati per <em>assistere</em> gli studenti al di fuori delle ore di lezione in grado di:
+<ul>
+<li><strong>Rispondere</strong> a domande <em>frequenti</em> sugli argomenti del corso.</li>
+<li><strong>Fornire spiegazioni</strong> aggiuntive su <em>concetti complessi</em>.</li>
+<li><strong>Fornire supporto</strong> personalizzato in base alle <em>esigenze</em> individuali degli studenti.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-docenti-10">AI in ambito accademico: <strong>Docenti</strong></h2>
+<h3 id="caso-5-creazione-di-tutor-ai-personalizzati-1">Caso 5: <em>Creazione di tutor AI personalizzati</em></h3>
+<ul>
+<li>Esistono varie <em>piattaforme</em> che permettono di <em>creare facilmente</em> dei bot personalizzati basati su modelli di linguaggio.</li>
+<li>In questo esempio vediamo come sia possibile crearne uno utilizzando <a href="https://schoolai.com/">SchoolAI</a>.
+<ul>
+<li>Si crea uno <strong>“spazio di lavoro”</strong>, inserendo il nome del corso e una breve descrizione.</li>
+<li>Si <strong>caricano</strong> i materiali di riferimento (dispense, slide, link a pagine web, etc…).</li>
+<li>Eventualmente vengono fornite altre <em>informazioni utili</em> (copertina del corso, tonality, etc…).</li>
+</ul>
+</li>
+<li>Una volta creato lo spazio di lavoro, si può <em>iniziare a chattare</em> con il bot, che risponderà in base al materiale caricato.</li>
+</ul>
+<div style="display:flex; gap:30px; justify-content:center; align-items:flex-start;">
+  <figure style="text-align:center;">
+    
+    
+    
+    
+    
+    
+    <img src="./schoolai/setup.png" alt="SchoolAI Setup" style="max-width: 95vw; max-height: 40vh; object-fit: contain; ">
+
+    <figcaption><p style="font-size: 24px; font-style: italic;">Setup dello spazio di lavoro</p></figcaption>
+  </figure>
+  <figure style="text-align:center;">
+    
+    
+    
+    
+    
+    
+    <img src="./schoolai/chat.png" alt="SchoolAI Chat" style="max-width: 95vw; max-height: 40vh; object-fit: contain; ">
+
+    <figcaption><p style="font-size: 24px; font-style: italic;">Chat con il tutor AI</p></figcaption>
+  </figure>
+</div>
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti">AI in ambito accademico: <strong>Studenti</strong></h2>
 <h3 id="caso-1-produzione-di-contenuti">Caso 1: <em>Produzione di contenuti</em></h3>
 <ul>
-<li>Gli studenti possono utilizzare AI per la generazione di vari contenuti:
+<li>Gli studenti possono utilizzare AI per la <em>generazione</em> di vari contenuti:
 <ul>
-<li>Creazione di appunti di studio sintetici e organizzati.</li>
-<li>Generazione di bozze per progetti o relazioni.</li>
-<li>Creazione di presentazioni per progetti accademici.</li>
+<li><strong>Creazione</strong> di appunti di studio <em>sintetici</em> e <em>organizzati</em>.</li>
+<li><strong>Generazione</strong> di bozze per <em>progetti</em> o <em>relazioni</em>.</li>
+<li><strong>Creazione</strong> di presentazioni per <em>progetti accademici</em>.</li>
 </ul>
 </li>
 </ul>
 </section><section>
 <h2 id="ai-in-ambito-accademico-studenti-1">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-1-produzione-di-contenuti-1">Caso 1: <em>Produzione di contenuti</em></h3>
 <ul>
-<li>Gli <strong>Studenti</strong> utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.</li>
+<li>
+<p><code>Dato il documento caricato,</code> <u><code>trova errori </code></u> <code>,</code> <u><code>incongruenze </code></u> <code>,</code> <u><code>punti di attacco </code></u> <code>e</code> <u><code>suggerimenti </code></u> <code>per migliorarlo</code></p>
+<ul>
+<li>[allegando la bozza]</li>
 </ul>
-<h3 id="caso-2-comprensione">Caso 2: <em>Comprensione</em></h3>
+</li>
+<li>
+<p><u><code>Integra</code></u><code> insieme questi due appunti di lezione in un unico documento coerente e ben strutturato</code></p>
 <ul>
-<li>Diverse soluzioni AI sono in grado di aiutare gli studenti nello studio:
+<li>[allegando i due appunti]</li>
+<li>opzionalmente: <code>Evidenzia le parti ridondanti o contraddittorie</code></li>
+<li>opzionalmente: <code>Aggiungi un sommario all'inizio</code></li>
+</ul>
+</li>
+<li>
+<p><code>Data questa scaletta, generami una bozza per questo capitolo di tesi</code></p>
 <ul>
-<li>Spiegazioni semplificate di concetti complessi.</li>
-<li>Risposte a domande specifiche su argomenti di studio.</li>
-<li>Suggerimenti per ulteriori letture o risorse di apprendimento.</li>
-<li>Esempi pratici per illustrare concetti teorici (codice, esercizi matematici, etc…).</li>
+<li>Si possono integrare eventuali riferimenti bibliografici</li>
+<li>Si può anche chiedere di mantenere uno stile specifico (formale, informale, tecnico, etc…)</li>
 </ul>
 </li>
 </ul>
 </section><section>
 <h2 id="ai-in-ambito-accademico-studenti-2">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-1-produzione-di-contenuti-2">Caso 1: <em>Produzione di contenuti</em></h3>
 <ul>
-<li>Gli <strong>Studenti</strong> utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.</li>
-</ul>
-<h3 id="caso-3-arricchimento-materiale-prodotto">Caso 3: <em>Arricchimento materiale prodotto</em></h3>
-<ul>
-<li>AI può aiutare a migliorare qualitativamente del materiale prodotto dagli studenti:
-<ul>
-<li>Correzione grammaticale e stilistica di testi.</li>
-<li>Parafrasi o riformulazione di contenuti per maggiore chiarezza.</li>
-<li>Suggerimenti per migliorare la struttura o l’organizzazione del materiale.</li>
-<li>Strutturazione di codice per progetti di programmazione.</li>
-<li>Generazione di grafici o diagrammi per visualizzare dati o concetti.</li>
-</ul>
+<li>
+<p><code>Generazione parafrasi canto V della Divina Commedia</code></p>
+</li>
+<li>
+<p>Risposta generata:
+<span style="color: grey; font-style: italic;">
+“Dante e Virgilio scendono nel secondo cerchio dell’Inferno, dove le anime sono giudicate da Minosse, che assegna a ciascuna la pena. Qui sono puniti i lussuriosi, trascinati per sempre da una bufera infernale che simboleggia la passione incontrollata che li travolse in vita. Dante vede tra loro celebri figure come Semiramide, Didone, Cleopatra, Elena, Achille, Paride e Tristano. In particolare, il poeta si sofferma su due anime che volano insieme: Paolo e Francesca da Rimini. Francesca racconta che l’amore tra loro nacque leggendo la storia di Lancillotto e Ginevra, e che, al punto in cui i protagonisti si baciarono, anche Paolo la baciò: fu l’inizio della loro condanna. La vicenda tocca profondamente Dante, che, preso dalla pietà, sviene.”
+</span></p>
 </li>
 </ul>
 </section><section>
 <h2 id="ai-in-ambito-accademico-studenti-3">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-1-produzione-di-contenuti-3">Caso 1: <em>Produzione di contenuti</em></h3>
 <ul>
-<li>Gli <strong>Studenti</strong> utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche.</li>
+<li>
+<p>La produzione di contenuti permette di avere una base di partenza su cui lavorare.</p>
+</li>
+<li>
+<p>Nella produzione di contenuti con AI è importante:</p>
+<ul>
+<li>Fornire un occhio di riguardo ad aspetti relativi a <span style="color: red;">diritti d’autore</span> e <span style="color: red;">plagio</span>.</li>
+<li><strong>Verificare</strong> sempre l’<em>accuratezza</em> e la <em>correttezza</em> delle informazioni generate.</li>
 </ul>
+</li>
+<li>
+<p>Spesso si usa come approccio per <em>superare</em> un eventuale blocco creativo.</p>
+<ul>
+<li>Si <strong>genera</strong> una bozza, poi la si <em>rielabora</em> e <em>migliora</em>.</li>
+</ul>
+</li>
+<li>
+<p>È importante <strong>specificare</strong> chiaramente il contesto e gli obiettivi nel prompt.</p>
+<ul>
+<li>Più il prompt è dettagliato, più è probabile che il risultato sia pertinente.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-4">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-2-comprensione">Caso 2: <em>Comprensione</em></h3>
+<ul>
+<li>Diverse soluzioni AI sono in grado di aiutare gli studenti nello studio:
+<ul>
+<li><strong>Spiegazioni</strong> <em>semplificate</em> di concetti complessi.</li>
+<li><strong>Risposte</strong> a domande <em>specifiche</em> su argomenti di studio.</li>
+<li><strong>Suggerimenti</strong> per ulteriori <em>letture</em> o <em>risorse di apprendimento</em>.</li>
+<li><strong>Esempi</strong> pratici per <em>illustrare</em> concetti teorici (codice, esercizi matematici, etc…).</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-5">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-2-comprensione-1">Caso 2: <em>Comprensione</em></h3>
+<ul>
+<li>
+<p><code>Spiegami in termini semplici il concetto di X</code></p>
+<ul>
+<li>[inserendo il concetto X]</li>
+</ul>
+</li>
+<li>
+<p><code>Nel seguente documento cosa si intender per A?</code></p>
+<ul>
+<li>[allegando il documento]</li>
+<li>opzionalmente: <code>Spiegami con un esempio pratico</code></li>
+</ul>
+</li>
+<li>
+<p><code>Quali sono le differenze principali tra i concetti A e B?</code></p>
+<ul>
+<li>Specifica sempre un <em>contesto</em> per i concetti A e B.</li>
+<li>Ad esempio, “In ambito matematico, quali sono le differenze tra funzione e relazione?”</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-6">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-2-comprensione-2">Caso 2: <em>Comprensione</em></h3>
+<ul>
+<li><code>All'interno del canto V della Divina Commedia, cosa rappresenta la bufera infernale?</code></li>
+<li>Risposta generata:
+<span style="color: grey; font-style: italic;">
+“La bufera infernale simboleggia la passione amorosa incontrollata dei lussuriosi, che in vita li trascinò senza misura e che ora li tormenta eternamente nel contrappasso.”
+</span></li>
+</ul>
+
+
+
+
+
+
+<img src="./student/bufera-infernale-chatgpt.png" alt="Risposta di chat gpt sulla bufera infernale" style="max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-7">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-3-arricchimento-materiale-prodotto">Caso 3: <em>Arricchimento materiale prodotto</em></h3>
+<ul>
+<li>AI può aiutare a <em>migliorare</em> qualitativamente del materiale prodotto dagli studenti:
+<ul>
+<li><strong>Correzione</strong> grammaticale e stilistica di testi.</li>
+<li><strong>Parafrasi</strong> o <strong>riformulazione</strong> di contenuti per maggiore chiarezza.</li>
+<li><strong>Suggerimenti</strong> per migliorare la struttura o l’organizzazione del materiale.</li>
+<li><strong>Strutturazione</strong> di codice per progetti di programmazione.</li>
+<li><strong>Generazione</strong> di grafici o diagrammi per visualizzare dati o concetti.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-8">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-3-arricchimento-materiale-prodotto-1">Caso 3: <em>Arricchimento materiale prodotto</em></h3>
+<ul>
+<li>
+<p><code>Sbobina questa traccia audio</code></p>
+<ul>
+<li>[allegando la traccia audio]</li>
+</ul>
+</li>
+<li>
+<p><code>Traduci questo testo in X</code></p>
+<ul>
+<li>[allegando il testo].</li>
+<li>[specificando la lingua X].</li>
+<li>opzionalmente è possibile anche chiedere una traduzione con un certo stile (formale, informale, tecnico, etc…).</li>
+</ul>
+</li>
+<li>
+<p><code>Fai il riassunto di questo video [fornire file]</code></p>
+<ul>
+<li>[allegando il video]</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-9">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-3-arricchimento-materiale-prodotto-2">Caso 3: <em>Arricchimento materiale prodotto</em></h3>
+<ul>
+<li>
+<p><code>Traduci questo testo in inglese, mantieni un tono discorsivo e formale</code>
+<br>
+<span style="color: grey; font-style: italic;">
+“La Divina Commedia non è una semplice opera letteraria, racchiude al suo interno tutto ciò che riguarda le scienze umane. Viaggiando con Dante attraverso l’oltretomba, il lettore conosce lentamente i fatti storici degli anni in cui il poema fu scritto, le travagliate vicissitudini politiche, il pensiero filosofico e teologico ed anche i cruenti fatti di sangue.”
+</span></p>
+</li>
+<li>
+<p>Traduzione generata:
+<span style="color: grey; font-style: italic;">
+“The Divine Comedy is not merely a literary work; it encompasses within itself the entirety of the human sciences. By journeying with Dante through the afterlife, the reader gradually comes to know the historical events of the years in which the poem was written, the turbulent political struggles, the philosophical and theological thought, as well as the violent and bloody occurrences of the time.”
+</span></p>
+</li>
+</ul>
+
+
+
+
+
+
+<img src="./student/divine-commedy-comment-traduction.png" alt="Traduzione commento sulla divina commedia" style="max-width: 95vw; max-height: 50vh; object-fit: contain; ">
+
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-10">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-3-arricchimento-materiale-prodotto-3">Caso 3: <em>Arricchimento materiale prodotto</em></h3>
+<ul>
+<li>
+<p>Nel caso della sbobinatura, è sempre importante <strong>controllare</strong> l’accuratezza del testo che viene generato.</p>
+<ul>
+<li>Spesso vengono commessi <span style="color: red;">errori di trascrizione</span>, specialmente con nomi propri o termini tecnici.</li>
+<li>È sempre bene <em>rileggere</em> e <em>correggere</em> il testo sbobinato.</li>
+</ul>
+</li>
+<li>
+<p>Nel caso della traduzione, è importante considerare il <em>contesto</em> e il <em>pubblico</em> a cui è destinato il testo tradotto.</p>
+<ul>
+<li>È consigliabile fornire <strong>indicazioni</strong> chiare sullo <em>stile</em> e sul <em>tono</em> desiderati.</li>
+<li>Anche in questo caso, è sempre bene <em>rileggere</em> e <em>correggere</em> la traduzione generata.</li>
+</ul>
+</li>
+<li>
+<p>Come per la produzione di contenuti è fondamentale <strong>verificare</strong> che non vi siano <span style="color: red;">problemi di plagio o diritti d’autore</span>.</p>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-11">AI in ambito accademico: <strong>Studenti</strong></h2>
 <h3 id="caso-4-brainstorming">Caso 4: <em>Brainstorming</em></h3>
 <ul>
-<li>Strumenti AI possono essere affiancati agli studenti a supporto del processo creativo:
+<li>Strumenti AI possono essere affiancati agli studenti a <strong>supporto</strong> del <em>processo creativo</em>:
 <ul>
-<li>Idee per progetti o ricerche.</li>
-<li>Refactoring di codice.</li>
-<li>Trovare soluzioni alternative a problemi complessi.</li>
-<li>Suggerimenti per migliorare l’efficacia di presentazioni o discorsi.</li>
+<li><strong>Idee</strong> per progetti o ricerche.</li>
+<li><strong>Refactoring</strong> di codice.</li>
+<li>Trovare <strong>soluzioni</strong> alternative a problemi complessi.</li>
+<li><strong>Suggerimenti</strong> per migliorare l’<em>efficacia</em> di presentazioni o discorsi.</li>
 </ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-12">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-4-brainstorming-1">Caso 4: <em>Brainstorming</em></h3>
+<ul>
+<li>
+<p><code>Quali sono i punti chiave di queste slide/appunti/capitolo?</code></p>
+<ul>
+<li>[allegando il materiale]</li>
+</ul>
+</li>
+<li>
+<p><code>Fornisci un elenco di domande aperte su questo argomento</code></p>
+<ul>
+<li>[specificando l’argomento]</li>
+</ul>
+</li>
+<li>
+<p><code>Suggerisci idee per un progetto di ricerca su X</code></p>
+<ul>
+<li>[specificando l’argomento X]</li>
+<li>opzionalmente: <code>Concentrati su approcci innovativi o interdisciplinari</code></li>
+</ul>
+</li>
+<li>
+<p><code>Data questa tesi/articolo, suggerisci 5 idee per estenderla</code></p>
+<ul>
+<li>[allegando la tesi/articolo]</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h2 id="ai-in-ambito-accademico-studenti-13">AI in ambito accademico: <strong>Studenti</strong></h2>
+<h3 id="caso-4-brainstorming-2">Caso 4: <em>Brainstorming</em></h3>
+<ul>
+<li><code>Quali sono gli eventi del canto V della Divina Commedia?</code>
+<br>
+
+
+
+
+
+
+<img src="./student/divine-commedy-event.png" alt="Eventi canto 5 divina commedia chiesto a ChatGPT" style="max-width: 95vw; max-height: 50vh; object-fit: contain; ">
 </li>
 </ul>
 </section>
 
 <section data-noprocess="" data-shortcode-slide="" id="technologies">
   
-<h1 id="tbd-carrellata-di-esempi-su-tecnologie">TBD carrellata di esempi su tecnologie</h1>
+<h1 id="esempi-di-tecnologie-genai">Esempi di <strong>tecnologie</strong> GenAI</h1>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-1">Esempi di <strong>tecnologie</strong> GenAI</h2>
+<ul>
+<li><strong>Esistono</strong> vari <em>strumenti</em> basati su AI generativa che possono <em>assistere</em> studenti e docenti in vari modi.</li>
+<li>Facciamo una breve panormica di alcune delle soluzioni più <em>comuni</em> e <em>interessanti</em>.</li>
+<li>Alcuni di questi forniti con una modalità <strong>gratuita</strong> mentre altri richiedono un <strong>abbonamento</strong> o <strong>pagamento</strong> per funzionalità avanzate.</li>
+</ul>
+</section><section>
+<!--
+## Esempi di __tecnologie__ GenAI: _Chat Testuali_
+- [ChatGPT](https://chat.openai.com/) - Piattaforma utilizzata per la generazione di contenuti in base alle richieste degli utenti.
+  + Supporta conversazioni contestuali e risposte personalizzate.
+  + Utilizzata per vari scopi in ambito educativo come spiegazioni, generazione di appunti, risoluzione di esercizi, etc.
+- [Claude](https://www.anthropic.com/index/claude-2) - Elabora grandi quantità di informazioni.
+  + Elabora una grande quantità di informazioni e contenuti.
+  + In grado di generare idee, produrre testi e codice.
+- [Microsoft Copilot](https://bard.google.com/) - Strumento LLM di Microsoft
+  + Integrato in vari prodotti Microsoft come Word, Excel, PowerPoint, etc.
+  + Aiuta a generare contenuti, analizzare dati e automatizzare compiti ripetitivi.
+  + Per l'educazione è usato per snellire la pianificazione delle lezioni, le valutazioni del lavoro e la creazione di materiali didattici.
+- [Gemini](https://gemini.google.com/?hl=it) - Modello di linguaggio Google:
+  + Eccelle in compiti che richiedono analisi dei dati in tempo reale e elaborazione multimodale.
+  + Come per le altre alternative, è usato per generare contenuti, rispondere a domande e assistere in vari task.
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Assistenti per la scrittura_
+- [Grammarly](https://www.grammarly.com/) - Assistente di scrittura AI:
+  + Aiuta a migliorare la grammatica, lo stile e la chiarezza dei testi.
+  + Utile per studenti e docenti per la revisione di saggi, email e altri documenti.
+- [QuillBot](https://quillbot.com/) - Strumento di parafrasi:
+  + Permette di riformulare testi mantenendo il significato originale.
+  + Utile per evitare il plagio e migliorare la qualità della scrittura.
+- [DeepL](https://www.deepl.com/) - Traduttore e assistente di scrittura:
+  + Offre traduzioni di alta qualità e suggerimenti per migliorare la scrittura.
+  + Utile per studenti e docenti che lavorano con testi in diverse lingue.
+  
+---
+
+## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
+
+- [TeachMeAI](https://teachmeai.com/) - Piattaforma educativa AI:
+  + Offre strumenti per creare lezioni interattive e personalizzate.
+  + Dispone di una vasta libreria di strumenti per:
+    * Creare risorse didattiche
+    * Supporti educativi speciali (BES)
+    * Compiti amministrativi
+- [Eduaide AI](https://www.eduaide.ai/) - Fornisce una serie di strumenti basati su AI per docenti e studenti
+  + Semplifica la pianificazione delle lezioni.
+  + Valuta grado padronanza degli studenti.
+  + Crea materiali didattici personalizzati.
+
+- [Diffit](https://web.diffit.me/) - Piattaforma per creare risorse educative fatte su misura
+  + In base alle esigenze specifiche degli studenti.
+  + Crea riassunti, quiz, etc.
+
+- [SchoolAI](https://schoolai.com/) - Presenta diversi strumenti AI per insegnanti e studenti.
+    + Possibile creare tutor AI personalizzati basati su materiali di corso specifici.
+    + Presente uno strumento chiamato "Dot" per guidare gli studenti attraverso il processo di apprendimento.
+       * In base al loro stile di apprendimento e alle loro esigenze.
+    + Strumenti appositi per monitorare i progressi degli studenti e adattare le lezioni di conseguenza.
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Valutazione e Feedback_
+
+- [Turnitin](https://www.turnitin.com/) - Strumento di rilevamento del plagio:
+  + Utilizzato per verificare l'originalità dei lavori degli studenti.
+  + Aiuta a mantenere l'integrità accademica.
+
+- [EssayGrader](https://essaygrader.ai/) - Strumento di valutazione automatica:
+  + Fornisce feedback immediato sui saggi degli studenti.
+  + Valuta aspetti come grammatica, coerenza e struttura.
+  + Ha integrazione con piattaforme LMS come Canvas e Google Classroom.
+
+- [Kahoot](https://kahoot.com/) - Piattaforma di apprendimento basata su giochi:
+  + Permette di creare quiz interattivi e giochi educativi.
+  + Utilizza AI per analizzare le risposte degli studenti e fornire feedback in tempo reale.
+
+---
+-->
+<h2 id="esempi-di-tecnologie-genai-chat-testuali">Esempi di <strong>tecnologie</strong> GenAI: <em>Chat Testuali</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/chatgpt-main-screen.png" alt="ChatGPT Schermata Principale" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><a href="https://chat.openai.com/">ChatGPT</a> - Piattaforma utilizzata per la generazione di contenuti in base alle richieste degli utenti.</p>
+<ul>
+<li>Supporta conversazioni contestuali e risposte personalizzate.</li>
+<li>Utilizzata per vari scopi in ambito educativo come spiegazioni, generazione di appunti, risoluzione di esercizi, etc.</li>
+</ul>
+</li>
+<li>
+<p>Prevede sia una versione <strong>gratuita</strong> che una a <strong>pagamento</strong>.</p>
+<ul>
+<li>La versione a pagamento offre accesso illimitato a modelli più avanzati.</li>
+<li>La versione gratuita ha limitazioni di utilizzo giornaliero e accesso (fallback) a modelli meno potenti.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-chat-testuali-1">Esempi di <strong>tecnologie</strong> GenAI: <em>Chat Testuali</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/claude-main-screen.png" alt="Claude Schermata Principale" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><a href="https://claude.ai/">Claude</a> - Elabora grandi quantità di informazioni.</p>
+<ul>
+<li>Elabora una grande quantità di informazioni e contenuti.</li>
+<li>In grado di generare idee, produrre testi e codice.</li>
+</ul>
+</li>
+<li>
+<p>Prevede sia una versione <strong>gratuita</strong> che una a <strong>pagamento</strong>.</p>
+<ul>
+<li>In entrambe è possibile sfruttare l’<em>ultima</em> versione del modello</li>
+<li>In base al piano di abbonamento si hanno <strong>limiti di utilizzo</strong> differenti.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-chat-testuali-2">Esempi di <strong>tecnologie</strong> GenAI: <em>Chat Testuali</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/copilot-main-screen.png" alt="Copilot Schermata Principale" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><a href="https://copilot.microsoft.com/">Microsoft Copilot</a> - Strumento LLM di Microsoft
+<ul>
+<li>Integrato in vari prodotti come Word, Excel, PowerPoint, etc.</li>
+<li>Aiuta a generare contenuti, analizzare dati e automatizzare compiti ripetitivi.</li>
+<li>Per l’educazione è usato per snellire la pianificazione delle lezioni, le valutazioni del lavoro e la creazione di materiali didattici.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-chat-testuali-3">Esempi di <strong>tecnologie</strong> GenAI: <em>Chat Testuali</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/gemini-main-screen.png" alt="Gemini Schermata Principale" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><a href="https://gemini.google.com/?hl=it">Gemini</a> - Modello di linguaggio Google:
+<ul>
+<li>Eccelle in compiti che richiedono analisi dei dati in tempo reale e elaborazione multimodale.</li>
+<li>Come per le altre alternative, è usato per generare contenuti, rispondere a domande e assistere in vari task.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-assistenti-per-la-scrittura">Esempi di <strong>tecnologie</strong> GenAI: <em>Assistenti per la scrittura</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/grammarly-main-screen.png" alt="Grammarly Schermata Principale" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><a href="https://www.grammarly.com/">Grammarly</a> - Assistente di scrittura AI:</p>
+<ul>
+<li>Aiuta a migliorare la grammatica, lo stile e la chiarezza dei testi.</li>
+<li>Utile per studenti e docenti per la revisione di saggi, email e altri documenti.</li>
+</ul>
+</li>
+<li>
+<p>Disponibile in diverse estensioni per browser, app desktop e integrazioni con software di scrittura.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-assistenti-per-la-scrittura-1">Esempi di <strong>tecnologie</strong> GenAI: <em>Assistenti per la scrittura</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/quillbot-main-screen.png" alt="QuillBot Schermata Principale" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><a href="https://quillbot.com/">QuillBot</a> - Strumento di parafrasi:</p>
+<ul>
+<li>Permette di riformulare testi mantenendo il significato originale.</li>
+<li>Utile per evitare il plagio e migliorare la qualità della scrittura.</li>
+</ul>
+</li>
+<li>
+<p>Fornisce varie modalità di utilizzo:</p>
+<ul>
+<li>Correzione grammaticale</li>
+<li>Detettore di plagio</li>
+<li>Traduzione</li>
+<li>Creatore di citazioni</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-assistenti-per-la-scrittura-2">Esempi di <strong>tecnologie</strong> GenAI: <em>Assistenti per la scrittura</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/deepl-main-screen.png" alt="DeepL Schermata Principale" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><a href="https://www.deepl.com/">DeepL</a> - Traduttore e assistente di scrittura:</p>
+<ul>
+<li>Offre traduzioni di alta qualità e suggerimenti per migliorare la scrittura.</li>
+<li>Utile per studenti e docenti che lavorano con testi in diverse lingue.</li>
+</ul>
+</li>
+<li>
+<p>Utilizzabile come applicazione web o desktop.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-assistenti-per-la-scrittura-3">Esempi di <strong>tecnologie</strong> GenAI: <em>Assistenti per la scrittura</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/deepl-main-screen.png" alt="DeepL Schermata Principale" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><a href="https://www.deepl.com/">DeepL</a> - Traduttore e assistente di scrittura:</p>
+<ul>
+<li>Offre traduzioni di alta qualità e suggerimenti per migliorare la scrittura.</li>
+<li>Utile per studenti e docenti che lavorano con testi in diverse lingue.</li>
+</ul>
+</li>
+<li>
+<p>Utilizzabile come applicazione web o desktop.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-piattaforme-educative">Esempi di <strong>tecnologie</strong> GenAI: <em>Piattaforme Educative</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><blockquote>
+<p>Imppossibile navigare al sito</p></blockquote>
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><a href="https://teachmeai.com/">TeachMeAI</a> - Piattaforma educativa AI:
+<ul>
+<li>Offre strumenti per creare lezioni interattive e personalizzate.</li>
+<li>Dispone di una vasta libreria di strumenti per:
+<ul>
+<li>Creare risorse didattiche</li>
+<li>Supporti educativi speciali (BES)</li>
+<li>Compiti amministrativi</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-piattaforme-educative-1">Esempi di <strong>tecnologie</strong> GenAI: <em>Piattaforme Educative</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/eduaide-main-screen.png" alt="Eduaide.Ai Schermata Principale" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><a href="https://www.eduaide.ai/">Eduaide AI</a> - Fornisce una serie di strumenti basati su AI per docenti e studenti</p>
+<ul>
+<li>Semplifica la pianificazione delle lezioni.</li>
+<li>Valuta grado padronanza degli studenti.</li>
+<li>Crea materiali didattici personalizzati.</li>
+</ul>
+</li>
+<li>
+<p>Fornisce molteplici funzionalità specifiche a supporto dei docenti come:</p>
+<ul>
+<li>Strumenti di valutazione automatizzati.</li>
+<li>Analisi delle performance degli studenti.</li>
+<li>Raccomandazioni personalizzate per il miglioramento.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-piattaforme-educative-2">Esempi di <strong>tecnologie</strong> GenAI: <em>Piattaforme Educative</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/diffit-main-screen.png" alt="Diffit Schermata Principale" style="width: 100%; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><a href="https://web.diffit.me/">Diffit</a> - Piattaforma per creare risorse educative fatte su misura
+<ul>
+<li>In base alle esigenze specifiche degli studenti.</li>
+<li>Crea riassunti, quiz, etc.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-piattaforme-educative-3">Esempi di <strong>tecnologie</strong> GenAI: <em>Piattaforme Educative</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/school-ai-chat.png" alt="SchoolAI Schermata Chat con Dot" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><a href="https://schoolai.com/">SchoolAI</a> - Presenta diversi strumenti AI per insegnanti e studenti.</p>
+<ul>
+<li>Possibile creare tutor AI personalizzati basati su materiali di corso specifici.</li>
+<li>Presente uno strumento chiamato “Dot” per guidare gli studenti attraverso il processo di apprendimento.
+<ul>
+<li>In base al loro stile di apprendimento e alle loro esigenze.</li>
+</ul>
+</li>
+<li>Strumenti appositi per monitorare i progressi degli studenti e adattare le lezioni di conseguenza.</li>
+</ul>
+</li>
+<li>
+<p>Permette di definire “spazi di lavoro” personalizzati per ogni corso.</p>
+<ul>
+<li>A questi possono accedervi, con permessi differenti sia studenti che docenti.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-valutazione-e-feedback">Esempi di <strong>tecnologie</strong> GenAI: <em>Valutazione e Feedback</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/turnitin-home-page.png" alt="Turnitin Schermata Home" style="width: 100%; max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><a href="https://www.turnitin.com/">Turnitin</a> - Strumento di rilevamento del plagio:
+<ul>
+<li>Utilizzato per verificare l’originalità dei lavori degli studenti.</li>
+<li>Aiuta a mantenere l’integrità accademica.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-valutazione-e-feedback-1">Esempi di <strong>tecnologie</strong> GenAI: <em>Valutazione e Feedback</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/easygrader-main-screen.png" alt="EasyGrader Schermata Home" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li><a href="https://essaygrader.ai/">EssayGrader</a> - Strumento di valutazione automatica:
+<ul>
+<li>Fornisce feedback immediato sui saggi degli studenti.</li>
+<li>Valuta aspetti come grammatica, coerenza e struttura.</li>
+<li>Ha integrazione con piattaforme LMS come Canvas e Google Classroom.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="esempi-di-tecnologie-genai-valutazione-e-feedback-2">Esempi di <strong>tecnologie</strong> GenAI: <em>Valutazione e Feedback</em></h2>
+
+<div class="container w-100 m-0 p-0">
+    <div class="row "><div class="col " style="text-align: center;"><img src="./tech-example/kahoot-quiz-creation.png" alt="Kahoot Schermata Creazione Quiz" style="max-width: 95vw; max-height: 80vh; object-fit: contain; ">
+</div>
+<div class="col " style="text-align: center;"><ul>
+<li>
+<p><a href="https://kahoot.com/">Kahoot</a> - Piattaforma di apprendimento basata su giochi:</p>
+<ul>
+<li>Permette di creare quiz interattivi e giochi educativi.</li>
+<li>Utilizza AI per analizzare le risposte degli studenti e fornire feedback in tempo reale.</li>
+</ul>
+</li>
+<li>
+<p>Usato in vari corsi per rendere l’apprendimento più coinvolgente e interattivo.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 
 <section data-noprocess="" data-shortcode-slide="" id="challenges">

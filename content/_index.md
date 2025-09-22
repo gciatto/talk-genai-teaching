@@ -19,7 +19,6 @@ outputs = ["Reveal"]
 
 <span class="hint">(versione presentazione: {{< today >}})</span>
 
-
 ---
 
 ## Link a queste slide
@@ -409,7 +408,7 @@ L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
 
 {{% fragment %}}
 ## Studenti
-- __Produzione__ di _contenuti_ per lo studio <!-- (riassunti, appunti, etc.) --> o _elaborati_ 
+- __Produzione__ di _contenuti_ per lo studio <!-- (riassunti, appunti, etc.) --> o _elaborati_
 - __Ricerca__ e __sintesi__ di informazioni da _fonti varie_
 - __Tutoraggio__ _personalizzato_ e pratica
 - __Arricchimento__ del _materiale_ di studio <!-- (e.g. sbobinatura, traduzione) -->
@@ -447,7 +446,7 @@ GenAI utile per _delineare_ i vari aspetti di un __percorso didattico__, tra cui
 - <u>`Progetta`</u>` il sillabo per un corso su X`
     - assume che `X` sia un argomento ben definito
 
-- <u>`Suggerisci`</u>` una diversa struttura per questa dispensa affinché sia più incrementale` 
+- <u>`Suggerisci`</u>` una diversa struttura per questa dispensa affinché sia più incrementale`
     - \[allegando la dispensa]
     - approccio incrementale spesso più efficace
 
@@ -513,7 +512,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 - <u>`Genera`</u> `il sillabo per un corso su X`
     - assume che `X` sia un argomento ben definito
 
-- <u>`Riscrivi`</u> `questa dispensa affinché sia più incrementale` 
+- <u>`Riscrivi`</u> `questa dispensa affinché sia più incrementale`
     - \[allegando la dispensa]
     - approccio incrementale spesso più efficace
 
@@ -562,7 +561,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 + _Feedback personalizzato_ basato sulle risposte degli studenti nei _quiz_ o _compiti_
 + _Identificazione_ di aree di miglioramento/approfondimento
 <!-- + _Suggerimenti_ su _risorse_ o _strategie_ di studio personalizzate. -->
-  
+
 ---
 
 ## GenAI in ambito accademico: __Docenti__
@@ -582,12 +581,12 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     |                        | fattore $2$ (malus)  | $-b_2$           |
     |                        | fattore $K$ (malus)  | $-b_K$           |
 
-   
+
 - `... calcola il punteggio totale e fornisci un feedback costruttivo`
     <!-- + La scala di valutazione va da 0 a 30, eventuali mezzi punti sono arrotondati per difetto -->
     + \[opt] `interrompi il ragionamento e chiedimi come procedere se incontri elementi non coperti dalla griglia`
 
---- 
+---
 
 ## GenAI in ambito accademico: __Docenti__
 
@@ -607,7 +606,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ### Supporto alla __valutazione__ degli studenti (Esempio completo)
 
-- _Domanda_ esempio: 
+- _Domanda_ esempio:
 <br/>
 <span style="color: grey; font-style: italic;">
     "Nel Canto V dell’Inferno, Dante incontra Paolo e Francesca. Analizza come l’autore intreccia amore e colpa nella rappresentazione dei due personaggi, mettendo in evidenza gli strumenti poetici e retorici utilizzati per suscitare empatia nel lettore, e discuti in che modo questo episodio contribuisce alla visione dantesca della giustizia divina"
@@ -675,7 +674,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
         * contatti utili
 
 - <u>`Crea`</u> ` una lettera di raccomandazione per lo studente Y basata su queste informazioni: ...`
-    + __Privacy-concerning__: informazioni sullo studente (es. voti, progetti, etc...) 
+    + __Privacy-concerning__: informazioni sullo studente (es. voti, progetti, etc...)
     + interazioni passate tra il firmatario e lo studente
     + informazioni sul destinatario (es. università, azienda, etc...)
 
@@ -694,12 +693,12 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 ### Caso 4: _Supporto attività amministrative_
 
 - Immaginiamo di voler inviare una email di benvenuto agli studenti iscritti al corso:
-  
+
 - `Generami una lettera sintetica di benvenuto agli studenti del mio corso sull'opera "La divina commedia" di Dante Alighieri. Il corso tratterà del background di Dante e inquadrerà gli aspetti essenziali dei vari canti.`
   + Descrizione del corso: `Il corso tratterà del background di Dante e inquadrerà gli aspetti essenziali dei vari gironi.`
   + Descrizione modalità esame: `L'esame è costituito da una parte scritta più una parte orale (l'ultima accessibile solamente superando quella scritta).`
   + Descrizione risorse: `Le lezioni saranno basate su slide e dispense, con materiale di approfondimento consigliato.`
-  + Orario lezioni: 
+  + Orario lezioni:
     * Lunedì 9:00 - 11:00
     * Mercoledì 14:00 - 16:00
     * Giovedì 10:00 - 12:00
@@ -720,7 +719,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ### Caso 5: _Creazione di tutor AI personalizzati_
 
-> Tutor AI $\approx$ _Chatbot_ basato su LLM, istruito/informato su materiale specifico del corso/docente 
+> Tutor AI $\approx$ _Chatbot_ basato su LLM, istruito/informato su materiale specifico del corso/docente
 
 È possibile __creare__ _tutor AI personalizzati_ per _assistere_ gli studenti al di fuori delle ore di lezione in grado di
 + __Rispondere__ a domande _frequenti_ sugli argomenti del corso
@@ -728,7 +727,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 + Fornire __supporto__ personalizzato in base alle _esigenze_ individuali degli studenti
 
 {{% fragment %}}
-> Doppia interfaccia: 
+> Doppia interfaccia:
 > 1. Studente $\rightarrow$ interfaccia _conversazionale_ (chat)
 > 2. Docente $\rightarrow$ interfaccia semplificata per _caricare_ materiali/istruzioni di riferimento
 {{% /fragment %}}
@@ -785,7 +784,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     + \[allegando i due appunti]
     + opzionalmente: `Evidenzia le parti ridondanti o contraddittorie`
     + opzionalmente: `Aggiungi un sommario all'inizio`
-  
+
 - `Data questa scaletta, generami una bozza per questo capitolo di tesi`
     + \[allegando la scaletta + riferimenti bibliografici]
     + si può anche chiedere di mantenere uno stile specifico (formale, informale, tecnico, etc...)
@@ -846,11 +845,11 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 - `Nel documento allegato cosa si intender per A?`
     + \[allegando il documento]
     + opzionalmente: `Spiegami con un esempio pratico`
-  
+
 - `Quali sono le differenze principali tra i concetti A e B?`
     + Specifica sempre un _contesto_ per i concetti A e B.
     + Ad esempio, "In ambito matematico, quali sono le differenze tra funzione e relazione?"
-  
+
 ---
 
 ## GenAI in ambito accademico: __Studenti__
@@ -946,10 +945,10 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 - `Quali sono i punti chiave di queste slide/appunti/capitolo?`
     + \[allegando il materiale]
-  
+
 - `Fornisci un elenco di domande aperte su questo argomento`
     + \[specificando l'argomento]
-  
+
 - `Suggerisci idee per un progetto di ricerca su X`
     + \[specificando l'argomento X]
     + opzionalmente: `Concentrati su approcci innovativi o interdisciplinari`
@@ -1014,7 +1013,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 - [DeepL](https://www.deepl.com/) - Traduttore e assistente di scrittura:
   + Offre traduzioni di alta qualità e suggerimenti per migliorare la scrittura.
   + Utile per studenti e docenti che lavorano con testi in diverse lingue.
-  
+
 ---
 
 ## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
@@ -1059,6 +1058,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ---
 -->
+
 ## Esempi di __tecnologie__ GenAI: _Chat Testuali_
 
 {{% multicol %}}
@@ -1068,7 +1068,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% /col %}}
 
 {{% col %}}
-- [ChatGPT](https://chat.openai.com/) 
+- [ChatGPT](https://chat.openai.com/)
     + _Stato dell'arte_ per modelli e interfaccia conversazionale
     + supporto ai __progetti__: gruppi di chat con _istruzioni/file condivisi_
     + supporto ai __GPT__{{% color "red" %}}\*{{% /color %}}: _chat-bot personalizzati_ (da terze parti) con funzionalità/_informazioni_ specifiche
@@ -1092,13 +1092,13 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/claude-main-screen.png"  alt="Claude Schermata Principale" >}}
+{{< image src="./tech-example/claude-main-screen.png"  alt="Claude Schermata Principale" width="50vw" >}}
 {{% /col %}}
 
 {{% col %}}
-- [Claude](https://claude.ai/) 
+- [Claude](https://claude.ai/)
     + importante competitor di ChatGPT
-    + supporto ai __progetti__: gruppi di chat con _istruzioni/file condivisi_ 
+    + supporto ai __progetti__: gruppi di chat con _istruzioni/file condivisi_
     + supporto gli __artefatti__: _chat-bot personalizzati_ (da terze parti) con funzionalità/_informazioni_ specifiche
 - Nella versione a __pagamento__
     + _meno limiti_ di utilizzo, _più scelta_ di modelli aggiornati
@@ -1115,32 +1115,14 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/copilot-main-screen.png" alt="Copilot Schermata Principale" >}}
+{{< image src="./interface-powerpoint.png" alt="Copilot Schermata Principale" width="50vw" >}}
 {{% /col %}}
 
 {{% col %}}
-- [Microsoft Copilot](https://copilot.microsoft.com/) - Strumento LLM di Microsoft
-  + Integrato in vari prodotti come Word, Excel, PowerPoint, etc.
-  + Aiuta a generare contenuti, analizzare dati e automatizzare compiti ripetitivi.
-  + Per l'educazione è usato per snellire la pianificazione delle lezioni, le valutazioni del lavoro e la creazione di materiali didattici.
-{{% /col %}}
-
-{{% /multicol %}}
-
----
-
-## Esempi di __tecnologie__ GenAI: _Chat Testuali_
-
-{{% multicol %}}
-
-{{% col %}}
-{{< image src="./tech-example/gemini-main-screen.png" alt="Gemini Schermata Principale" >}}
-{{% /col %}}
-
-{{% col %}}
-- [Gemini](https://gemini.google.com/?hl=it) - Modello di linguaggio Google:
-  + Eccelle in compiti che richiedono analisi dei dati in tempo reale e elaborazione multimodale.
-  + Come per le altre alternative, è usato per generare contenuti, rispondere a domande e assistere in vari task.  
+- [Microsoft Copilot](https://copilot.microsoft.com/)
+    + interfaccia _conversazionale_ integrata in prodotti _Office 365_ (Word, Excel, PowerPoint, etc.)
+    + aiuta a generare contenuti _dentro l'app_, o automatizzare compiti ripetitivi
+    + utile per la __generazione__ di _slide_ (PowerPoint), _documenti_ (Word) e analisi dati (Excel)
 {{% /col %}}
 
 {{% /multicol %}}
@@ -1152,15 +1134,19 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/grammarly-main-screen.png" alt="Grammarly Schermata Principale" >}}
+{{< image src="./tech-example/grammarly-main-screen.png" alt="Grammarly Schermata Principale" width="50vw" >}}
 {{% /col %}}
 
 {{% col %}}
 - [Grammarly](https://www.grammarly.com/) - Assistente di scrittura AI:
-  + Aiuta a migliorare la grammatica, lo stile e la chiarezza dei testi.
-  + Utile per studenti e docenti per la revisione di saggi, email e altri documenti.
+  + aiuta a migliorare la _grammatica_, lo stile e la _chiarezza_ dei testi.
+  + utile soprattutto per la _scrittura in lingua_
 
-- Disponibile in diverse estensioni per browser, app desktop e integrazioni con software di scrittura.
+- Integrazione con __browser__ o _editor di testo_
+
+- Controlli _più fini_ sono possibili solo con la versione __premium__
+
+- Competitor _gratuito_: [LanguageTool](https://languagetool.org/it)
 {{% /col %}}
 
 {{% /multicol %}}
@@ -1172,44 +1158,23 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/quillbot-main-screen.png" alt="QuillBot Schermata Principale" >}}
+{{< image src="./tech-example/quillbot-main-screen.png" alt="QuillBot Schermata Principale" width="60vw" >}}
 {{% /col %}}
 
 {{% col %}}
-- [QuillBot](https://quillbot.com/) - Strumento di parafrasi:
-  + Permette di riformulare testi mantenendo il significato originale.
-  + Utile per evitare il plagio e migliorare la qualità della scrittura.
+- [QuillBot](https://quillbot.com/)
+   + correzione grammaticale
+   + detettore di _plagio_ o _generazione_
+   + traduzione
+   + gestore di voci bibliografiche
+   + sintetizzatore di testi
 
-- Fornisce varie modalità di utilizzo:
-   + Correzione grammaticale
-   + Detettore di plagio
-   + Traduzione
-   + Creatore di citazioni
+- Interfaccia _1-size-fits-all_ per comuni operazioni di scrittura
 {{% /col %}}
 
 {{% /multicol %}}
 
----
-
-## Esempi di __tecnologie__ GenAI: _Assistenti per la scrittura_
-
-{{% multicol %}}
-
-{{% col %}}
-{{< image src="./tech-example/deepl-main-screen.png" alt="DeepL Schermata Principale" >}}
-{{% /col %}}
-
-{{% col %}}
-- [DeepL](https://www.deepl.com/) - Traduttore e assistente di scrittura:
-  + Offre traduzioni di alta qualità e suggerimenti per migliorare la scrittura.
-  + Utile per studenti e docenti che lavorano con testi in diverse lingue.
-
-- Utilizzabile come applicazione web o desktop.
-{{% /col %}}
-
-{{% /multicol %}}
-
----
+<!-- ---
 
 ## Esempi di __tecnologie__ GenAI: _Assistenti per la scrittura_
 
@@ -1227,9 +1192,9 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 - Utilizzabile come applicazione web o desktop.
 {{% /col %}}
 
-{{% /multicol %}}
+{{% /multicol %}} -->
 
----
+<!-- ---
 
 ## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
 
@@ -1248,6 +1213,37 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     * Compiti amministrativi
 {{% /col %}}
 
+{{% /multicol %}} -->
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/eduaide-main-screen.png" alt="Eduaide.Ai Schermata Principale" width="50vw" >}}
+{{% /col %}}
+
+{{% col %}}
+- [Eduaide AI](https://www.eduaide.ai/)
+    + costruzione _semi-automatica_ di __strumenti didattici interattivi__
+    + focus su ordini di _scuola primaria e secondaria_, solo in inglese
+
+- Sistema _GenAI-based_ per la __didattica__:
+    + _pianificazione_ e _impostazione_ delle lezioni
+    + creazione _esercizi_ e _attività pratiche_, anche di _gruppo_
+    + creazione _quiz_ e test di valutazione
+    + _feedback_ personalizzato per studenti
+
+- Soluzione _omni-comprensiva_ per docenti
+    + versione _premium_ __senza limiti__ di utilizzo + __ChatBot d'aula__
+
+- Molte funzionalità, _difficile valutare efficacia_
+    + bisogna comunque fornire _materiale/indicazioni_ di partenza
+
+{{% /col %}}
+
 {{% /multicol %}}
 
 ---
@@ -1257,39 +1253,13 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/eduaide-main-screen.png" alt="Eduaide.Ai Schermata Principale" >}}
+{{< image src="./tech-example/diffit-main-screen.png" width="50vw" alt="Diffit Schermata Principale" >}}
 {{% /col %}}
 
 {{% col %}}
-- [Eduaide AI](https://www.eduaide.ai/) - Fornisce una serie di strumenti basati su AI per docenti e studenti
-  + Semplifica la pianificazione delle lezioni.
-  + Valuta grado padronanza degli studenti.
-  + Crea materiali didattici personalizzati.
-
-- Fornisce molteplici funzionalità specifiche a supporto dei docenti come:
-  + Strumenti di valutazione automatizzati.
-  + Analisi delle performance degli studenti.
-  + Raccomandazioni personalizzate per il miglioramento.
-
-{{% /col %}}
-
-{{% /multicol %}}
-
----
-
-## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
-
-{{% multicol %}}
-
-{{% col %}}
-{{< image src="./tech-example/diffit-main-screen.png" width="100%" alt="Diffit Schermata Principale" >}}
-{{% /col %}}
-
-{{% col %}}
-- [Diffit](https://web.diffit.me/) - Piattaforma per creare risorse educative fatte su misura
-  + In base alle esigenze specifiche degli studenti.
-  + Crea riassunti, quiz, etc.
-
+- [Diffit](https://web.diffit.me/)
+    + generazione di _materiali didattici_...
+    + ... a partire da _libreria di risorse_ (__premium__)
 {{% /col %}}
 
 {{% /multicol %}}
@@ -1305,14 +1275,64 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% /col %}}
 
 {{% col %}}
-- [SchoolAI](https://schoolai.com/) - Presenta diversi strumenti AI per insegnanti e studenti.
-    + Possibile creare tutor AI personalizzati basati su materiali di corso specifici.
-    + Presente uno strumento chiamato "Dot" per guidare gli studenti attraverso il processo di apprendimento.
-       * In base al loro stile di apprendimento e alle loro esigenze.
-    + Strumenti appositi per monitorare i progressi degli studenti e adattare le lezioni di conseguenza.
+- [SchoolAI](https://schoolai.com/) - GenAI per insegnanti _e studenti_
+    + __tutor AI__ personalizzati (sul corso) che:
+        1. _guidano_ lo studente
+        2. si _adattano_ al suo stile di apprendimento
+    + strumenti per __monitorare i progressi__ degli studenti...
+    + ... e _adattare le lezioni_ di conseguenza
 
-- Permette di definire "spazi di lavoro" personalizzati per ogni corso.
-  + A questi possono accedervi, con permessi differenti sia studenti che docenti.
+- Supporta __"spazi di lavoro"__ personalizzati (per corso)
+  + controllo dei _diritti/livelli d'accesso_ (docenti/studenti)
+  + condivisione di _materiali_ e _risorse_ all'interno dello spazio
+
+{{% /col %}}
+
+{{% /multicol %}}
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Piattaforme Educative_
+
+### Note su [SchoolAI](https://schoolai.com/)
+
+
+{{% color "red" %}}Non è chiaro...{{% /color %}}
+
+1. cosa significhi _"guidare"_ lo studente
+1. cosa significhi _"adattarsi"_ al suo stile di apprendimento
+1. cosa significhi __"monitorare i progressi"__
+1. quali _informazioni_ il chat-bot _catturi_ e usi per guidare/adattarsi
+    + e quali informazioni la piattaforma _conservi_ sugli studenti
+1. quanto bene funzionino i chat-bot in situazione di __cold-start__
+    + nuova classe, nuovo studente, nuovo corso, etc...
+1. come facciano i _tutor AI_ a mantenere l'engagement degli studenti
+    + considerato che i chat-bot basati su LLM sono __reattivi__
+
+---
+
+## Esempi di __tecnologie__ GenAI: _Valutazione e Feedback_
+
+{{% multicol %}}
+
+{{% col %}}
+{{< image src="./tech-example/turnitin-home-page.png" width="50vw" alt="Turnitin Schermata Home" max-h="40vh" >}}
+{{< image src="./reading/comparison/compilatio.png" width="50vw" alt="Compilatio Schermata Home" max-h="40vh" >}}
+{{% /col %}}
+
+{{% col %}}
+- Strumenti di rilevamento del __plagio__:
+    + [Turnitin](https://www.turnitin.com/)
+    + [Compilatio](https://www.compilatio.net/it)
+
+- Tanto più efficaci quanto più ampia la loro biblioteca di _testi di riferimento_
+    + importante che questa possa essere _costantemente aggiornata_, _ampia_
+
+- Possibile integrazione con _piattaforme LMS_ (Moodle, Canvas, etc...)
+    + es. per controllare i _compiti/esami_ caricati dagli studenti
+
+- I sistemi professionali sono __costosi__
+    + meglio appoggiarsi a _licenza istituzionale_ se disponibile
 
 {{% /col %}}
 
@@ -1325,58 +1345,46 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/turnitin-home-page.png" width="100%" alt="Turnitin Schermata Home" >}}
+{{< image src="./tech-example/easygrader-main-screen.png" alt="EasyGrader Schermata Home" width="50vw" >}}
 {{% /col %}}
 
 {{% col %}}
-- [Turnitin](https://www.turnitin.com/) - Strumento di rilevamento del plagio:
-  + Utilizzato per verificare l'originalità dei lavori degli studenti.
-  + Aiuta a mantenere l'integrità accademica.
+- [EssayGrader](https://essaygrader.ai/)
+    + valutazione _automatica_ di __saggi__
+    + previo _inserimento_ di __griglia di valutazione__ ("rubric") da parte del docente
+    + valuta aspetti come grammatica, coerenza, struttura
+
+- Funzionalità __premium__:
+    + integrazione con piattaforme _LMS_ come Canvas e __Google Classroom__
+    + ridotto limite di _saggi valutabili al mese_
+    + analisi della performance a livello di _classe_ o _studente_
+    + detection di _testo generato_
+
 {{% /col %}}
 
 {{% /multicol %}}
 
----
+<!--
 
 ## Esempi di __tecnologie__ GenAI: _Valutazione e Feedback_
 
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/easygrader-main-screen.png" alt="EasyGrader Schermata Home" >}}
+{{< image src="./tech-example/kahoot-quiz-creation.png" alt="Kahoot Schermata Creazione Quiz" width="50vw" >}}
 {{% /col %}}
 
 {{% col %}}
-- [EssayGrader](https://essaygrader.ai/) - Strumento di valutazione automatica:
-  + Fornisce feedback immediato sui saggi degli studenti.
-  + Valuta aspetti come grammatica, coerenza e struttura.
-  + Ha integrazione con piattaforme LMS come Canvas e Google Classroom.
-{{% /col %}}
-
-{{% /multicol %}}
-
----
-
-## Esempi di __tecnologie__ GenAI: _Valutazione e Feedback_
-
-{{% multicol %}}
-
-{{% col %}}
-{{< image src="./tech-example/kahoot-quiz-creation.png" alt="Kahoot Schermata Creazione Quiz" >}}
-{{% /col %}}
-
-{{% col %}}
-- [Kahoot](https://kahoot.com/) - Piattaforma di apprendimento basata su giochi:
-  + Permette di creare quiz interattivi e giochi educativi.
+- [Kahoot](https://kahoot.com/)
+  + Permette di creare _quiz interattivi_ e _giochi educativi_
   + Utilizza AI per analizzare le risposte degli studenti e fornire feedback in tempo reale.
 
 - Usato in vari corsi per rendere l'apprendimento più coinvolgente e interattivo.
 {{% /col %}}
 
-{{% /multicol %}}
+{{% /multicol %}} -->
 
 ---
-
 
 {{< slide id="challenges" >}}
 
@@ -1400,7 +1408,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 <!-- - Vi è un dibattito in corso su come bilanciare i vari benefici offerti dall'AI con le potenziali sfide etiche, pedagogiche e pratiche. -->
 
 <!-- Si vuole __evitare__ che l'AI diventi un __ostacolo__ piuttosto che un __supporto__ all'apprendimento. -->
-  
+
 ---
 
 ## Potenziali abusi degli strumenti GenAI
@@ -1516,26 +1524,50 @@ Un __controllo diretto__ su come gli studenti utilizzano GenAI è spesso {{% col
     + fonti $\approx$ materiale di riferimento, esempi
 
 - Per mitigare l'<u>incompletezza</u>, è utile:
-    1. sfruttare la generazione _poco alla volta_, __gerarchicamente__, e ricorsivamente 
+    1. sfruttare la generazione _poco alla volta_, __gerarchicamente__, e ricorsivamente
         + es. prima i capitoli, poi le sezioni di ogni capitolo, poi i paragrafi di ogni sezione, etc.
     2. chiedere __esplicitamente__ di includere certi aspetti
         + es. fornendo una scaletta di cose da includere, esempi, etc.
 
-<!-- --- -->
 
 <!-- ## Problemi di Bias, Disinformazione e Accuratezza
 
 
 - Studenti e docenti devono essere _consapevoli_ dei limiti e potenziali errori degli strumenti AI.
 - È importante _insegnare_ a _valutare criticamente_ le informazioni generate da AI e a verificare le fonti ed eventuali bias.
-- Gli educatori devono __progettare__ compiti che richiedano un'_analisi critica_ degli output dell'IA, promuovendo competenze che vanno oltre la semplice ricerca di informazioni. 
+- Gli educatori devono __progettare__ compiti che richiedano un'_analisi critica_ degli output dell'IA, promuovendo competenze che vanno oltre la semplice ricerca di informazioni.
 - IA da strumento che fornisce risposte a strumento che _supporta il pensiero critico_ e la _risoluzione di problemi_. -->
-  
+
 ---
 
 ## Impatto sul Pensiero Critico e sull'Eccessiva Dipendenza
 
-- Abbiamo visto come __potenzialmente__ strumenti AI siano in grado:
+Ci sono __preoccupazioni__ riguardo all'effetto su larga scala di una _eccessiva dipendenza_ dagli strumenti di GenAI
++ {{% color "red" %}}riduzione{{% /color %}} della capacità di __ricerca indipendente__
++ {{% color "red" %}}diminuzione{{% /color %}} della capacità di __analisi critica__ delle informazioni
++ {{% color "red" %}}minore sviluppo{{% /color %}} di competenze di __risoluzione dei problemi__
+
+---
+
+## Impatto sul Pensiero Critico e sull'Eccessiva Dipendenza
+
+### Consigli non richiesti (Opinionated)
+
+- Tener presente il _bias cognitivo_ WYSIATI ("__What You See Is All There Is__", Kahneman 2011)
+    + si tende a fidarsi di ciò che GenAI fornisce, pensando che sia _tutto ciò che c'è da sapere_
+    + {{% color "red" %}}ma GenAI non è sempre <u>esaustiva</u>{{% /color %}}
+        * meglio assumere che non lo sia __mai__ (aka: _GenAI <u>non</u> è un motore di ricerca_)
+
+- Importante __educare__ certe competenze <u>anche</u> in assenza di GenAI (es. _ricerca_ di informazioni in testo/tomo/rete)
+    + importante _allenare_ queste competenze nei _corsi di base_ (es. con compiti/esami che _impediscano_ l'uso di GenAI)
+        * solo dopo, in _corsi avanzati_, istruire all'uso degli strumenti di GenAI per __aumentare__ tali competenze (es. con compiti/esami che _richiedano_ l'uso di GenAI)
+    + {{% color "red" %}}perché GenAI non è sempre <u>accurata</u>{{% /color %}}
+        * meglio potersi accorgere degli errori e poterne fare a meno quando sbaglia
+
+- Affinchè GenAI abbia un _impatto positivo_ sull'apprendimento sarà importante un _grande sforzo_ (ri-)organizzativo
+    + es. ripensare __metodi di insegnamento__, __tipi di compiti__ e __modalità di verifica__
+
+<!-- - Abbiamo visto come __potenzialmente__ strumenti AI siano in grado:
   + Di fornire _facilmente_ accesso a risposte rapide.
   + Generare _immediatamente_ contenuti su richiesta.
 
@@ -1543,9 +1575,9 @@ Un __controllo diretto__ su come gli studenti utilizzano GenAI è spesso {{% col
 - Diversi ostacoli all'apprendimento e allo sviluppo del pensiero critico:
   + {{% color "red" %}}Riduzione{{% /color %}} della capacità di ricerca indipendente.
   + {{% color "red" %}}Diminuzione{{% /color %}} della capacità di analisi critica delle informazioni.
-  + {{% color "red" %}}Minore sviluppo{{% /color %}} di competenze di risoluzione dei problemi.
-  
----
+  + {{% color "red" %}}Minore sviluppo{{% /color %}} di competenze di risoluzione dei problemi. -->
+
+<!-- ---
 
 ## Impatto sul Pensiero Critico e sull'Eccessiva Dipendenza
 
@@ -1553,15 +1585,30 @@ Un __controllo diretto__ su come gli studenti utilizzano GenAI è spesso {{% col
   + Possano _incrementare la creatività_,
   + _Facilitare_ un apprendimento più profondo se usata per _aumentare la conoscenza e la costruzione di idee_.
 
-- A livello educativo è necessario progettare attività che __incoraggino__ l'uso critico e riflessivo degli strumenti AI, __promuovendo__ un equilibrio tra l'uso di AI e lo sviluppo di competenze umane fondamentali.
-  
+- A livello educativo è necessario progettare attività che __incoraggino__ l'uso critico e riflessivo degli strumenti AI, __promuovendo__ un equilibrio tra l'uso di AI e lo sviluppo di competenze umane fondamentali. -->
+
 ---
 
-## Necessità di Sviluppo Professionale e Alfabetizzazione sull'IA
+## Sull'adozione di soluzioni GenAI in ambito educativo
 
-- Molti docenti {{% color "red" %}}non hanno ancora ricevuto{{% /color %}} una formazione adeguata sull’uso dell’IA, nonostante la sua diffusione crescente.
-- I distretti scolastici stanno iniziando a introdurre _linee guida_ e programmi di _formazione_ per docenti e studenti.
-- È stato suggerito che un modulo o un corso dedicato ai __chatbot IA__ dovrebbe diventare una componente __obbligatoria__ dei corsi di laurea per garantire che gli studenti siano _informati sull'uso di tali strumenti_.
+In questo momento proliferano _strumenti roboanti_ la cui __efficacia__ ed __usabilità__ pratica sono tutte da dimostrare
+
+- Non farsi abbindolare dal marketing:
+    1. le soluzioni offrono __molte funzionalità__...
+    2. la cui __efficacia__ è vincolata
+        + alla _qualità_ del _materiale di partenza_
+        + alla _pazienza_ del docente di fornire _istruzioni chiare_ e dettagliate
+        + alla _motivazione_ degli studenti a fruire attivamente degli strumenti
+
+- Soluzioni _special-purpose_ (es. Eduaide AI) <u>non necessariamente offrono LLM migliori</u>, rispetto a soluzioni general-purpose (es. ChatGPT)
+    + spesso il valore aggiunto sta _nell'interoperabilità_ con altri strumenti (es. LMS, gestione classe, etc.)
+        * l'acquisto ha senso se c'è interoperabilità con _sistemi pre-esistenti_ (es. __Moodle__)
+    + a volte il valore aggiunto sta _nella UI_ che guida maggiormente l'utente
+
+- Rischio di __lock-in__ con soluzioni proprietarie
+    + es. dipendenza da _licenze_, _formati chiusi_, _vendor-specific features_, etc.
+        * una volta che si sceglie un provider non è facile cambiare
+    + i vendor principali sono visibilmente in una fase di _accumulo di utenti_
 
 ---
 

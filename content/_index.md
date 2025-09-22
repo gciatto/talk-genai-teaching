@@ -421,6 +421,10 @@ L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
 
 ---
 
+# GenAI in ambito educativo: __Docenti__
+
+---
+
 ## GenAI in ambito educativo: __Docenti__
 
 <!-- - I __Docenti__ utilizzano AI per semplificare e migliorare vari aspetti della loro attività didattiche. -->
@@ -550,7 +554,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ---
 
-## AI in ambito accademico: __Docenti__
+## GenAI in ambito accademico: __Docenti__
 
 ### Supporto alla __valutazione__ degli studenti (Overview)
 
@@ -561,7 +565,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
   
 ---
 
-## AI in ambito accademico: __Docenti__
+## GenAI in ambito accademico: __Docenti__
 
 ### Supporto alla __valutazione__ degli studenti (Pattern di prompt utili)
 
@@ -585,7 +589,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 --- 
 
-## AI in ambito accademico: __Docenti__
+## GenAI in ambito accademico: __Docenti__
 
 ### Supporto alla __valutazione__ degli studenti (Pattern di prompt utili, cont.)
 
@@ -599,7 +603,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     + fornire copia dei materiali didattici se si vuole che GenAI attinga da essi
 ---
 
-## AI in ambito accademico: __Docenti__
+## GenAI in ambito accademico: __Docenti__
 
 ### Supporto alla __valutazione__ degli studenti (Esempio completo)
 
@@ -618,7 +622,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 |                         | Racconto di Paolo e Francesca: dinamica della vicenda                                         | 2             |
 |                         | Analisi dei temi amore/colpa/peccato ed empatia suscitata                                     | 3             |
 |                         | Collegamento alla visione della giustizia divina e al progetto etico-teologico di Dante       | 3             |
-| **Errori tipici**       | {{% color="red" %}}Riassunto meramente narrativo senza analisi {{% /color %}}                 | -2            |
+| **Errori tipici**       | {{% color "red" %}}Riassunto meramente narrativo senza analisi {{% /color %}}                 | -2            |
 |                         | Confondere canto o collocazione nell’Inferno                                                  | -1            |
 | **Fattori bonus/malus** | Uso di citazioni testuali mirate (anche brevi)                                                | +2            |
 |                         | Argomentazione poco coerente o priva di struttura                                             | -2            |
@@ -626,7 +630,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ---
 
-## AI in ambito accademico: __Docenti__
+## GenAI in ambito accademico: __Docenti__
 
 ### Supporto alla __valutazione__ degli studenti
 
@@ -646,21 +650,22 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ---
 
-## AI in ambito accademico: __Docenti__
+## GenAI in ambito accademico: __Docenti__
 
-### Caso 4: _Supporto attività amministrative_
+### Caso 4: _Supporto attività amministrative_ (Overview)
 
-- L'efficacia nell'automatizzazione di compiti ripetitivi rende AI uno strumento utile per la gestione di varie attività amministrative
-    + Gestione delle comunicazioni con gli studenti (email, annunci, etc...).
-    + Gestione delle iscrizioni e registrazioni degli studenti.
-    + Monitoraggio delle scadenze accademiche e amministrative.
-  
+<!-- - L'efficacia nell'automatizzazione di compiti ripetitivi rende AI uno strumento utile per la gestione di varie attività amministrative -->
++ Generazione di __comunicazioni__ generali/personalizzate con gli studenti (email, annunci, etc...)
++ Creazione di __documenti__ amministrativi standard (lettere, report, etc...)
++ Analisi dei __questionari della didattica__ per individuare aree di miglioramento
++ Generazione __timesheet__ o _report di avanzamento_ per progetti di ricerca
+
 ---
 
-## AI in ambito accademico: __Docenti__
+## GenAI in ambito accademico: __Docenti__
 
-### Caso 4: _Supporto attività amministrative_
-- <u>`Genera`</u> ` una email per informare gli studenti del corso X che la lezione di domani è spostata a data Y`
+### Caso 4: _Supporto attività amministrative_ (Pattern di prompt utili)
+<!-- - <u>`Genera`</u> ` una email per informare gli studenti del corso X che la lezione di domani è spostata a data Y` -->
 
 - <u>`Genera`</u> ` una lettera di benvenuto per i nuovi studenti iscritti al corso X`
     + includendo informazioni su:
@@ -670,13 +675,19 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
         * contatti utili
 
 - <u>`Crea`</u> ` una lettera di raccomandazione per lo studente Y basata su queste informazioni: ...`
-    + informazioni sullo studente (es. voti, progetti, etc...)
+    + __Privacy-concerning__: informazioni sullo studente (es. voti, progetti, etc...) 
+    + interazioni passate tra il firmatario e lo studente
     + informazioni sul destinatario (es. università, azienda, etc...)
 
-- `Dato questo questionario di feedback degli studenti,` <u>`genera`</u> ` un report sintetico con i punti chiave e suggerimenti per migliorare il corso X`
-    + \[allegando il questionario]
+- `Dato questo questionario di feedback degli studenti,` <u>`genera`</u> ` un report sintetico con i punti chiave e suggerimenti per migliorare il corso`
+    + \[allegando esiti del questionario e feedback dello studente]
 
----
+- `Genera un timesheet mensile per il progetto P, considerando i seguenti vincoli:`
+    + `massimo 8 ore al giorno, dal lunedì al venerdì`
+    + `faccio 3 ore di lezione il lunedì e 2 ore il mercoledì`
+    + __Nota__ LLM non possono inferire il calendarario se non per mezzo di informazioni esplicite e/o tools
+
+<!-- ---
 
 ## AI in ambito accademico: __Docenti__
 
@@ -692,40 +703,50 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     * Lunedì 9:00 - 11:00
     * Mercoledì 14:00 - 16:00
     * Giovedì 10:00 - 12:00
-  + Eventuali contatti: `ugo.rossi@unibo.it`
+  + Eventuali contatti: `ugo.rossi@unibo.it` -->
 
----
+<!-- ---
 
 ## AI in ambito accademico: __Docenti__
 
 ### Caso 4: _Supporto attività amministrative_
 
 ### Risultato generato:
-{{< image src="./teaching/welcome-letter-chatgpt.png" max-h="80vh" alt="Welcome letter written with ChatGPT" >}}
+{{< image src="./teaching/welcome-letter-chatgpt.png" max-h="80vh" alt="Welcome letter written with ChatGPT" >}} -->
 
 ---
 
-## AI in ambito accademico: __Docenti__
+## GenAI in ambito accademico: __Docenti__
 
 ### Caso 5: _Creazione di tutor AI personalizzati_
 
-- È possibile __creare__ tutor AI personalizzati per _assistere_ gli studenti al di fuori delle ore di lezione in grado di:
-    + __Rispondere__ a domande _frequenti_ sugli argomenti del corso.
-    + __Fornire spiegazioni__ aggiuntive su _concetti complessi_.
-    + __Fornire supporto__ personalizzato in base alle _esigenze_ individuali degli studenti.
-  
+> Tutor AI $\approx$ _Chatbot_ basato su LLM, istruito/informato su materiale specifico del corso/docente 
+
+È possibile __creare__ _tutor AI personalizzati_ per _assistere_ gli studenti al di fuori delle ore di lezione in grado di
++ __Rispondere__ a domande _frequenti_ sugli argomenti del corso
++ Fornire __spiegazioni__ aggiuntive su _argomenti del corso_
++ Fornire __supporto__ personalizzato in base alle _esigenze_ individuali degli studenti
+
+{{% fragment %}}
+> Doppia interfaccia: 
+> 1. Studente $\rightarrow$ interfaccia _conversazionale_ (chat)
+> 2. Docente $\rightarrow$ interfaccia semplificata per _caricare_ materiali/istruzioni di riferimento
+{{% /fragment %}}
+
 ---
 
-## AI in ambito accademico: __Docenti__
+## GenAI in ambito accademico: __Docenti__
 
 ### Caso 5: _Creazione di tutor AI personalizzati_
 
-- Esistono varie _piattaforme_ che permettono di _creare facilmente_ dei bot personalizzati basati su modelli di linguaggio. 
-- In questo esempio vediamo come sia possibile crearne uno utilizzando [SchoolAI](https://schoolai.com/).
-  + Si crea uno __"spazio di lavoro"__, inserendo il nome del corso e una breve descrizione.
-  + Si __caricano__ i materiali di riferimento (dispense, slide, link a pagine web, etc...).
-  + Eventualmente vengono fornite altre _informazioni utili_ (copertina del corso, tonality, etc...).
-- Una volta creato lo spazio di lavoro, si può _iniziare a chattare_ con il bot, che risponderà in base al materiale caricato.
+- Esistono varie _piattaforme_ che permettono di _creare facilmente_ dei bot personalizzati basati su LLM
+
+- Esempio: [SchoolAI](https://schoolai.com/)
+    + Si crea uno __"spazio di lavoro"__, inserendo il nome del corso e una breve descrizione
+    + Si __caricano__ i materiali di riferimento (dispense, slide, link a pagine web, etc...)
+    + Eventualmente vengono fornite altre _informazioni utili_ (preferenze del docente, orari, convenzioni, etc)
+
+- Una volta creato lo spazio di lavoro, si può _iniziare a chattare_ con il bot, che risponderà in base al materiale caricato
 
 <div style="display:flex; gap:30px; justify-content:center; align-items:flex-start;">
   <figure style="text-align:center;">
@@ -741,80 +762,88 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ---
 
-## AI in ambito accademico: __Studenti__
-
-### Caso 1: _Produzione di contenuti_
-- Gli studenti possono utilizzare AI per la _generazione_ di vari contenuti:
-    + __Creazione__ di appunti di studio _sintetici_ e _organizzati_.
-    + __Generazione__ di bozze per _progetti_ o _relazioni_.
-    + __Creazione__ di presentazioni per _progetti accademici_.
+# GenAI in ambito educativo: __Studenti__
 
 ---
-## AI in ambito accademico: __Studenti__
 
-### Caso 1: _Produzione di contenuti_
-- `Dato il documento caricato,` <u>`trova errori `</u> `,` <u>`incongruenze `</u> `,` <u>`punti di attacco `</u> `e` <u>`suggerimenti `</u> `per migliorarlo`
-    + \[allegando la bozza]
+## GenAI in ambito accademico: __Studenti__
 
-- <u>`Integra`</u>` insieme questi due appunti di lezione in un unico documento coerente e ben strutturato`
+### Caso 1: _Produzione di contenuti_ (Overview)
+
++ Creazione di __appunti__ di studio _sintetici_ e _organizzati_
++ Generazione di __bozze__ per _progetti_ o _relazioni_
++ Creazione di __presentazioni__ per _progetti accademici_
++ Validazione di __contenuti__ (e.g., controllo grammaticale, coerenza, etc...)
+
+---
+
+## GenAI in ambito accademico: __Studenti__
+
+### Caso 1: _Produzione di contenuti_ (Pattern di prompt utili)
+
+- <u>`Integra`</u>` questi due appunti di lezione in un unico documento coerente e ben strutturato`
     + \[allegando i due appunti]
     + opzionalmente: `Evidenzia le parti ridondanti o contraddittorie`
     + opzionalmente: `Aggiungi un sommario all'inizio`
   
 - `Data questa scaletta, generami una bozza per questo capitolo di tesi`
-    + Si possono integrare eventuali riferimenti bibliografici
-    + Si può anche chiedere di mantenere uno stile specifico (formale, informale, tecnico, etc...)
+    + \[allegando la scaletta + riferimenti bibliografici]
+    + si può anche chiedere di mantenere uno stile specifico (formale, informale, tecnico, etc...)
+
+- `Dato il documento caricato,` <u>`trova errori `</u> `,` <u>`incongruenze `</u> `,` <u>`punti di attacco `</u> `e` <u>`suggerimenti `</u> `per migliorarlo`
+    + \[allegando la bozza]
 
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
-### Caso 1: _Produzione di contenuti_
+### Caso 1: _Produzione di contenuti_ (Esempio)
 
-- `Generazione parafrasi canto V della Divina Commedia`
-  
-- Risposta generata:
-<span style="color: grey; font-style: italic;">
-"Dante e Virgilio scendono nel secondo cerchio dell’Inferno, dove le anime sono giudicate da Minosse, che assegna a ciascuna la pena. Qui sono puniti i lussuriosi, trascinati per sempre da una bufera infernale che simboleggia la passione incontrollata che li travolse in vita. Dante vede tra loro celebri figure come Semiramide, Didone, Cleopatra, Elena, Achille, Paride e Tristano. In particolare, il poeta si sofferma su due anime che volano insieme: Paolo e Francesca da Rimini. Francesca racconta che l’amore tra loro nacque leggendo la storia di Lancillotto e Ginevra, e che, al punto in cui i protagonisti si baciarono, anche Paolo la baciò: fu l’inizio della loro condanna. La vicenda tocca profondamente Dante, che, preso dalla pietà, sviene."
-</span>
+- `Genera una parafrasi puntuale del canto, riga per riga`
+    + \[allegando il testo del canto]
+
+<br>
+
+{{< image src="./student/divine-comedy-chap5-analysis.png" max-h="60vh" alt="Parafrasi (generata) del canto V della Divina Commedia" >}}
 
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
-### Caso 1: _Produzione di contenuti_
+### Caso 1: _Produzione di contenuti_ (Note)
 
-- La produzione di contenuti permette di avere una base di partenza su cui lavorare.
+- La produzione di contenuti permette di avere una _base di partenza_ su cui lavorare
+    + utile per la prima stesura, non per l'ultima
+    + si genera una __bozza__, poi la si _rielabora_ e _migliora_.
 
-- Nella produzione di contenuti con AI è importante:
-    + Fornire un occhio di riguardo ad aspetti relativi a {{% color "red" %}}diritti d'autore{{% /color %}} e {{% color "red" %}}plagio{{% /color %}}.
-    + __Verificare__ sempre l'_accuratezza_ e la _correttezza_ delle informazioni generate.
+- Nella produzione di contenuti con GenAI è importante:
+    + fare attenzione {{% color "red" %}}diritti d'autore{{% /color %}} e {{% color "red" %}}plagio{{% /color %}} anche accidentale
+    + __verificare sempre__ l'_accuratezza_ e la _correttezza_ delle informazioni generate
 
-- Spesso si usa come approccio per _superare_ un eventuale blocco creativo.
-  + Si __genera__ una bozza, poi la si _rielabora_ e _migliora_.
-
-- È importante __specificare__ chiaramente il contesto e gli obiettivi nel prompt.
-  + Più il prompt è dettagliato, più è probabile che il risultato sia pertinente.
+- È importante __specificare__ chiaramente il _contesto_, gli _obiettivi_, e _background_ nel prompt
+    + è possibile fornire queste informazioni man man che si corregge il tiro
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
+
+### Caso 2: _Comprensione_ (Overview)
+
++ __Spiegazioni__ _semplificate_ di concetti complessi
++ __Risposte__ a domande _specifiche_ su argomenti di studio
++ __Suggerimenti__ per ulteriori _letture_ o _risorse di apprendimento_
++ __Esempi__ pratici per _illustrare_ concetti teorici (codice, esercizi matematici, etc...)
++ __Confronti__ tra concetti simili per chiarirne le differenze
+
+---
+
+## GenAI in ambito accademico: __Studenti__
 
 ### Caso 2: _Comprensione_
-- Diverse soluzioni AI sono in grado di aiutare gli studenti nello studio:
-    + __Spiegazioni__ _semplificate_ di concetti complessi.
-    + __Risposte__ a domande _specifiche_ su argomenti di studio.
-    + __Suggerimenti__ per ulteriori _letture_ o _risorse di apprendimento_.
-    + __Esempi__ pratici per _illustrare_ concetti teorici (codice, esercizi matematici, etc...).
 
----
-
-## AI in ambito accademico: __Studenti__
-
-### Caso 2: _Comprensione_
 - `Spiegami in termini semplici il concetto di X`
-    + \[inserendo il concetto X]
+    + \[fornendo magari materiale didattico]
 
-- `Nel seguente documento cosa si intender per A?`
+- `Nel documento allegato cosa si intender per A?`
     + \[allegando il documento]
     + opzionalmente: `Spiegami con un esempio pratico`
   
@@ -824,9 +853,10 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
   
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
 ### Caso 2: _Comprensione_
+
 - `All'interno del canto V della Divina Commedia, cosa rappresenta la bufera infernale?`
 - Risposta generata:
 <span style="color: grey; font-style: italic;">
@@ -837,84 +867,80 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
 ### Caso 3: _Arricchimento materiale prodotto_
 
-- AI può aiutare a _migliorare_ qualitativamente del materiale prodotto dagli studenti:
-    + __Correzione__ grammaticale e stilistica di testi.
-    + __Parafrasi__ o __riformulazione__ di contenuti per maggiore chiarezza.
-    + __Suggerimenti__ per migliorare la struttura o l'organizzazione del materiale.
-    + __Strutturazione__ di codice per progetti di programmazione.
-    + __Generazione__ di grafici o diagrammi per visualizzare dati o concetti.
+<!-- - AI può aiutare a _migliorare_ qualitativamente del materiale prodotto dagli studenti: -->
++ __Correzione__ grammaticale e stilistica di testi
++ __Parafrasi__ o __riformulazione__ di contenuti per maggiore chiarezza
++ __Suggerimenti__ per migliorare la struttura o l'organizzazione del materiale
++ Strutturazione/analisi di __codice__ per progetti di _programmazione_
++ Generazione di __grafici__ o diagrammi per visualizzare dati o concetti
 
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
 ### Caso 3: _Arricchimento materiale prodotto_
 
-- `Sbobina questa traccia audio`
+- `Cerca errori o incongruenze nel testo allegato`
+    + \[allegando la documento]
+
+- `Trascrivi questa traccia audio`
     + \[allegando la traccia audio]
 
 - `Traduci questo testo in X`
-    + \[allegando il testo].
-    + \[specificando la lingua X].
+    + \[allegando il testo e specificando la lingua X].
     + opzionalmente è possibile anche chiedere una traduzione con un certo stile (formale, informale, tecnico, etc...).
 
-- `Fai il riassunto di questo video [fornire file]`
+- `Fai il riassunto di questo video`
   + \[allegando il video]
 
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
 ### Caso 3: _Arricchimento materiale prodotto_
 
-- `Traduci questo testo in inglese, mantieni un tono discorsivo e formale`
+- `Traduci il testo del canto in inglese cercando di avere anche lì uno stile arcaico ed uno schema metrico`
 <br/>
-<span style="color: grey; font-style: italic;">
-"La Divina Commedia non è una semplice opera letteraria, racchiude al suo interno tutto ciò che riguarda le scienze umane. Viaggiando con Dante attraverso l'oltretomba, il lettore conosce lentamente i fatti storici degli anni in cui il poema fu scritto, le travagliate vicissitudini politiche, il pensiero filosofico e teologico ed anche i cruenti fatti di sangue."
-</span>
-
-- Traduzione generata: 
-<span style="color: grey; font-style: italic;">
-"The Divine Comedy is not merely a literary work; it encompasses within itself the entirety of the human sciences. By journeying with Dante through the afterlife, the reader gradually comes to know the historical events of the years in which the poem was written, the turbulent political struggles, the philosophical and theological thought, as well as the violent and bloody occurrences of the time."
-</span>
 
 {{< image src="./student/divine-commedy-comment-traduction.png" max-h="50vh" alt="Traduzione commento sulla divina commedia" >}}
 
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
 ### Caso 3: _Arricchimento materiale prodotto_
 
-- Nel caso della sbobinatura, è sempre importante __controllare__ l'accuratezza del testo che viene generato.
-  + Spesso vengono commessi {{% color "red" %}}errori di trascrizione{{% /color %}}, specialmente con nomi propri o termini tecnici.
-  + È sempre bene _rileggere_ e _correggere_ il testo sbobinato.
+- Nel caso della __sbobinatura__, è sempre importante _controllare l'esattezza del testo_ generato
+    + spesso vengono commessi {{% color "red" %}}errori di trascrizione{{% /color %}}, specialmente con nomi propri o termini tecnici.
+    + è sempre bene _rileggere_ e _correggere_ il testo sbobinato
 
-- Nel caso della traduzione, è importante considerare il _contesto_ e il _pubblico_ a cui è destinato il testo tradotto.
-  + È consigliabile fornire __indicazioni__ chiare sullo _stile_ e sul _tono_ desiderati.
-  + Anche in questo caso, è sempre bene _rileggere_ e _correggere_ la traduzione generata.
+- Nel caso della __traduzione__, è importante considerare il _contesto_ e il _pubblico_ a cui è destinato il testo tradotto
+    + è consigliabile fornire __indicazioni__ chiare sullo _stile_ e sul _tono_ desiderati
+    + è sempre bene _rileggere_ e _validare_ la traduzione generata
 
-- Come per la produzione di contenuti è fondamentale __verificare__ che non vi siano {{% color "red" %}}problemi di plagio o diritti d'autore{{% /color %}}.
+- Facile incorrere in problematiche relative a problemi di __plagio__ o __diritti d'autore__
+    + la traduzione è 'inventata' da GenAI o è una traduzione esistente?
+    + avevi il diritto di usare le registrazioni? e di condividerle col provider di GenAI?
 
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
 ### Caso 4: _Brainstorming_
 
 - Strumenti AI possono essere affiancati agli studenti a __supporto__ del _processo creativo_:
-    + __Idee__ per progetti o ricerche.
-    + __Refactoring__ di codice.
-    + Trovare __soluzioni__ alternative a problemi complessi.
-    + __Suggerimenti__ per migliorare l'_efficacia_ di presentazioni o discorsi.
+    + __Idee__ per progetti o ricerche
+    + __Refactoring__ di codice
+    + Cercare __soluzioni__ alternative a problemi complessi
+    + __Suggerimenti__ per migliorare l'_efficacia_ di presentazioni o discorsi
 
 ---
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
 ### Caso 4: _Brainstorming_
 
@@ -934,13 +960,15 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 ---
 
 
-## AI in ambito accademico: __Studenti__
+## GenAI in ambito accademico: __Studenti__
 
 ### Caso 4: _Brainstorming_
 
-- `Quali sono gli eventi del canto V della Divina Commedia?`
+- `Voglio fare una tesina dove metto in relazione l'inferno dantesco alla cultura musulmana, suggerisci idee`
+
 <br/>
-{{< image src="./student/divine-commedy-event.png" max-h="50vh" alt="Eventi canto 5 divina commedia chiesto a ChatGPT" >}}
+
+{{< image src="./student/divine-commedy-islam.png" max-h="50vh" alt="Suggerimenti per tesina su inferno dantesco e cultura musulmana" >}}
 
 ---
 
@@ -952,11 +980,12 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 ## Esempi di __tecnologie__ GenAI
 
-- __Esistono__ vari _strumenti_ basati su AI generativa che possono _assistere_ studenti e docenti in vari modi.
-- Facciamo una breve panormica di alcune delle soluzioni più _comuni_ e _interessanti_.
-- Alcuni di questi forniti con una modalità __gratuita__ mentre altri richiedono un __abbonamento__ o __pagamento__ per funzionalità avanzate.
+- __Esistono__ vari _strumenti_ basati su GenAI che supportano i casi d'uso discussi
+- Segue __panoramica__ delle soluzioni più _comuni_ e _interessanti_
+- Alcuni di questi forniti con una modalità __gratuita__ mentre altri richiedono un __abbonamento__ o __pagamento__ per funzionalità avanzate
 
 ---
+
 <!--
 ## Esempi di __tecnologie__ GenAI: _Chat Testuali_
 - [ChatGPT](https://chat.openai.com/) - Piattaforma utilizzata per la generazione di contenuti in base alle richieste degli utenti.
@@ -1035,21 +1064,26 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/chatgpt-main-screen.png"  alt="ChatGPT Schermata Principale" >}}
+{{< image src="./interface-conversational.png"  alt="ChatGPT Schermata d'Esempio" >}}
 {{% /col %}}
 
 {{% col %}}
-- [ChatGPT](https://chat.openai.com/) - Piattaforma utilizzata per la generazione di contenuti in base alle richieste degli utenti.
-  + Supporta conversazioni contestuali e risposte personalizzate.
-  + Utilizzata per vari scopi in ambito educativo come spiegazioni, generazione di appunti, risoluzione di esercizi, etc.
+- [ChatGPT](https://chat.openai.com/) 
+    + _Stato dell'arte_ per modelli e interfaccia conversazionale
+    + supporto ai __progetti__: gruppi di chat con _istruzioni/file condivisi_
+    + supporto ai __GPT__{{% color "red" %}}\*{{% /color %}}: _chat-bot personalizzati_ (da terze parti) con funzionalità/_informazioni_ specifiche
+    + modalità __studia e impara__ (per discenti){{% color "red" %}}\*{{% /color %}}: esercizi, quiz, spiegazioni, etc...
 
-- Prevede sia una versione __gratuita__ che una a __pagamento__.
-  + La versione a pagamento offre accesso illimitato a modelli più avanzati.
-  + La versione gratuita ha limitazioni di utilizzo giornaliero e accesso (fallback) a modelli meno potenti.
+- Nella versione a __pagamento__
+    + _meno limiti_ di utilizzo{{% color "red" %}}\*{{% /color %}}, _più scelta_ di modelli aggiornati
+        * es. numero di messaggi, _upload di file_, etc.
+    + modalità __agente__: possibilità per ChatBot di _interfacciarsi_ ad altre applicazioni e servizi
+
 {{% /col %}}
 
 {{% /multicol %}}
 
+{{% color "red" %}}\*{{% /color %}} funzionalità impattanti per l'educazione
 
 ---
 
@@ -1062,13 +1096,14 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% /col %}}
 
 {{% col %}}
-- [Claude](https://claude.ai/) - Elabora grandi quantità di informazioni.
-  + Elabora una grande quantità di informazioni e contenuti.
-  + In grado di generare idee, produrre testi e codice.
-
-- Prevede sia una versione __gratuita__ che una a __pagamento__.
-    + In entrambe è possibile sfruttare l'_ultima_ versione del modello
-    + In base al piano di abbonamento si hanno __limiti di utilizzo__ differenti.
+- [Claude](https://claude.ai/) 
+    + importante competitor di ChatGPT
+    + supporto ai __progetti__: gruppi di chat con _istruzioni/file condivisi_ 
+    + supporto gli __artefatti__: _chat-bot personalizzati_ (da terze parti) con funzionalità/_informazioni_ specifiche
+- Nella versione a __pagamento__
+    + _meno limiti_ di utilizzo, _più scelta_ di modelli aggiornati
+        * es. numero di messaggi, _upload di file_, etc.
+    + possibilità di definire __connettori__: possibilità per ChatBot di _interfacciarsi_ ad altre applicazioni e servizi
 {{% /col %}}
 
 {{% /multicol %}}

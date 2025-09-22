@@ -678,20 +678,16 @@
 </ul>
 </section><section>
 <h2 id="ai-in-ambito-accademico-docenti">AI in ambito accademico: <strong>Docenti</strong></h2>
-<h3 id="supporto-alla-valutazione-degli-studenti">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+<h3 id="supporto-alla-valutazione-degli-studenti-overview">Supporto alla <strong>valutazione</strong> degli studenti (Overview)</h3>
 <ul>
-<li>AI trova impiego anche nel <em>monitoraggio</em> e <em>valutazione</em> del progresso degli studenti, con suggerimenti personalizzati per migliorare l’apprendimento
-<ul>
-<li><em>Analisi</em> delle prestazioni degli studenti attraverso <em>dati</em> e <em>metriche</em>.</li>
-<li><em>Feedback personalizzato</em> basato sulle risposte degli studenti nei <em>quiz</em> o <em>compiti</em>.</li>
-<li><em>Identificazione</em> di aree di miglioramento</li>
-<li><em>Suggerimenti</em> su <em>risorse</em> o <em>strategie</em> di studio personalizzate.</li>
+<li><em>Valutazione semi-automatica</em> delle risposte degli studenti</li>
+<li><em>Feedback personalizzato</em> basato sulle risposte degli studenti nei <em>quiz</em> o <em>compiti</em></li>
+<li><em>Identificazione</em> di aree di miglioramento/approfondimento</li>
 </ul>
-</li>
-</ul>
+<!-- + _Suggerimenti_ su _risorse_ o _strategie_ di studio personalizzate. -->
 </section><section>
 <h2 id="ai-in-ambito-accademico-docenti-1">AI in ambito accademico: <strong>Docenti</strong></h2>
-<h3 id="supporto-alla-valutazione-degli-studenti-1">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+<h3 id="supporto-alla-valutazione-degli-studenti-pattern-di-prompt-utili">Supporto alla <strong>valutazione</strong> degli studenti (Pattern di prompt utili)</h3>
 <ul>
 <li>
 <p><u><code>Valuta</code></u> <code>la risposta X data alla domanda Y secondo questi criteri di valutazione: ...</code></p>
@@ -706,66 +702,66 @@
   <tbody>
       <tr>
           <td><strong>Informazioni attese</strong></td>
-          <td>informazione 1</td>
-          <td>p1</td>
+          <td>informazione $1$</td>
+          <td>$p_1$</td>
       </tr>
       <tr>
           <td></td>
-          <td>informazione 2</td>
-          <td>p2</td>
+          <td>informazione $2$</td>
+          <td>$p_2$</td>
       </tr>
       <tr>
           <td></td>
-          <td>informazione N</td>
-          <td>pN</td>
+          <td>informazione $N$</td>
+          <td>$p_N$</td>
       </tr>
       <tr>
           <td><strong>Errori tipici</strong></td>
-          <td>errore tipico 1</td>
-          <td>-e1</td>
+          <td>errore tipico $1$</td>
+          <td>$-e_1$</td>
       </tr>
       <tr>
           <td></td>
-          <td>errore tipico 2</td>
-          <td>-e2</td>
+          <td>errore tipico $2$</td>
+          <td>$-e_2$</td>
       </tr>
       <tr>
           <td></td>
-          <td>errore tipico M</td>
-          <td>-eM</td>
+          <td>errore tipico $M$</td>
+          <td>$-e_M$</td>
       </tr>
       <tr>
           <td><strong>Fattori bonus/malus</strong></td>
-          <td>fattore 1 (bonus)</td>
-          <td>+b1</td>
+          <td>fattore $1$ (bonus)</td>
+          <td>$+b_1$</td>
       </tr>
       <tr>
           <td></td>
-          <td>fattore 2 (malus)</td>
-          <td>-b2</td>
+          <td>fattore $2$ (malus)</td>
+          <td>$-b_2$</td>
       </tr>
       <tr>
           <td></td>
-          <td>fattore K (malus)</td>
-          <td>-bK</td>
+          <td>fattore $K$ (malus)</td>
+          <td>$-b_K$</td>
       </tr>
   </tbody>
 </table>
 </li>
 <li>
-<p><code>Data la risposta A </code> <u><code>calcola</code></u> <code> il punteggio totale e fornisci un feedback costruttivo</code></p>
+<p><code>... calcola il punteggio totale e fornisci un feedback costruttivo</code></p>
+  <!-- + La scala di valutazione va da 0 a 30, eventuali mezzi punti sono arrotondati per difetto -->
 <ul>
-<li>Possibile anche definire la <strong>scala di valutazione</strong> (e.g., 0-30, A-F, etc.)</li>
-<li>Il feedback può includere suggerimenti su come <em>migliorare</em>, <em>punti di forza</em> della risposta, e <em>aree che necessitano di ulteriore approfondimento</em>.</li>
+<li>[opt] <code>interrompi il ragionamento e chiedimi come procedere se incontri elementi non coperti dalla griglia</code></li>
 </ul>
 </li>
 </ul>
 </section><section>
 <h2 id="ai-in-ambito-accademico-docenti-2">AI in ambito accademico: <strong>Docenti</strong></h2>
-<h3 id="supporto-alla-valutazione-degli-studenti-2">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+<h3 id="supporto-alla-valutazione-degli-studenti-pattern-di-prompt-utili-cont">Supporto alla <strong>valutazione</strong> degli studenti (Pattern di prompt utili, cont.)</h3>
 <ul>
 <li>
-<p><code>L'esito di questo compito X ha dato questo risultato Y.</code> <u><code>Suggerisci</code></u> <code> un feedback costruttivo per lo studente basato su queste mie opinioni grezze: ...</code></p>
+<p><code>Riposta X alla domanda Y, segue opinione grezza, aiutami a dare un feedback costruttivo</code></p>
 <ul>
 <li>Le opinioni grezze possono essere ad esempio:
 <ul>
@@ -777,25 +773,25 @@
 </ul>
 </li>
 <li>
-<p><code>La media dei voti di questo quiz è Z.</code> <u><code>Suggerisci</code></u> <code> materiale di approfondimento</code></p>
+<p><code>Risposta X alla domanda Y, giudizio Z, suggerisci materiali di approfondimento per lo studente</code></p>
 <ul>
-<li>Potresti consigliare risorse aggiuntive come articoli, video o esercizi pratici per aiutare gli studenti a comprendere meglio gli argomenti in cui hanno avuto difficoltà.</li>
+<li>fornire copia dei materiali didattici se si vuole che GenAI attinga da essi</li>
 </ul>
 </li>
 </ul>
 </section><section>
 <h2 id="ai-in-ambito-accademico-docenti-3">AI in ambito accademico: <strong>Docenti</strong></h2>
-<h3 id="supporto-alla-valutazione-degli-studenti-3">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+<h3 id="supporto-alla-valutazione-degli-studenti-esempio-completo">Supporto alla <strong>valutazione</strong> degli studenti (Esempio completo)</h3>
 <ul>
 <li>
-<p>Domanda esempio:
+<p><em>Domanda</em> esempio:
 <br>
 <span style="color: grey; font-style: italic;">
 “Nel Canto V dell’Inferno, Dante incontra Paolo e Francesca. Analizza come l’autore intreccia amore e colpa nella rappresentazione dei due personaggi, mettendo in evidenza gli strumenti poetici e retorici utilizzati per suscitare empatia nel lettore, e discuti in che modo questo episodio contribuisce alla visione dantesca della giustizia divina”
 </span></p>
 </li>
 <li>
-<p>Griglia di valutazione:</p>
+<p><em>Griglia</em> di valutazione:</p>
 </li>
 </ul>
 <table>
@@ -834,7 +830,7 @@
       </tr>
       <tr>
           <td><strong>Errori tipici</strong></td>
-          <td>Riassunto meramente narrativo senza analisi</td>
+          <td><span style="color: ;">Riassunto meramente narrativo senza analisi </span></td>
           <td>-2</td>
       </tr>
       <tr>
@@ -861,7 +857,7 @@
 </table>
 </section><section>
 <h2 id="ai-in-ambito-accademico-docenti-4">AI in ambito accademico: <strong>Docenti</strong></h2>
-<h3 id="supporto-alla-valutazione-degli-studenti-4">Supporto alla <strong>valutazione</strong> degli studenti</h3>
+<h3 id="supporto-alla-valutazione-degli-studenti">Supporto alla <strong>valutazione</strong> degli studenti</h3>
 <ul>
 <li>
 <p>Risposta esempio <em>buona</em> (voto 26/30):

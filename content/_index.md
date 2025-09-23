@@ -31,12 +31,19 @@ outputs = ["Reveal"]
 
 ---
 
+{{< slide id="toc" >}}
+
 ## Scaletta
 
 1. [Introduzione](#intro)
-2. [Principali soluzioni tecnologiche](#interfaces)
-3. [Principali modalità d'utilizzo di GenAI](#modes)
-4. [Principalità impieghi di GenAI in ambito educativo](#academic-use)
+1. [Principali soluzioni tecnologiche](#interfaces)
+1. [Principali modalità d'utilizzo di GenAI](#modes)
+    1. per [docenti](#academic-use-teachers)
+    1. per [studenti](#academic-use-students)
+1. [Principali impieghi di GenAI in ambito educativo](#academic-use)
+1. [Esempi di tecnologie GenAI per l'educazione](#technologies)
+1. [Sfide e criticità dell'applicazione di GenAI all'educazione](#challenges)
+1. [Sperimentazioni in corso in UniBo](#unibo-experiments)
 
 {{% /section %}}
 
@@ -387,8 +394,6 @@ Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, C
 
 # Principali __impieghi__ di GenAI in ambito educativo
 
-
-
 L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
 
 {{% multicol %}}
@@ -419,6 +424,8 @@ L'utilizzo di strumenti AI varia a seconda del __ruolo__ accademico considerato.
 {{% /multicol %}}
 
 ---
+
+{{< slide id="academic-use-teachers" >}}
 
 # GenAI in ambito educativo: __Docenti__
 
@@ -639,11 +646,11 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
     "Nel canto V Dante colloca i lussuriosi nel secondo cerchio, travolti dalla bufera che simboleggia la passione incontrollata. L’incontro con Paolo e Francesca, introdotto dal giudizio di Minosse, è narrato con forte pathos: Francesca parla per entrambi, presentando l’amore come forza inevitabile, alimentata dalla lettura (“Galeotto fu ’l libro”). Dante utilizza un registro lirico che suscita empatia, ma al tempo stesso mostra come la mancanza di responsabilità trasformi l’amore in colpa. Il canto esprime così la tensione tra pietà umana e giustizia divina."
 </span>
 
-- Risposta esempio {{% color "red" %}} non accurata {{% /color %}} (voto 14/30):
+<!-- - Risposta esempio {{% color "red" %}} non accurata {{% /color %}} (voto 14/30):
 <br/>
 <span style="color: grey; font-style: italic;">
     "Nel canto V Dante incontra Paolo e Francesca, uccisi dal marito di lei dopo essersi innamorati leggendo un libro. Dante si commuove e sviene. L’episodio è famoso perché parla di un amore romantico che colpisce ancora oggi."
-</span>
+</span> -->
 
 {{< image src="./teaching/divine-comedy-eval.png" max-h="50vh" alt="Correzione risposte tramite ChatGPT" >}}
 
@@ -722,7 +729,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 > Tutor AI $\approx$ _Chatbot_ basato su LLM, istruito/informato su materiale specifico del corso/docente
 
 È possibile __creare__ _tutor AI personalizzati_ per _assistere_ gli studenti al di fuori delle ore di lezione in grado di
-+ __Rispondere__ a domande _frequenti_ sugli argomenti del corso
++ __Rispondere__ a domande _frequenti_ sugli argomenti/logistica del corso
 + Fornire __spiegazioni__ aggiuntive su _argomenti del corso_
 + Fornire __supporto__ personalizzato in base alle _esigenze_ individuali degli studenti
 
@@ -760,6 +767,8 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 </div>
 
 ---
+
+{{< slide id="academic-use-students" >}}
 
 # GenAI in ambito educativo: __Studenti__
 
@@ -973,11 +982,11 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 {{< slide id="technologies" >}}
 
-# Esempi di __tecnologie__ GenAI
+# Esempi di __tecnologie__ GenAI per l'educazione
 
 ---
 
-## Esempi di __tecnologie__ GenAI
+## Esempi di __tecnologie__ GenAI per l'educazione
 
 - __Esistono__ vari _strumenti_ basati su GenAI che supportano i casi d'uso discussi
 - Segue __panoramica__ delle soluzioni più _comuni_ e _interessanti_
@@ -1612,4 +1621,102 @@ In questo momento proliferano _strumenti roboanti_ la cui __efficacia__ ed __usa
 
 ---
 
+{{< slide id="unibo-experiments" >}}
+
+# Sperimentazioni in corso in UniBo 
+
+---
+
+## AI-Assisted Programming
+
+Sperimentazione di *AI-assisted programming* nel primo anno del corso di _laurea triennale in Scienze Statistiche_
+- __Obiettivo__: supportare l’insegnamento dell’informatica tramite strumenti di IA generativa
+- Esperienza ispirata al quadro metodologico di _Porter e Zingaro (Manning Publications, 2024)_
+- Focus su aspetti *cognitivi*, *metacognitivi* e *motivazionali* dell’apprendimento della programmazione
+- Integrazione di IA per:
+    - assistenza alla _scrittura del codice_
+    - _analisi automatica_ delle soluzioni
+    - _personalizzazione del feedback_ agli studenti
+- Discussione di *vantaggi* e *criticità* emersi durante la sperimentazione
+
+---
+
+## Personalizzazione e conoscenza del profilo d’aula con l’IA
+
+Clusterizzazione, stili di apprendimento e progettazione didattica
+
+- __Obiettivo__: _personalizzazione dei contenuti didattici_ e la _creazione di profili d’aula_ basati sui dati
+- Applicazione di *tecniche di clusterizzazione* ai background e ai comportamenti degli studenti universitari per individuare pattern ricorrenti
+    + _stili di apprendimento_
+    + grado di _familiarità con le tecnologie_
+    + progressione nei corsi
+- Implicazioni operative per il *supporto alla progettazione didattica*
+- Potenzialità dell’IA come strumento di supporto alla *governance* e al miglioramento continuo dell’offerta formativa
+
+---
+
+## Sperimentazioni di GenIA nella didattica del diritto: il caso DSG (pt. 1)
+
+Nel Dipartimento di Scienze Giuridiche (DSG) sono state integrate 4 modalità innovative di GenIA nella didattica:
+- _Analisi critica_ in aula delle risposte di ChatGPT su _temi giuridici_, per promuovere un uso consapevole
+- _Storytelling giuridico_: trasformazione di casi tecnici in racconti narrativi tramite GenIA, per facilitare la comprensione
+- _Confronto tra pari_ sull’uso di GenIA nello studio del diritto
+- _Simulazioni di role-play_ con GenIA nel corso di negoziazione internazionale, per esplorare dinamiche di trattativa e asimmetrie informative
+
+---
+
+## Sperimentazioni di GenIA nella didattica del diritto: il caso DSG (pt. 2)
+
+CdLM in Informatica Giuridica, Sperimentazione su LLM in task giuridiche
+
+* **Obiettivo**: sperimentare LLM locali in task giuridiche
+* **Attività**:
+  * Estrazione di definizioni normative e riferimenti giuridici
+  * Identificazione di elementi qualificanti (es. titolare trattamento dati)
+  * Generazione di definizioni giuridiche
+* **Metodologia didattica**:
+  * Introduzione teorica + esercitazioni in piccoli gruppi
+  * Scelte tecniche su parametri (temperatura, top-k, top-p), system prompt, contesto.
+* **Output atteso**: valutazione critica dei risultati, analisi dell’impatto delle scelte tecniche, riflessione etica.
+
+---
+
+## Sperimentazioni di GenIA nella didattica del diritto: il caso DSG (pt. 3)
+
+CdLM in Informatica Giuridica, Sperimentazione su KNIME e ipotesi giuridiche
+
+* **Obiettivo**: laboratorio su KNIME, strumento di coding visuale per data processing finalizzato alla verifica di un’ipotesi giuridica
+* **Attività**:
+  * Presentazione e giustificazione del caso e dei dati
+  * Pulizia, elaborazione e commento dei dataset
+  * Esposizione metodologia + visualizzazione grafica
+* **Aspetti critici**:
+  * Questioni giuridiche (es. privacy)
+  * Questioni etiche (es. bias di genere)
+* **Output atteso**: valutazione dei risultati con strumenti di argomentazione e interpretazione giuridica.
+
+---
+
+## Laboratorio su Bias e GenAI: sceneggiature inclusive
+
+CdL in Scienze della Comunicazione e DAMS:
+- Sperimentazione didattica: uso critico di GenAI (ChatGPT, Bard) per scrivere _sceneggiature originali_
+- Focus su _progettazione di prompt_ e _riconoscimento/discussione di bias_ (genere, etnia, abilismo, rappresentazione sociale) nei testi generati
+- Approccio interdisciplinare: integrazione tra pedagogia e informatica per _analisi critica delle sceneggiature_
+- __Obiettivo__: promuovere media education, pensiero critico e data literacy, riflettendo sui rischi dei pregiudizi sistemici nei dati di addestramento
+
+---
+
+## AI e inclusione nella didattica del diritto: progettare UDA con supporto generativo
+
+Sperimentazione nel corso “Didattica del diritto” (CdL Giurisprudenza)
+- Utilizzo di GenAI per _progettare Unità di Apprendimento_ (UDA) rivolte a studenti delle scuole superiori
+- _Attività di gruppo_: generazione idee, strutturazione attività inclusive per BES, esplorazione metodologie innovative (flipped classroom, simulazioni di processo), connessioni interdisciplinari
+- _Obbligo di trasparenza_ sull’origine delle idee generate
+- Presentazione finale dei progetti, _riflessione sui limiti_ e _valore_ dell’AI, _feedback_ della docente
+
+---
+
 ![The end](./end.webp)
+
+[torna a scaletta](#toc)

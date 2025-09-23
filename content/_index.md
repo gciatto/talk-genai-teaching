@@ -1632,18 +1632,25 @@ In questo momento proliferano _strumenti roboanti_ la cui __efficacia__ ed __usa
 Sperimentazione di *AI-assisted programming* nel primo anno del corso di _laurea triennale in Scienze Statistiche_
 - __Obiettivo__: supportare l’insegnamento dell’informatica tramite strumenti di IA generativa
 - Esperienza ispirata al quadro metodologico di _Porter e Zingaro (Manning Publications, 2024)_
-- Focus su aspetti *cognitivi*, *metacognitivi* e *motivazionali* dell’apprendimento della programmazione
+- Focus su aspetti *cognitivi*, *metacognitivi* e *motivazionali* dell’__apprendimento della programmazione__
 - Integrazione di IA per:
     - assistenza alla _scrittura del codice_
     - _analisi automatica_ delle soluzioni
     - _personalizzazione del feedback_ agli studenti
 - Discussione di *vantaggi* e *criticità* emersi durante la sperimentazione
 
+{{% fragment %}}
+### Commenti
+
+- _Nessuna criticità_ dal punto di vista delle policy
+- Sarebbe forse critico se fosse un corso di base in un CdL di Informatica
+{{% /fragment %}}
+
 ---
 
 ## Personalizzazione e conoscenza del profilo d’aula con l’IA
 
-Clusterizzazione, stili di apprendimento e progettazione didattica
+<!-- Clusterizzazione, stili di apprendimento e progettazione didattica -->
 
 - __Obiettivo__: _personalizzazione dei contenuti didattici_ e la _creazione di profili d’aula_ basati sui dati
 - Applicazione di *tecniche di clusterizzazione* ai background e ai comportamenti degli studenti universitari per individuare pattern ricorrenti
@@ -1653,9 +1660,14 @@ Clusterizzazione, stili di apprendimento e progettazione didattica
 - Implicazioni operative per il *supporto alla progettazione didattica*
 - Potenzialità dell’IA come strumento di supporto alla *governance* e al miglioramento continuo dell’offerta formativa
 
+{{% fragment %}}
+### Commenti
+- {{% color "red" %}}potenzialmente critico{{% /color %}}: dipende da se e come si usano dati sensibili
+{{% /fragment %}}
+
 ---
 
-## Sperimentazioni di GenIA nella didattica del diritto: il caso DSG (pt. 1)
+## Sperimentazioni di GenAI in Giurisprudenza (pt. 1)
 
 Nel Dipartimento di Scienze Giuridiche (DSG) sono state integrate 4 modalità innovative di GenIA nella didattica:
 - _Analisi critica_ in aula delle risposte di ChatGPT su _temi giuridici_, per promuovere un uso consapevole
@@ -1663,9 +1675,15 @@ Nel Dipartimento di Scienze Giuridiche (DSG) sono state integrate 4 modalità in
 - _Confronto tra pari_ sull’uso di GenIA nello studio del diritto
 - _Simulazioni di role-play_ con GenIA nel corso di negoziazione internazionale, per esplorare dinamiche di trattativa e asimmetrie informative
 
+{{% fragment %}}
+### Commenti
+
+- _Nessuna criticità_ dal punto di vista delle policy
+{{% /fragment %}}
+
 ---
 
-## Sperimentazioni di GenIA nella didattica del diritto: il caso DSG (pt. 2)
+## Sperimentazioni di GenAI in Giurisprudenza (pt. 2)
 
 CdLM in Informatica Giuridica, Sperimentazione su LLM in task giuridiche
 
@@ -1679,9 +1697,16 @@ CdLM in Informatica Giuridica, Sperimentazione su LLM in task giuridiche
   * Scelte tecniche su parametri (temperatura, top-k, top-p), system prompt, contesto.
 * **Output atteso**: valutazione critica dei risultati, analisi dell’impatto delle scelte tecniche, riflessione etica.
 
+{{% fragment %}}
+### Commenti
+
+- _Nessuna criticità_ dal punto di vista delle policy
+- {{% color "red" %}}potenzialmente critico{{% /color %}}: generazioni di definizioni giuridiche
+{{% /fragment %}}
+
 ---
 
-## Sperimentazioni di GenIA nella didattica del diritto: il caso DSG (pt. 3)
+## Sperimentazioni di GenAI in Giurisprudenza (pt. 3)
 
 CdLM in Informatica Giuridica, Sperimentazione su KNIME e ipotesi giuridiche
 
@@ -1695,6 +1720,28 @@ CdLM in Informatica Giuridica, Sperimentazione su KNIME e ipotesi giuridiche
   * Questioni etiche (es. bias di genere)
 * **Output atteso**: valutazione dei risultati con strumenti di argomentazione e interpretazione giuridica.
 
+{{% fragment %}}
+### Commenti
+
+- _Nessuna criticità_ dal punto di vista delle policy
+{{% /fragment %}}
+
+---
+
+## Sperimentazioni di GenAI in Giurisprudenza (pt. 4)
+
+Sperimentazione nel corso “Didattica del diritto” (CdL Giurisprudenza): progettare UDA con supporto generativo
+- Utilizzo di GenAI per _progettare Unità di Apprendimento_ (UDA) rivolte a studenti delle scuole superiori
+- _Attività di gruppo_: generazione idee, strutturazione attività inclusive per BES, esplorazione metodologie innovative (flipped classroom, simulazioni di processo), connessioni interdisciplinari
+- _Obbligo di trasparenza_ sull’origine delle idee generate
+- Presentazione finale dei progetti, _riflessione sui limiti_ e _valore_ dell’AI, _feedback_ della docente
+
+{{% fragment %}}
+### Commenti
+
+- _Nessuna criticità_ dal punto di vista delle policy
+{{% /fragment %}}
+
 ---
 
 ## Laboratorio su Bias e GenAI: sceneggiature inclusive
@@ -1705,15 +1752,34 @@ CdL in Scienze della Comunicazione e DAMS:
 - Approccio interdisciplinare: integrazione tra pedagogia e informatica per _analisi critica delle sceneggiature_
 - __Obiettivo__: promuovere media education, pensiero critico e data literacy, riflettendo sui rischi dei pregiudizi sistemici nei dati di addestramento
 
+{{% fragment %}}
+### Commenti
+
+- _Nessuna criticità_ dal punto di vista delle policy
+{{% /fragment %}}
+
 ---
 
-## AI e inclusione nella didattica del diritto: progettare UDA con supporto generativo
+## Didattica delle lingue e GenAI
 
-Sperimentazione nel corso “Didattica del diritto” (CdL Giurisprudenza)
-- Utilizzo di GenAI per _progettare Unità di Apprendimento_ (UDA) rivolte a studenti delle scuole superiori
-- _Attività di gruppo_: generazione idee, strutturazione attività inclusive per BES, esplorazione metodologie innovative (flipped classroom, simulazioni di processo), connessioni interdisciplinari
-- _Obbligo di trasparenza_ sull’origine delle idee generate
-- Presentazione finale dei progetti, _riflessione sui limiti_ e _valore_ dell’AI, _feedback_ della docente
+- __Attività 1__ — Scrittura in L2 con _feedback IA_ (inglese B2)
+    - Blog di classe; uso strategico del feedback di ChatGPT
+    - Focus progressivo: morfosintassi → lessico → stile
+
+- __Attività 2__ — _Prompting_ per interazione orale (italiano L2)
+    - Sviluppo dell’arte del prompting per “conversare con la macchina”
+    - Obiettivo: pratica autonoma della produzione orale fuori aula
+
+- __Attività 3__ — Progettazione UDA con GenAI (formazione docenti)
+    - Uso di più strumenti GenAI per progettare unità didattiche
+    - Valutazione: UDA = 40% del voto finale; restante via colloquio orale
+
+{{% fragment %}}
+### Commenti
+
+- _Nessuna criticità_ dal punto di vista delle policy per attività 1 e 2
+- {{% color "red" %}}potenzialmente critico{{% /color %}}: attività 3 richiede analisi dell'efficacia di GenAI nella progettazione didattica
+{{% /fragment %}}
 
 ---
 

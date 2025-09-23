@@ -1231,7 +1231,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/eduaide-main-screen.png" alt="Eduaide.Ai Schermata Principale" width="50vw" >}}
+{{< image src="./tech-example/eduaide-main-screen.png" alt="Eduaide.Ai Schermata Principale" width="45vw" >}}
 {{% /col %}}
 
 {{% col %}}
@@ -1280,7 +1280,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% multicol %}}
 
 {{% col %}}
-{{< image src="./tech-example/school-ai-chat.png" alt="SchoolAI Schermata Chat con Dot" >}}
+{{< image src="./tech-example/school-ai-chat.png" alt="SchoolAI Schermata Chat con Dot" width="45vw" >}}
 {{% /col %}}
 
 {{% col %}}
@@ -1623,7 +1623,7 @@ In questo momento proliferano _strumenti roboanti_ la cui __efficacia__ ed __usa
 
 {{< slide id="unibo-experiments" >}}
 
-# Sperimentazioni in corso in UniBo 
+# Sperimentazioni in corso in UniBo
 
 ---
 

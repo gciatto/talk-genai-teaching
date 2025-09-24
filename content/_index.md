@@ -161,6 +161,8 @@ Algoritmi di _IA_ in grado di __generare automaticamente__ _contenuti_, e.g.:
 
 ---
 
+{{% section %}}
+
 {{< slide id="interfaces" >}}
 
 # Principali soluzioni __tecnologiche__
@@ -369,6 +371,8 @@ Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, C
 {{% /fragment %}}
 {{% /col %}}
 {{% /multicol %}}
+
+{{% /section %}}
 
 ---
 

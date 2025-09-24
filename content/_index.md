@@ -959,12 +959,12 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 - `Quali sono i punti chiave di queste slide/appunti/capitolo?`
     + \[allegando il materiale]
 
-- `Fornisci un elenco di domande aperte su questo argomento`
-    + \[specificando l'argomento]
-
-- `Suggerisci idee per un progetto di ricerca su X`
+- `Fornisci un elenco di problemi aperti su argomento X`
     + \[specificando l'argomento X]
-    + opzionalmente: `Concentrati su approcci innovativi o interdisciplinari`
+
+- `Suggerisci idee per un progetto su X`
+    + \[specificando l'argomento X, e la natura del progetto]
+    <!-- + opzionalmente: `Concentrati su approcci innovativi o interdisciplinari` -->
 
 - `Data questa tesi/articolo, suggerisci 5 idee per estenderla`
     + \[allegando la tesi/articolo]
@@ -995,6 +995,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 - __Esistono__ vari _strumenti_ basati su GenAI che supportano i casi d'uso discussi
 - Segue __panoramica__ delle soluzioni più _comuni_ e _interessanti_
 - Alcuni di questi forniti con una modalità __gratuita__ mentre altri richiedono un __abbonamento__ o __pagamento__ per funzionalità avanzate
+    + pagamento spesso _necessario_ per usabilità pratica
 
 ---
 
@@ -1133,7 +1134,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 
 {{% col %}}
 - [Microsoft Copilot](https://copilot.microsoft.com/)
-    + interfaccia _conversazionale_ integrata in prodotti _Office 365_ (Word, Excel, PowerPoint, etc.)
+    + interfaccia _conversazionale_ + _in-app_ integrata in prodotti _Office 365_ (Word, Excel, PowerPoint, etc.)
     + aiuta a generare contenuti _dentro l'app_, o automatizzare compiti ripetitivi
     + utile per la __generazione__ di _slide_ (PowerPoint), _documenti_ (Word) e analisi dati (Excel)
 {{% /col %}}
@@ -1177,12 +1178,14 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% col %}}
 - [QuillBot](https://quillbot.com/)
    + correzione grammaticale
-   + detettore di _plagio_ o _generazione_ 
+   + detettore di _plagio_ o _generazione_{{% color "red" %}}\*{{% /color %}}
    + traduzione
    + gestore di voci bibliografiche
    + sintetizzatore di testi
 
 - Interfaccia _1-size-fits-all_ per comuni operazioni di scrittura
+
+{{% color "red" %}}\*{{% /color %}} dubbi su accuratezza
 {{% /col %}}
 
 {{% /multicol %}}
@@ -1347,6 +1350,8 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 - I sistemi professionali sono __costosi__
     + meglio appoggiarsi a _licenza istituzionale_ se disponibile
 
+- __Diffidare__ delle funzionalità di _GenAI-detection_
+
 {{% /col %}}
 
 {{% /multicol %}}
@@ -1429,7 +1434,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 <!-- - Vi sono preoccupazioni sempre più diffuse riguardo l'utilizzo di strumenti AI nel {{% color "red" %}}compromettere valutazioni date agli studenti e nell'integrità accademica{{% /color %}}. -->
 Un __controllo diretto__ su come gli studenti utilizzano GenAI è spesso {{% color "red" %}}impraticabile{{% /color %}}
 + è __possibile__ che gli studenti abusino degli strumenti generativi
-+ è {{% color "red" %}}difficile{{% /color %}}, per i docenti, _verificare_ le competenze _reali_ degli studenti
++ è __difficile__, per i docenti, _verificare_ le competenze _reali_ degli studenti
 
 {{% fragment %}}
 
@@ -1512,7 +1517,7 @@ Un __controllo diretto__ su come gli studenti utilizzano GenAI è spesso {{% col
 
 {{% fragment %}}
 
-> Fondamentale essere consci del livello di protezione dei dati offerto dagli strumenti AI adottati.
+> Fare attenzione livello di protezione dei dati offerto dagli strumenti GenAI adottati
 - in assenza di informazioni chiare, __meglio assumere il peggio__ e __limitare l'uso__ di tali strumenti
     + idem in caso di _non-configurabilità_ delle impostazioni di privacy
 
@@ -1574,7 +1579,7 @@ Ci sono __preoccupazioni__ riguardo all'effetto su larga scala di una _eccessiva
 - Importante __educare__ certe competenze <u>anche</u> in assenza di GenAI (es. _ricerca_ di informazioni in testo/tomo/rete)
     + importante _allenare_ queste competenze nei _corsi di base_ (es. con compiti/esami che _impediscano_ l'uso di GenAI)
         * solo dopo, in _corsi avanzati_, istruire all'uso degli strumenti di GenAI per __aumentare__ tali competenze (es. con compiti/esami che _richiedano_ l'uso di GenAI)
-    + {{% color "red" %}}perché GenAI non è sempre <u>accurata</u>{{% /color %}}
+    + {{% color "red" %}}perché GenAI <u>non</u> è sempre <u>accurata</u>{{% /color %}}
         * meglio potersi accorgere degli errori e poterne fare a meno quando sbaglia
 
 - Affinchè GenAI abbia un _impatto positivo_ sull'apprendimento sarà importante un _grande sforzo_ (ri-)organizzativo
@@ -1609,7 +1614,7 @@ In questo momento proliferano _strumenti roboanti_ la cui __efficacia__ ed __usa
 - Non farsi abbindolare dal marketing:
     1. le soluzioni offrono __molte funzionalità__...
     2. la cui __efficacia__ è vincolata
-        + alla _qualità_ del _materiale di partenza_
+        + alla _qualità_ del _materiale di partenza_ (fornito dall'utilizzatore)
         + alla _pazienza_ del docente di fornire _istruzioni chiare_ e dettagliate
         + alla _motivazione_ degli studenti a fruire attivamente degli strumenti
 
@@ -1629,7 +1634,7 @@ In questo momento proliferano _strumenti roboanti_ la cui __efficacia__ ed __usa
 
 # Sperimentazioni in corso in UniBo
 
-(__DISCLAIMER__: Seguono opinioni personali del docente)
+(__DISCLAIMER__: Seguono opinioni personali dello speaker)
 
 ---
 

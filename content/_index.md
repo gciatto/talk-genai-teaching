@@ -1173,7 +1173,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 {{% col %}}
 - [QuillBot](https://quillbot.com/)
    + correzione grammaticale
-   + detettore di _plagio_ o _generazione_
+   + detettore di _plagio_ o _generazione_ 
    + traduzione
    + gestore di voci bibliografiche
    + sintetizzatore di testi
@@ -1425,7 +1425,7 @@ GenAI utile per _generare_ effettivamente i contenuti didattici, tra cui:
 <!-- - Vi sono preoccupazioni sempre più diffuse riguardo l'utilizzo di strumenti AI nel {{% color "red" %}}compromettere valutazioni date agli studenti e nell'integrità accademica{{% /color %}}. -->
 Un __controllo diretto__ su come gli studenti utilizzano GenAI è spesso {{% color "red" %}}impraticabile{{% /color %}}
 + è __possibile__ che gli studenti abusino degli strumenti generativi
-+ è {{% color "red" %}}difficile{{% /color %}} _verificare_ le competenze _reali_ degli studenti
++ è {{% color "red" %}}difficile{{% /color %}}, per i docenti, _verificare_ le competenze _reali_ degli studenti
 
 {{% fragment %}}
 
@@ -1479,7 +1479,7 @@ Un __controllo diretto__ su come gli studenti utilizzano GenAI è spesso {{% col
 
 ## __Prevenire__ abusi degli strumenti GenAI (pt. 2)
 
-### Strategie di verifica
+### Suggerimenti su strategie di verifica
 
 - Evitare compiti che possano essere __svolti__ in toto __con GenAI__
     + es. risposte multiple, calcoli di cui si debba riportare solo il risultato, etc.
@@ -1625,6 +1625,8 @@ In questo momento proliferano _strumenti roboanti_ la cui __efficacia__ ed __usa
 
 # Sperimentazioni in corso in UniBo
 
+(__DISCLAIMER__: Seguono opinioni personali del docente)
+
 ---
 
 ## AI-Assisted Programming
@@ -1646,11 +1648,9 @@ Sperimentazione di *AI-assisted programming* nel primo anno del corso di _laurea
 - Sarebbe forse critico se fosse un corso di base in un CdL di Informatica
 {{% /fragment %}}
 
----
+<!-- ---
 
 ## Personalizzazione e conoscenza del profilo d’aula con l’IA
-
-<!-- Clusterizzazione, stili di apprendimento e progettazione didattica -->
 
 - __Obiettivo__: _personalizzazione dei contenuti didattici_ e la _creazione di profili d’aula_ basati sui dati
 - Applicazione di *tecniche di clusterizzazione* ai background e ai comportamenti degli studenti universitari per individuare pattern ricorrenti
@@ -1662,8 +1662,8 @@ Sperimentazione di *AI-assisted programming* nel primo anno del corso di _laurea
 
 {{% fragment %}}
 ### Commenti
-- {{% color "red" %}}potenzialmente critico{{% /color %}}: dipende da se e come si usano dati sensibili
-{{% /fragment %}}
+- __attenzione__: all'uso che si fa di dati sensibili 
+{{% /fragment %}} -->
 
 ---
 
@@ -1701,7 +1701,7 @@ CdLM in Informatica Giuridica, Sperimentazione su LLM in task giuridiche
 ### Commenti
 
 - _Nessuna criticità_ dal punto di vista delle policy
-- {{% color "red" %}}potenzialmente critico{{% /color %}}: generazioni di definizioni giuridiche
+- __Attenzione__ alla generazione di definizioni giuridiche
 {{% /fragment %}}
 
 ---
@@ -1778,7 +1778,7 @@ CdL in Scienze della Comunicazione e DAMS:
 ### Commenti
 
 - _Nessuna criticità_ dal punto di vista delle policy per attività 1 e 2
-- {{% color "red" %}}potenzialmente critico{{% /color %}}: attività 3 richiede analisi dell'efficacia di GenAI nella progettazione didattica
+- __Attenzione__ all'attività 3: richiede analisi dell'efficacia di GenAI nella progettazione didattica
 {{% /fragment %}}
 
 ---
